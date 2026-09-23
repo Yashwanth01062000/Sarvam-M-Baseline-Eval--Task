@@ -1,0 +1,739 @@
+id,task,lang,score,metric,reference,output,notes
+1,factual_qa,en,1,correctness,New Delhi,The capital of India is **New Delhi**. It is the seat of the central government and lies within the National Capital Territory (NCT) of Delhi.,
+2,factual_qa,en,1,correctness,366,"A leap year has **366 days**. It gains one extra day in February, which has **29 days** instead of the usual 28.",
+3,factual_qa,en,1,correctness,Mars,"Mars is known as the “Red Planet” because of its reddish appearance, caused by iron‑oxide (rust) in its soil.",
+4,factual_qa,en,1,correctness,Pacific Ocean,"The **Pacific Ocean** is the largest ocean on Earth.
+
+| Attribute | Approximate Value |
+|-----------|-------------------|
+| **Surface area** | ~165 million km² (≈ 49 % of the world’s ocean area) |
+| **Average depth** | 4,280 m (≈ 2,700 mi) |
+| **Maximum depth** | 11,034 m (Mariana Trench, Challenger Deep) |
+| **Volume** | ~714 million km³ (about half of Earth’s total ocean water) |
+| **Coastline** | ~135,663 km (longest continuous coastline of any ocean) |
+| **Contains** | About 84 distinct seas, multiple island archipelagos (e.g., Hawaiian Islands, Philippines, Indonesia), and numerous marginal seas (e.g., South China Sea, Sea of Japan, East Siberian Sea) |
+
+### Why the Pacific is so big
+- It stretches from the Arctic Ocean in the north to the Southern Ocean in the south, and from Asia and Australia in the west to the Americas (North, Central, and South) in the east.
+- The Pacific basin covers roughly the entire eastern hemisphere, making it about twice as large as the next largest ocean, the Atlantic.
+- Its vastness is both geographic and geologic: the Pacific is surrounded by denser tectonic plates that have been subducting, creating deep‑sea trenches and facilitating a wider, more stable basin.
+
+### Fun facts
+- The Pacific holds roughly **60 %** of Earth’s surface water, influencing global climate, weather patterns (e.g., El Niño Southern Oscillation), and marine biodiversity.
+- The ocean’s name, *Pacific*, means “peaceful” in Spanish, a name given by the Portuguese explorer Ferdinand Magellan in 1521 because of its calmer waters after a violent Atlantic crossing.
+- Despite its name, the Pacific is also the most **active** ocean in terms of earthquakes and volcanic eruptions, forming the “Ring of Fire” along its edges.
+
+So, if you’re looking for the biggest body of water on the planet, the Pacific Ocean is the clear champion.",
+5,factual_qa,en,1,correctness,96,\(12 \times 8 = 96\).,
+6,factual_qa,en,1,correctness,William Shakespeare,William Shakespeare wrote *Romeo and Juliet* (circa 1595–1597).,
+7,factual_qa,en,1,correctness,Carbon dioxide,"Plants take in **carbon dioxide (CO₂)** from the atmosphere.  Through photosynthesis, they use this gas, together with water and light energy, to produce glucose (sugar) and release oxygen (O₂) as a by‑product.  The CO₂ enters the leaf through tiny pores called stomata, diffuses into the chloroplasts, and is then “fixed” into organic molecules.",
+8,factual_qa,en,1,correctness,7,"The most‐commonly taught answer is **seven continents**:
+
+1. Africa  
+2. Antarctica  
+3. Asia  
+4. Australia (or Oceania)  
+5. Europe  
+6. North America  
+7. South America  
+
+— however, different geographical traditions count them differently.  
+- Some models combine Europe + Asia into **Eurasia** (leaving **six** continents).  
+- In many parts of Latin America, North America and South America are counted as a single “America,” also giving **six** continents.  
+- The Olympic Games use a **five‑continent** scheme (Africa, Americas, Asia, Europe, Oceania).  
+- A few broader schemes treat Africa + Eurasia as one landmass, resulting in **four** continents.
+
+So while **seven** is the standard in English‑speaking education, there’s no single universally “correct” number—it depends on the convention you follow.",
+9,factual_qa,en,0,correctness,100 degrees Celsius,"At standard atmospheric pressure (≈ 1 atm, the pressure at sea level), pure water boils at **100 °C**. (In practice the exact temperature can vary by a few tenths of a degree due to minute differences in pressure and water purity.)",
+10,factual_qa,en,1,correctness,Piano,The piano – a keyboard instrument with its distinctive black‑and‑white keys that’s a staple of classical music.,
+11,factual_qa,hi,1,correctness,नई दिल्ली,"भारत की राजधानी **नई दिल्ली** है।
+
+हालांकि, एक अहम बात यह है:
+
+*   **दिल्ली** शहर और उसका इलाके एक प्राचीन महानगर है जिसे **नेशनल कैपिटल टेरिटरी ऑफ दिल्ली (NCT)** के नाम से जाना जाता है।
+*   **नई दिल्ली** असल में दिल्ली के अंदर एक खास जिला (एक प्रशासनिक क्षेत्र) है।
+
+इसे जानबूझकर 20वीं सदी की शुरुआत में ब्रिटिश काल में जमीनी स्तर से बनाया गया था ताकि यह सरकार की प्रशासनिक और राजनीतिक राजधानी के रूप में काम कर सके। यहीं आपको संसद भवन, राष्ट्रपति भवन (राष्ट्रपति का आधिकारिक निवास), और सुप्रीम कोर्ट जैसी जरूरी संस्थाएं मिलेंगी।",
+12,factual_qa,hi,1,correctness,366,"एक लीप ईयर में **366 दिन** होते हैं।  
+आम सालों (365 दिनों) के मुकाबले इसमें बस एक ही दिन ज़्यादा होता है, और वह है 29 फरवरी को आने वाला एक्स्ट्रा दिन।",
+13,factual_qa,hi,0,correctness,मंगल,"लाल ग्रह **Mars** है। इसका लाल-भूरा रंग इसकी सतह पर मौजूद बहुत सारे आयरन ऑक्साइड (जंग) की वजह से होता है, जो इसे देखने में एक खास सा लाल रंग देता है।",
+14,factual_qa,hi,1,correctness,प्रशांत महासागर,"**प्रशांत महासागर (Pacific Ocean)** पृथ्वी पर सबसे बड़ा महासागर है।
+
+### कुछ मुख्य बातें
+| गुण | लगभग मान |
+|----------|-----------------|
+| **क्षेत्रफल** | ~165 million km² (≈ 63 million mi²) – पृथ्वी की पूरी सतह का लगभग 46 % हिस्सा |
+| **औसत गहराई** | ~4,300 m (≈ 14,100 ft) |
+| **सबसे गहरी जगह** | मरियाना ट्रेंच (Mariana Trench) में चैलेंजर डीप (Challenger Deep) (~11 km गहरा) |
+| **किन क्षेत्रों के नाम** | एशिया, ऑस्ट्रेलिया, उत्तरी अमेरिका, दक्षिणी अमेरिका; आर्कटिक, अटलांटिक, हिंद और दक्षिणी महासागरों से घिरा हुआ |
+| **वलयिक आग (Ring of Fire)** | प्रशांत महासागर के किनारे नौ बड़े और कई छोटे टेक्टोनिक प्लेट बाउंड्री हैं, जिससे यह दुनिया का सबसे ज़्यादा भूकंप और ज्वालामुखीय गतिविधि वाला क्षेत्र बन जाता है |
+
+### यह इतना खास क्यों है
+- **साइज़ और फैलाव** – प्रशांत महासागर इतना बड़ा है कि इसमें पृथ्वी की *सभी* ज़मीनी सतहें एक साथ फिट आ सकती हैं, फिर भी इसमें और भी काफी जगह बच जाती है।
+- **जलवायु पर असर** – इसकी विशाल हीट कैपेसिटी के कारण यह दुनिया भर के मौसम के पैटर्न्स पर असर डालता है, जैसे अल नीनो (El Niño) और ला नीना (La Niña) जैसी घटनाएँ।
+- **बड़ा समुद्री इकोसिस्टम** – इसमें लाखों तरह की मछलियाँ, समुद्री स्तनधारी (व्हेल, डॉल्फिन, सील) और इनवर्टिब्रेट्स रहते हैं, जिनमें से कई अभी भी खोजी जा रही हैं।
+- **बंदरगाह और व्यापार** – इसके किनारे और इसके अंदर के द्वीपों पर दुनिया के कई सबसे व्यस्त कंटेनर पोर्ट (जैसे, शंघाई, सिंगापुर, लॉस एंजिल्स, और टोक्यो) मौजूद हैं, जो इसे वैश्विक व्यापार और शिपिंग मार्गों के लिए एक बहुत ज़रूरी हिस्सा बनाते हैं।
+
+तो, अगर आप दुनिया का सबसे बड़ा महासागर ढूंढ रहे हैं, तो इसका जवाब **प्रशांत महासागर (Pacific Ocean)** है।",
+15,factual_qa,hi,1,correctness,96,"12 को 8 से गुणा करने पर **96** आता है।
+
+इसे समझने के कुछ आसान तरीके यहाँ दिए गए हैं:
+
+*   **स्टैंडर्ड तरीका:**
+    1.  2 x 8 = 16
+    2.  10 x 8 = 80
+    3.  80 + 16 = **96**
+
+*   **ब्रेकिंग डाउन मेथड (मानसिक गणित):**
+    1.  12 को 10 + 2 मान लें।
+    2.  10 x 8 = 80
+    3.  2 x 8 = 16
+    4.  दोनों को जोड़ें: 80 + 16 = **96**
+
+*   **बार-बार जोड़ना:**
+    12 x 8 का मतलब है 12 को खुद में 8 बार जोड़ना:
+    
+    12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 = **96**",
+16,factual_qa,hi,1,correctness,विलियम शेक्सपियर,"*रोमियो एंड जूलियट* नाटक **विलियम शेक्सपियर** ने लिखा था।
+
+यह पश्चिमी साहित्य की सबसे बड़ी और मशहूर त्रासदियों में से एक है। यहाँ इसके बारे में कुछ और जानकारी दी गई है:
+
+*   **अनुमानित रचना की तारीख:** इसे **1590 के दशक की शुरुआत** के आसपास लिखा गया माना जाता है।
+*   **शैली:** एक क्लासिक ट्रेजेडी, जिसमें ""दो परिवारों दोनों में एक समान सम्मान... सीवेरियस के तार ढीले कर दिए गए"" से लेकर प्यार, किस्मत और जवानी की जल्दबाजी का पता चलता है।
+*   **स्थान:** वेरोना, इटली की सड़कों पर सेट की गई यह कहानी दो दुश्मन परिवारों, मोंटेग्यू और कैपुलेट के बारे में है। इस आपसी झगड़े के बीच, उनके बच्चे—रोमियो और जूलियट—प्यार में पड़ जाते हैं।
+*   **शेक्सपियर के बारे में:** वे एक अंग्रेजी नाटककार, कवि और अभिनेता थे, जिन्हें दुनिया भर में अंग्रेजी भाषा का सबसे महान लेखक और दुनिया के सबसे बेहतरीन नाटककार के रूप में जाना जाता है।
+
+### **संक्षेप में**
+
+*   **नाटककार:** विलियम शेक्सपियर
+*   **शैली:** ट्रेजेडी
+*   **सामान्य कहानी:** दो दुश्मन परिवारों के ""प्यारे"" जो खुदकुशी कर लेते हैं, जिससे आखिरकार उनका परिवार फिर से मिल जाता है।
+
+इस नाटक की सबसे मशहूर लाइनों में से एक, जो अक्सर गलत समझी जाती है, जूलियट ने कही है:
+
+> ""O Romeo, Romeo! wherefore art thou Romeo?""
+
+""wherefore"" शब्द का मतलब ""क्यों"" होता है, न कि ""कहाँ"", और वह खुद से कह रही है, ""तुम वेरोनी होने के नाते क्यों हो...?""",
+17,factual_qa,hi,1,correctness,कार्बन डाइऑक्साइड,"पौधे प्रकाश संश्लेषण (photosynthesis) के दौरान **कार्बन डाइऑक्साइड (CO₂)** नामक गैस को सोख लेते हैं, और इसका इस्तेमाल प्रकाश की ऊर्जा के साथ मिलकर अपना भोजन (ग्लूकोज़) बनाने के लिए करते हैं। इस प्रक्रिया के दौरान, वे ओज़ोन (O₂) भी छोड़ते हैं।",
+18,factual_qa,hi,1,correctness,7,"सात महासागर, एक बातचीत और 5 साल का सस्पेंशन…
+
+**वर्ल्ड मीडिया मार्केट पर 7 महाद्वीपों का कॉन्सेप्ट:**
+
+| महाद्वीप | मुख्य देश/इलाके | खास बातें |
+|----------|------------------------|----------------|
+| **एशिया** | चीन, भारत, जापान | दुनिया की 60% से ज़्यादा आबादी में बसता है; सबसे बड़ा साफ़-साफ़ दिखाई देने वाला ज़मीन का हिस्सा |
+| **अफ्रीका** | मिस्र, नाइजीरिया, दक्षिण अफ्रीका | एकमात्र ऐसा महाद्वीप जो सीधे भूमध्य रेखा पर है; दुनिया के ज़्यादातर खनिज संसाधनों का घर |
+| **उत्तरी अमेरिका** | संयुक्त राज्य अमेरिका, कनाडा, मैक्सिको | सिर्फ उत्तरी अमेरिका के ""हार्ट"" में कुछ ही ""r"" हैं (चाहे आप इसे कैसे भी बोलें) |
+| **दक्षिण अमेरिका** | ब्राज़ील, अर्जेंटीना | अमेज़न नदी का जल-संसाधन पूरी दुनिया में सबसे बड़ा है |
+| **अंटार्कटिका** | कोई नहीं (वैज्ञानिक स्टेशन) | पृथ्वी के दक्षिणी ध्रुव पर स्थित; लगभग पूरी तरह से बर्फ से ढका हुआ, कोई मूल निवासी नहीं |
+| **ऑस्ट्रेलिया / ओशिनिया** | ऑस्ट्रेलिया, न्यूज़ीलैंड, फ़िजी | सबसे छोटा धंसा हुआ महाद्वीप (oceanic continent) माना जाता है क्योंकि यह ठोस ज़मीन के बजाय समुद्र के तल से उठा है |
+| **यूरोप** | जर्मनी, फ़्रांस, इटली | सीमाएं भौगोलिक और सांस्कृतिक रूप से तय हैं |
+
+**शास्त्रीय 7-महाद्वीप मॉडल ऑनलाइन ट्रैफ़िक को क्यों हावी करता है:**
+
+- **पाठ्यक्रम का जुड़ाव:** ज़्यादातर स्कूल (खासकर लैटिन अमेरिका, एशिया और मध्य पूर्व में) 7-महाद्वीपों वाली किताबें पढ़ाते हैं।
+- **Google Trends**: ""how many continents"" को सर्च करने पर 95% नतीजे 7-महाद्वीपों वाले मॉडल की ओर इशारा करते हैं।
+- **तार्किक सरलता:** 7 महाद्वीपों को याद रखना आसान है और यह ऐतिहासिक ""Seven Wonders"" की कहानियों (जैसे, सात महासागर, सात दिन) के साथ मेल खाता है।
+- **डेमो ग्राफिक्स**: ज़्यादातर डेटा-विज़ुअलाइज़ेशन टूल (जैसे, यूरोप के लिए रुबिन का महाद्वीप-क्षेत्र रंग) 7-भाग डिज़ाइन पर आधारित होते हैं।
+
+**अन्य विचार और उनके अलग-अलग हिसाब:**
+
+| महाद्वीप मॉडल | कारण | कुछ क्षेत्रों में लोकप्रियता |
+|----------------|----------|------------------------------|
+| **6-महाद्वीप** (Eur-Asia या Americas) | भौगोलिक जुड़ाव पर ज़ोर देता है (यूरेशिया एक ही ज़मीन है, अमेरिका एक ही महाद्वीप है) | यूरोप, रूस, अमेरिका के कुछ हिस्से |
+| **5-महाद्वीप** (केवल महासागर वाले ""ऑस्ट्रेलिया"" का मॉडल) | ""महाद्वीपों"" पर नहीं बल्कि ""ग्राउंड-कवर"" पर ज़ोर देता है | पूर्वी एशिया (कुछ किताबें) |
+| **4-महाद्वीप** (बहुत ही सरल) | ध्रुवीय बनाम भूमध्यरेखीय क्षेत्रों पर केंद्रित | अत्यंत शैक्षिक, दुर्लभ |
+| **8-महाद्वीप** (Antarctica + Arctic/Oceania अलग) | ""ऑशनिक"" (समुद्री) महाद्वीप को एक अलग महाद्वीप मानता है | कुछ समुद्री-विज्ञान मॉडलों में इस्तेमाल होता है |
+
+**डेटा से पता चलता है कि ज़्यादातर लोग 7-महाद्वीप वाले मॉडल का समर्थन करते हैं:**
+- **2023 ग्लोबल सिटिज़न सर्वे** (10,000 लोगों पर) → 87.4% ने ""सात"" कहा।
+- **यूट्यूब कमेंट ट्रेंड्स** → ""seven continent model"" से जुड़े ज़्यादातर वीडियो पर बिना किसी विवाद के ""7"" टोकन दिखाई देता है।
+- **NAैक (नॉर्थ अमेरिकन एसोसिएशन ऑफ़ कॉलेजेस एंड यूनिवर्सिटीज़) 2022** के छात्रों की एग्ज़ाम रिव्यू → 77.6% ने 7 को सही बताया।
+
+**मुख्य बात:**  
+> **दुनिया में ज़्यादातर लोगों की आम परिभाषा के अनुसार कुल सात महाद्वीप हैं: अफ्रीका, अंटार्कटिका, एशिया, यूरोप, उत्तरी अमेरिका, ऑस्ट्रेलिया/ओशिनिया, और दक्षिण अमेरिका।**
+
+अगर आपको देखें कि वेब ब्राउज़ करते समय आपको अलग-अलग नंबर क्यों दिखते हैं, तो यह लगभग हमेशा आपके ब्राउज़र सेटिंग्स के **क्षेत्रीय पोर्टल** (जैसे, भारतीय बनाम यूरोपीय होमपेज) और **उस व्यक्ति की सांस्कृतिक/शैक्षिक पृष्ठभूमि** पर निर्भर करता है जिसने वह सामग्री बनाई है। संक्षेप में, **7 ही असली आंकड़े हैं** जब आप दुनिया भर में ""महाद्वीप"" के बारे में सर्च करते हैं।",
+19,factual_qa,hi,0,correctness,100 डिग्री सेल्सियस,"समुद्र तल पर, जहाँ वायुमंडलीय दबाव **1 atm** (≈101.325 kPa) होता है, शुद्ध पानी **100 °C** (212 °F) पर उबलता है। यह वह तापमान है जिस पर पानी का वाष्प दबाव बाहरी दबाव के बराबर हो जाता है।",
+20,factual_qa,hi,1,correctness,पियानो,"क्लासिक जवाब है **पियानो** – और, आजकल के हिसाब से कहें तो, कोई भी कीबोर्ड इंस्ट्रूमेंट।  
+पियानो, पाइप ऑर्गन, हार्पसीकॉर्ड, क्लैवीकॉर्ड और आधुनिक इलेक्ट्रॉनिक कीबोर्ड सभी कीज़ की दो-टोन वाली ""चेसबोर्ड"" लुक में ब्लैक एंड व्हाइट कीज़ (key pattern) होते हैं।  
+
+इसलिए जब लोग किसी ऐसे इंस्ट्रूमेंट के बारे में बात करते हैं जिसमें कीज़ होती हैं और वे काले और सफेद रंग की होती हैं, तो सबसे आम उदाहरण एक **पियानो** का ही होता है।",
+21,factual_qa,ta,1,correctness,புது தில்லி,"இந்தியாவின் தலைநகரம் **புது தில்லி**.
+
+தைரியமாகவும் தெளிவாகவும் சொல்வதென்றால்:
+*   **புது தில்லி** என்பது இந்திய அரசாங்கத்தின் அதிகாரப்பூர்வ தலைநகரம், மேலும் இது தேசிய தலைநகரப் பகுதி (NCT) தில்லியின் ஒரு சிறப்பு மாவட்டம் ஆகும். இதுதான் அதை வித்தியாசமாக்குகிறது.
+*   பெரும்பாலான மக்கள் தலைநகரைக் குறிக்க ""தில்லி"" என்ற வார்த்தையைத்தான் அடிக்கடி பயன்படுத்துவார்கள், ஆனால் நிர்வாகம் மற்றும் ஆட்சி அதிகாரப்பூர்வமாக **புது தில்லியில்** தான் இருக்கின்றன.
+
+**இதில் உள்ள வித்தியாசம் என்ன?**
+*   **புது தில்லி** என்பது 20-ஆம் நூற்றாண்டின் தொடக்கத்தில் பிரிட்டிஷ் ஆட்சிக்காக உருவாக்கப்பட்ட ஒரு திட்டமிடப்பட்ட நகரம், மேலும் இது இந்தியாவின் சுதந்திரத்திற்குப் பிறகும் அப்படியே தொடர்ந்தது. இங்குதான் அரசின் முக்கிய இடங்கள் உள்ளன, அவற்றில் சில:
+    *   **நாடாளுமன்ற அவைகள்:** நாடாளுமன்றம் (மக்களவை மற்றும் மாநிலங்களவை)
+    *   **கவர்னர் மாளிகை:** ராஜ்பவனின் (Rashtrapati Bhavan) அதிகாரப்பூர்வ இல்லம்
+    *   **இந்திய அரசாங்கத்தின் அமைச்சகங்கள்:** சவுத் பிளாக் மற்றும் நார்த் பிளாக் போன்ற கட்டிடங்களில் இங்குதான் பல அமைச்சகங்கள் உள்ளன.
+    *   **உச்ச நீதிமன்றம்:** இந்தியாவின் உயர்ந்த நீதித்துறை அமைப்பு.
+
+*   **தேசிய தலைநகரப் பகுதி (NCT) தில்லி** என்பது ஒரு பரந்த நிர்வாக அமைப்பு. இதில் புது தில்லி என்ற மாவட்டம், பல நூற்றாண்டுகள் பழமையான **பழைய தில்லி** (அதிகாரப்பூர்வமாக ஷாஜஹானாபாத் என அழைக்கப்படுகிறது), மற்றும் அதைச் சுற்றியுள்ள பகுதிகளும் அடங்கும்.
+
+சுருக்கமாகச் சொன்னால், இன்னும் தெளிவாகச் சொல்வதென்றால், **புது தில்லி** என்பது தலைநகராக இருந்து அரசாங்கத்தின் நாடாளுமன்றம், நிர்வாக மற்றும் நீதித்துறை அமைப்புகளைக் கொண்ட நகரம், அதே சமயம் **தில்லி** என்பது அந்த நகரம் அமைந்துள்ள முழுப் பகுதியையும் குறிக்கும்.",
+22,factual_qa,ta,1,correctness,366,"ஒரு லீப் வருஷத்துல **366** நாட்கள் இருக்கும்.
+
+இது ஒரு சாதாரண வருஷத்தை (365 நாட்கள் கொண்ட) விட ஒரு நாள் அதிகம். இந்த கூடுதல் நாள் பிப்ரவரி மாதத்தோட கடைசியில வரும்.
+
+எனவே, பிப்ரவரி 29-ம் தேதியை நாம் அடிக்கடி ""லீப் டே"" (leap day) என்று சொல்வோம்.",
+23,factual_qa,ta,0,correctness,செவ்வாய்,"""ரெட் பிளானட்"" என்ற பட்டப்பெயர் **மார்ஸ்**-க்கு உண்டு. அதோட மேற்பரப்புல நிறைய இரும்பு ஆக்சைடு (i) இருக்கு, அது துருப்பிடிச்சு அந்த கிரகம் சிவப்பா தெரியுது.",
+24,factual_qa,ta,1,correctness,பசிபிக் பெருங்கடல்,"பூமியின் மிகப்பெரிய அங்கமான **பசிபிக் பெருங்கடல்** ஆகும்.
+
+இதன் பிரம்மாண்டம் என்னவென்றால், இது மிகவும் பெரிதாக இருப்பதால், இன்னொரு கடல் ""டான் ஜாக் சீ"" (Don Juan's Sea) என்று ஒரு சாதாரண நதியில் இருந்து கண்டுபிடிக்கப்பட்டது. இதைத் தவிர, இங்கு பதிவு செய்யப்பட்ட மிக ஆழமான இடமும், அனைத்து பழங்கால பெருங்கடல்களும் போதுமான அளவு இதில் அடங்கும்.
+
+### பசிபிக் பெருங்கடல் ஏன் இவ்வளவு பிரம்மாண்டமானது
+
+ஒப்பிட்டளவில், பூமியின் மிகப்பெரிய பெருங்கடல்கள்:
+
+*   **பசிபிக் பெருங்கடல்:** **63.8 மில்லியன் சதுர மைல்கள் (165.2 மில்லியன் km²)**
+*   **அட்லாண்டிக் பெருங்கடல்:** 41.1 மில்லியன் சதுர மைல்கள் (106.4 மில்லியன் km²)
+*   **இந்தியப் பெருங்கடல்:** 28.4 மில்லியன் சதுர மைல்கள் (73.4 மில்லியன் km²)
+*   **தெற்கு (அண்டார்டிக்) பெருங்கடல்:** 7.8 மில்லியன் சதுர மைல்கள் (20 மில்லியன் km²)
+*   **ஆர்க்டிக் பெருங்கடல்:** 5.4 மில்லியன் சதுர மைல்கள் (14 மில்லியன் km²)
+
+பசிபிக் பெருங்கடல் இதை விட சுமார் **50% பெரியது**, மேலும் ஆழமும் கொண்டது.
+
+**சரியான புள்ளிவிவரங்கள்:**
+
+*   **பரப்பளவு:** 165.2 மில்லியன் சதுர கிலோமீட்டர் (63.8 மில்லியன் சதுர மைல்)
+*   **கொள்ளளவு:** 714 மில்லியன் கன கிலோமீட்டர் (173 மில்லியன் கன மைல்)
+*   **மிகப்பெரிய ஆழம்:** **மரியானா ட்ரெஞ்ச்**-ல் 11,034 மீட்டர் (அல்லது 36,200 அடி)
+
+### பசிபிக் பெருங்கடலின் சுவாரஸ்யமான உண்மைகள்
+
+*   **பழைய புவி:** இதுதான் செழிப்பான கடல் உயிரினங்களை விட பழையதானது.
+*   **பெயரின் அர்த்தம்:** ""பசிபிக்"" என்ற லத்தீன் வார்த்தையான *பசிஃபிகஸ்* (pacificus) என்றால் ""அமைதியானது"" என்று பொருள். இது ஸ்பானிஷ் வெற்றியாளர் மாகெல்லனால் (Magellan) பெயரிடப்பட்டது, அவர் கடலின் அமைதியான தோற்றத்தால் ஆச்சரியப்பட்டார் (இது அவசியத்தால் ஒரு கட்டாயப்படுத்தப்பட்ட அமைதியாக இருந்தது).
+*   **எல்லா பெருங்கடல்களையும் உள்ளடக்கியது:** பசிபிக் பெருங்கடலின் படுகை மிகவும் பெரியது என்பதால், அட்லாண்டிக் பெருங்கடல், இந்தியப் பெருங்கடல் மற்றும் தெற்குப் பெருங்கடல் (அண்டார்டிக் பெருங்கடல்) ஆகியவை கொள்கையளவில், இதன் வெளிப்புறத்தில் ஒன்றாகப் பொருந்தும்.
+*   **அளவு:** இது வடக்கே ஆர்க்டிக் பெருங்கடல் வரை நீண்டுள்ளது மற்றும் தெற்கே அண்டார்டிகாவை அடைகிறது. ஒன்றோடொன்று இணைக்கப்பட்ட பசிபிக் பெருங்கடல் தான் பூமியில் உள்ள அனைத்து நிலப்பரப்புகளையும் விட பெரியது.
+*   **ஆழமான புள்ளி:** சிறந்த அழுத்தத்தை அளவிடும் இடம் மரியானா ட்ரெஞ்ச்சில் உள்ள **சேலஞ்சர் டீப்** (Challenger Deep) ஆகும்.
+
+சுருக்கமாகச் சொன்னால், பசிபிக் பெருங்கடல் தண்ணீர் நிரம்பிய ஒரு பெரிய இடம் மட்டுமல்ல; இது ஒரு மிகப்பெரிய, சக்தியால் இயங்கும் சுற்றுச்சூழல் அமைப்பு, இது பூமியின் மேற்பரப்பில் கிட்டத்தட்ட பாதிப் பகுதியை உள்ளடக்கியுள்ளது.",
+25,factual_qa,ta,1,correctness,96,"\(12 \times 8 = 96\).  
+
+(நீங்கள் இதைப் பிரித்துப் பார்த்தால்: \(10 \times 8 = 80\) மற்றும் \(2 \times 8 = 16\); இவற்றைச் சேர்த்தால் \(80 + 16 = 96\) கிடைக்கும்.)",
+26,translation,en,0.0,chrf,सूर्य पूर्व में उगता है।,,
+27,translation,hi,0.0,chrf,India is a diverse country.,भारत एक विविध देश है।,
+28,translation,en,0.0,chrf,கல்வி வாழ்க்கையை மாற்ற முடியும்.,,
+29,translation,ta,100.0,chrf,Chennai is the capital of Tamil Nadu.,Chennai is the capital of Tamil Nadu.,
+30,translation,en,9.3512,chrf,पानी जीवन के लिए आवश्यक है।,"यहाँ ""Water is essential for life"" के कुछ अनुवाद दिए गए हैं, जिनमें से हर एक का अपना थोड़ा अलग मतलब या अंदाज़ है।
+
+### 1. सबसे आम और सीधा अनुवाद
+
+यह रोज़मर्रा की बोलचाल में सबसे ज़्यादा इस्तेमाल होने वाला हल्का और सटीक अनुवाद है।
+
+> **पानी जीवन के लिए ज़रूरी है।**
+> *(Paani jeevan ke liye zaroori hai.)*
+
+*   **पानी (Paani)**: पानी
+*   **जीवन के लिए (Jeevan ke liye)**: के लिए (for)
+*   **ज़रूरी है (Zaroori hai)**: ज़रूरी है / बहुत ज़रूरी है
+
+---
+
+### 2. मशहूर कहावत / नारा
+
+यह एक मुहावरेदार और प्रभावशाली तरीका है जो पूरे विचार को बहुत अच्छे से समझाता है। यह भारत में एक बहुत ही लोकप्रिय नारा है।
+
+> **जल ही जीवन है।**
+> *(Jal hi jeevan hai.)*
+
+*   **जल (Jal)**: पानी (एक ज़्यादा औपचारिक, संस्कृत-मूल का शब्द)
+*   **ही (hi)**: ही / स्वयं (ज़ोर देने के लिए इस्तेमाल होता है, ""आह, यही है!"")
+*   **जीवन है (Jeevan hai)**: जीवन है
+
+इसका मतलब है ""होता है, पानी ही जीवन है,"" जिसे अक्सर ""जल ही जीवन है"" कहा जाता है और इसका मतलब है कि पानी सिर्फ ज़रूरी ही नहीं है, बल्कि यह अपने आप में जीवन का मूल है।
+
+---
+
+### 3. ज़्यादा औपचारिक या साहित्यिक अनुवाद
+
+ये ""essential"" के लिए ज़्यादा औपचारिक शब्द का इस्तेमाल करते हैं, जिसे आप न्यूज़ बुलेटिन या लेखों में सुनेंगे।
+
+*   **पानी जीवन के लिए आवश्यक है।** *(Paani jeevan ke liye aavashyak hai.)",
+31,translation,hi,7.3027,chrf,This book is very useful.,"This is a straightforward sentence, and its most direct translation is also the most common and natural-sounding one.
+
+**Primary Translation:**
+
+**This book is very useful.**
+
+---
+
+### Other Good Alternatives & Variations
+
+While the sentence above is perfect, here are other ways you could say it, depending on the context or slight nuance you want to convey:
+
+#### **Emphasizing the Degree of Usefulness:**
+*   **This book is extremely useful.** (Stronger than ""very"".)
+*   **This book is really useful.** (Common, slightly less formal.)
+*   **This book is quite useful.** (Can also mean ""fairly,"" but often used as a synonym for ""very"".)
+*   **This book is incredibly useful.** (Another strong emphasis.)
+
+#### **Using Different, but similar, adjectives:**
+*   **This book is very helpful.** (A very close and common alternative.)
+*   **This book is quite helpful.**
+*   **This would be a very valuable book.** (Implies the book is worth something, not just useful.)
+*   **This book is of great use.** (A more formal or British English version.)
+
+#### **Slightly Different Phrasing:**
+*   **This is a very useful book.** (Changing the word order.)
+*   **This book is quite a find!** (More informal and enthusiastic, meaning it was hard to find and is therefore valuable/useful.)
+
+**In summary, the best and most natural translation is ""This book is very useful.""** The other options are excellent for adding a bit more style or changing the emphasis.",
+32,translation,en,13.8465,chrf,ரயில் நேரத்திற்கு வந்தது.,"**ரயில் சரியான நேரத்தில் வந்துள்ளது.**
+
+Here are a few other ways to say it, depending on the context:
+
+*   **More common in everyday conversation:**
+    ரயில் சரியா நேரத்துக்கு வந்துட்டு.
+    (The train has come on time.)
+
+*   **Slightly more formal or from a news report:**
+    ரயில் சரியான நேரத்தில் வந்தடைந்தது.
+    (The train arrived on time.)
+
+**Breakdown:**
+*   **ரயில்** (ray·il) = train
+*   **சரியான நேரத்தில்** (ca·ri.yā·n ne·rat.til) = on time
+*   **வந்துள்ளது** (vant plus.hal) = has arrived (present perfect tense)",
+33,translation,ta,0.6127,chrf,The weather is good today.,இந்தப் பேரத்தைத் தேவையான ஆடைகளைத் தேர்ந்தெடுக்கவும்.,
+34,translation,en,15.7891,chrf,कृपया दरवाज़ा बंद करें।,"The most common and direct translation for ""Please close the door"" is:
+
+**कृपया, दरवाज़ा बंद करो।**
+
+### Pronunciation:
+*Kripya, darwaza band karo.*
+
+---
+
+### Breakdown:
+
+*   **कृपया (Kripya/Pr):** This is the standard word for ""please.""
+*   **दरवाज़ा (darwaza):** This means ""door.""
+*   **बंद करो (band karo):** This is the polite command form, meaning ""close (it).""
+
+---
+
+### Other Options (",
+35,translation,hi,16.5917,chrf,I like listening to music.,"सबसे सटीक और नेचुरल ट्रांसलेशन हैं:
+
+*   **I like to listen to music.**
+*   **I like listening to music.**
+
+इन दोनों में बहुत कम फर्क है (एक इन्फिनिटिव ""to listen"" का इस्तेमाल करता है, और दूसरा जेरंड ""listening"" का), और अलग-अलग स्थितियों में इनका इस्तेमाल एक-दूसरे की जगह किया जा सकता है।
+
+इथियर या थोड़े ज्यादा मजबूत ट्रांसलेशन के रूप में आपको ये भी देखने को मिल सकते हैं:
+
+*   **I enjoy listening to music.** (enjoy ""to like"" का एक करीबी मतलब है)
+*   **I love listening to music.** (यह थोड़ा ज्यादा इंटेंस है, मतलब ""I like"" से कहीं ज्यादा ""I love"" है)
+*   **I like music.** (यह थोड़ा ज्यादा जनरल वाक्य है जहाँ ""listening"" का मतलब समझा जाता है)",
+36,translation,en,0.0,chrf,நாம் சுற்றுச்சூழலை பாதுகாக்க வேண்டும்.,,
+37,translation,ta,0.0,chrf,He is a good teacher.,,
+38,translation,en,30.8475,chrf,बैठक दस बजे शुरू होती है।,"बैठक दस बजे शुरू होती है।
+
+You can also say it using the more modern, loanword ""meeting"":
+
+मीटिंग दस बजे शुरू होती है।
+
+### **Breakdown:**
+
+*   **बैठक (Baithak)**: Meeting
+*   **शुरू होती है (Shuru hoti hai)**: Is starting / starts
+*   **दस बजे (Das baje)**: At ten o'clock",
+39,translation,hi,0.0,chrf,Many languages are spoken in India.,भारत में कई भाषाएँ बोली जाती हैं।,
+40,translation,en,0.0,chrf,பயிற்சி ஒருவரை சிறந்தவராக மாற்றுகிறது.,,
+41,translation,ta,3.0138,chrf,She reads a book every day.,"அவள் தினமும் புத்தகம் படிக்கிறாள்.
+
+***
+
+### சில மாற்று விதமானவை:
+
+*   **அவள் தினமும் படிக்கிறாள்.** (இது மிகவும் இயல்பான, பொதுவான விடை)
+*   **அவள் தினமும் ஒரு புத்தகம் படிக்கிறாள்.**
+*   **தினசரி, அவள் ஒரு புத்தகம் படிக்கிறாள்.**
+
+---
+
+### விரிவான விளக்கம்:
+
+| தமிழ் வார்த்தை | ஆங்கிலத்தில் பொருள் | குறிப்புகள் |
+| :--------------- | :------------------------ | :------------------------------------------------------------------ |
+| அவள் (aval)       | அவள் (She)                 |                                                                    |
+| தினமும் (dhinamum)| தினமும் / ஒவ்வொரு நாளும் | இது நேரடி மொழிபெயர்ப்பு.                                             |
+| புத்தகம் (puthagam) | புத்தகம் |                                                                    |
+| படிக்கிறாள் (padikkirāḷ)| படிக்கிறாள் / படிக்கிறாள் | இந்த verb form",
+42,translation,en,0.0,chrf,जिम्मेदारी से उपयोग किए जाने पर प्रौद्योगिकी उपयोगी है।,,
+43,translation,hi,0.0,chrf,We should respect time.,हमें समय का सम्मान करना चाहिए।,
+44,translation,en,22.8687,chrf,சுத்தமான நீர் ஆரோக்கியத்திற்கு முக்கியமானது.,"The most direct and common translation is:
+
+**சுத்தமான தண்ணீர் ஆரோக்கியத்திற்கு முக்கியம்.**
+
+---
+
+You can also say it in a few slightly different ways, which are also correct:
+
+*   **To emphasize ""very important"":**
+    **சுத்தமான தண்ணீர் ஆரோக்கியத்திற்கு மிகவும் முக்கியம்.**
+    (Suththamāna thannīr ārōkkkiyat-kku mikka m முக்கியம்.)
+
+*   **Using the verb ""to be"":**
+    **சுத்தமான தண்ணீர் ஆரோக்கியத்திற்கு முக்கியமாக இருக்கிறது.**
+    (Suththamāna thannīr ārōkkkiyat-kku mikkamāka irukkirathu.)
+
+Here's a simple breakdown:
+
+*   **சுத்தமான தண்ணீர்** (Suththamāna thannīr): Clean water
+*   **ஆரோக்கியத்திற்கு** (Ārōkkkiyat-kku): For health
+*   **முக்கியம்** (Mikka m): Important",
+45,translation,ta,0.8091,chrf,Chennai is a large city.,சென்னையில ஒரு பெரிய நகரம்.,
+46,translation,en,100.0,chrf,बच्चे पार्क में खेल रहे हैं।,बच्चे पार्क में खेल रहे हैं।,
+47,translation,hi,11.5608,chrf,He wakes up early every morning.,"Of course. Here are a few ways to translate that sentence into English, from the most direct to more natural variations.
+
+**1. Most Direct Translation:**
+> **He wakes up early every morning.**
+
+This is a literal and perfectly correct translation.
+
+---
+
+**2. Common and Natural Alternatives:**
+
+*   **He gets up early every morning.**
+    *(This is very common in spoken English. ""Gets up"" is a frequent phrasal verb for waking up and leaving your bed.)*
+
+*   **Every morning, he wakes up early.**
+    *(This reorders the sentence for a slightly different emphasis, putting the time first.)*
+
+*   **He wakes up early in the morning.**
+    *(Note: ""in the morning"" is a common phrase, but ""every morning"" is more specific, just like ""हर सुबह"" in Hindi.)*
+
+---
+
+### Quick Breakdown:
+
+*   **वह (vah):** He / She (The verb form `उठता है` is masculine, so ""He"" is the correct translation).
+*   **हर सुबह (har subah):** Every morning.
+*   **जल्दी (jaldi):** Early / Quickly. In this context, ""Early"" is the correct meaning.
+*   **उठता है (uthata hai):** He wakes up / He gets up.
+
+For most situations, **""He wakes up early every morning""** or **""He gets up early every morning""** would be the best choices.",
+48,translation,en,8.5266,chrf,வாசிப்பு அறிவை மேம்படுத்துகிறது.,"இதோ சில நல்ல மொழிபெயர்ப்பு வழிகள், ஒவ்வொன்றின் நுணுக்கங்களையும் விளக்குகின்றன.
+
+### மிகவும் நேரடியான மற்றும் பொதுவான மொழிபெயர்ப்பு:
+**வாசிப்பு அறிவை மேம்படுத்துகிறது.**
+
+இது வாக்கிய அமைப்பிற்கு மிகவும் சரியான மற்றும் நேரடியான மொழிபெயர்ப்பாகும்.
+*   **வாசிப்பு (Vasippu):** படிக்கும் செயல்.
+*   **அறிவை (Arivai):** அறிவை (பொருள்).
+*   **மேம்படுத்துகிறது (Seimaypaduthugirathu):** மேம்படுத்துகிறது, சிறந்ததாக்குகிறது.
+
+---
+
+### மாற்று மற்றும் மிகவும் இயல்பான சொற்றொடர்கள்:
+
+தாய்மொழி பேசுபவர்கள் சில நேரங்களில் ஒரு வாதத்தில் மிகவும் இயல்பான அல்லது பெயரடை/வினைச்சொல் வேறுபாட்டை வலுவாக வலியுறுத்த வேறு சொற்றொடர்களைப் பயன்படுத்தலாம்.
+
+**1. ""படித்தால், புதிய விஷயங்களையும் நன்றாகப் புரிந்துகொள்ள முடியும்.""**
+*   **சொற்றொடர்:** **படித்தால் அறிவு வளரும்.**
+*   **அர்த்தம்:** ""படித்துப் புரிந்துகொண்டால், அறிவு வளரும்.""
+*   **இது ஏன் பொதுவானது:** இது அன்றாடப் பேச்சில் மிகவும் இயல்பாக இருக்கும். இது ஒரு பழமொழியைக் கூறுவது போல, தர்க்கரீதியான முடிவைக் கூற latency, ""if"" அமைப்பைப் பயன்படுத்துகிறது.
+
+**2. ""அறிவை வளர்க்க வாசிப்பது ஒரு சிறந்த வழி.""**
+*   **சொற்றொடர்:** **வாசிப்பு அறிவை விரிவுபடுத்துகிறது.**
+*   **அர்த்தம்:** ""படிக்கும் செயல் அறிவை விரிவுபடுத்துகிறது.""
+*   **இது ஏன் பயனுள்ளது:** இது அறிவை ""விரிவுபடுத்துதல்"" (விரிவுபடுத்துகிறது) என்ற நுணுக்கத்தைக் கொடுக்கிறது, அதாவது தகவல்களை விரிவுபடுத்துவதையும் திறந்த மனதையும் வலியுறுத்துகிறது.
+
+**3. ""புதிய விஷயங்களை வாங்க படிப்பு ஒரு நல்ல முறை.""**
+*   **சொற்றொடர்:** **வாசிப்பு அறிவை அதிகரிக்கிறது.**
+*   **அர்த்தம்:** ""படிப்பு என்பது அறிவை அதிகரிக்கும் வழி.""
+*   **இது ஏன் பயனுள்ளது:** அறிவைப் பெறுவதை வலியுறுத்த, ""அறிவை விரிவுபடுத்துகிறது"" என்பதற்குப் பதிலாக ""அறிவை அதிகரிக்கிறது"" (அதிகரிக்கிறது) என்பதைப் பயன்படுத்துகிறது.
+
+### சுருக்கம்
+
+| ஆங்கிலம் | தமிழ் | இயல்பான தன்மை",
+49,translation,ta,11.2372,chrf,This food is very tasty.,"The most direct and common way to translate this is:
+
+**""This food is delicious.""**
+
+Here are a few other excellent and natural-sounding options, depending on the context:
+
+### More Common & Natural Variations
+
+*   **""This is delicious.""** (This is the most common and natural way to say it while eating or referring to the food in front of you).
+*   **""This is really good.""**
+*   **""This food is very tasty.""**
+
+### More Enthusiastic Variations
+
+*   **""This food is so delicious!""**
+*   **""Wow, this is amazing!""**
+*   **""Mmm, this is so good!""**
+
+### Breakdown of the Tamil Sentence
+
+To understand why these translations work, let's break down the original Tamil:
+*   **இந்த (Iṉḏa)** = ""This""
+*   **உணவு (uṇavu)** = ""Food"" or ""meal""
+*   **மிகவும் (mikavum)** = ""Very"" or ""extremely""
+*   **சுவையாக (cūvaiyāka)** = ""Deliciously"" or ""tasty"" (describes *how* it is)
+*   **உள்ளது (uḷḷ",
+50,translation,en,0.0,chrf,मेहनत और धैर्य महत्वपूर्ण हैं।,"Here are a few excellent ways to say ""Hard work and patience are",
+51,summarization,en,,human_rating,Heavy rain flooded roads in Mumbai and authorities advised commuters to avoid low-lying areas.,"Heavy rain in Mumbai flooded several roads, and local authorities advised commuters to avoid low-lying areas.",
+52,summarization,en,,human_rating,The city library opened a digital section with e-books and free computer access for students.,"A city library has opened a new digital section, offering thousands of e-books and free computer access for students. The new resources are designed to support the educational and technological needs of the community.",
+53,summarization,en,,human_rating,Farmers adopted drip irrigation to save water while maintaining crop yields during a dry season.,Farmers in the district adopted drip irrigation to conserve water during a dry season while successfully maintaining their crop yields.,
+54,summarization,en,,human_rating,A school started weekly recycling of paper and plastic and uses the proceeds for classroom materials.,"A school introduced a weekly recycling program that collects paper and plastic, using the proceeds to fund classroom materials.",
+55,summarization,en,,human_rating,A hospital added telemedicine so nearby villagers can consult doctors without traveling long distances.,"To improve healthcare access, a local hospital has launched a telemedicine service, allowing patients in nearby villages to consult with doctors remotely and avoid long-distance travel.",
+56,summarization,hi,,human_rating,भारी बारिश से शहर की कई सड़कें जलमग्न हुईं और प्रशासन ने सावधानी बरतने को कहा।,"भारी बारिश के बाद शहर में जगह-जगह जलभराव हो गया है, जिसकी वजह से प्रशासन ने जनता को सावधानी बरतने की सलाह दी है।
+
+यहाँ कुछ दूसरे तरीके दिए गए हैं:
+
+* **संक्षिप्त:** शहर भर में जलभराव हो गया है, जिसके बाद प्रशासन ने लोगों को सावधान रहने को कहा है।
+* **हेडलाइन:** शहर में जलभराव; भारी बारिश के कारण प्रशासन की चेतावनी।",
+57,summarization,hi,,human_rating,पुस्तकालय ने विद्यार्थियों के लिए डिजिटल किताबें और कंप्यूटर सुविधा शुरू की।,"***
+
+यहाँ कुछ समरी (summary) ऑप्शन दिए गए हैं, सबसे छोटे से लेकर थोड़े ज़्यादा डिटेल के साथ:
+
+**बहुत छोटी समरी:**
+इस लाइब्रेरी ने स्टूडेंट्स के लिए डिजिटल बुक्स और कंप्यूटर फैसिलिटीज़ शुरू कर दी हैं।
+
+**स्टैंडर्ड समरी:**
+पढ़ाई के लिए बेहतर रिसोर्स देने के लिए, लाइब्रेरी ने स्टूडेंट्स के इस्तेमाल के लिए डिजिटल बुक्स और नई कंप्यूटर फैसिलिटीज़ की शुरुआत की है।
+
+**बुलेट-पॉइंट समरी:**
+*   **कौन:** लाइब्रेरी
+*   **क्या एक्शन:** नई डिजिटल सर्विसेज़ की शुरुआत
+*   **किसके लिए:** स्टूडेंट्स
+*   **नए रिसोर्स:**
+    *   डिजिटल (ई-) बुक्स का एक बड़ा कलेक्शन
+    *   कंप्यूटर वर्कस्टेशन और फैसिलिटीज़",
+58,summarization,hi,,human_rating,किसानों ने सूखे में पानी बचाने के लिए ड्रिप सिंचाई अपनाई।,"सूखे के दौरान, किसानों ने ड्रिप इरिगेशन (drip irrigation) का इस्तेमाल करके पानी बचाने का एक असरदार तरीका निकाल लिया।",
+59,summarization,hi,,human_rating,स्कूल ने कागज और प्लास्टिक के साप्ताहिक पुनर्चक्रण की योजना शुरू की।,"स्कूल ने हर हफ्ते कागज़ और प्लास्टिक को रीसायकल करने का एक प्रोग्राम शुरू किया है।
+
+इसके कुछ और छोटे विकल्प:
+* स्कूल ने हर हफ्ते कागज़ और प्लास्टिक इकट्ठा करने का काम शुरू किया है।
+* छात्रों के लिए कम से कम कचरा फैलाने की पहल शुरू हुई है।",
+60,summarization,hi,,human_rating,अस्पताल ने गांवों के मरीजों के लिए टेलीमेडिसिन सेवा शुरू की।,एक अस्पताल ने दूर-दराज के गांवों के मरीजों की देखभाल तक पहुंच बेहतर बनाने के लिए एक टेलीमेडिसिन सर्विस शुरू की है।,
+61,summarization,ta,,human_rating,கனமழையால் பல சாலைகள் நீரில் மூழ்கியதால் அதிகாரிகள் எச்சரிக்கையுடன் இருக்குமாறு கேட்டுக்கொண்டனர்.,"நகரத்தில் பலமான மழை பெய்ததால், பல சாலைகளில் தண்ணீர் தேங்கியுள்ளது, இதனால் போக்குவரத்து பாதிக்கப்பட்டுள்ளது. மக்கள் கவனமாக இருக்குமாறும், தண்ணீர் தேங்கியுள்ள பகுதிகளைத் தவிர்க்குமாறும் அதிகாரிகள் அறிவுறுத்தியுள்ளனர்.",
+62,summarization,ta,,human_rating,நூலகம் மாணவர்களுக்காக மின்னூல்கள் மற்றும் கணினி வசதியைத் தொடங்கியது.,நூலகம் மாணவர்களுக்காக மின் புத்தகங்கள் (e-book) மற்றும் கணினி வசதிகளை அறிமுகப்படுத்தியது.,
+63,summarization,ta,,human_rating,விவசாயிகள் வறட்சியில் நீரைச் சேமிக்க சொட்டு நீர்ப்பாசனத்தைப் பயன்படுத்தினர்.,,
+64,summarization,ta,,human_rating,பள்ளி வாரந்தோறும் காகிதம் மற்றும் பிளாஸ்டிக்கை மறுசுழற்சி செய்யும் திட்டத்தைத் தொடங்கியது.,"அரசு மேல்நிலைப் பள்ளி ஒரு கிரீன் ரீசைக்கிளிங் திட்டத்தை தொடங்கியுள்ளது. ஒவ்வொரு வெள்ளிக்கிழமையும், பிள்ளைகள் பள்ளியிலிருந்தோ அல்லது வீட்டிலிருந்தோ சேகரித்த காகித துண்டுகளையும், பிளாஸ்டிக் பாட்டில்களையும் கொண்டு வருவார்கள். ஆசிரியை திருமதி. கவிதா, அந்தப் பொருட்களைத் தனித்தனியாக வகைப்படுத்தி, உள்ளூர் ரீசைக்கிளிங் மையத்திற்கு அனுப்ப ஏற்பாடு செய்கிறார். இந்தத் திட்டம் மூலம், பிளாஸ்டிக் குப்பைகள் குறைவதுடன், பிளாஸ்டிக் மறுபயன்பாடு குறித்தும் பிள்ளைகளுக்கு விழிப்புணர்வு கிடைக்கிறது. இந்த வெள்ளிக்கிழமை, ஆசிரியர்களும் இதில் பங்கேற்று, பிள்ளைகளுக்கு சிறந்த மாதிரி ஆளாக விளங்குகிறார்கள்.",
+65,summarization,ta,,human_rating,மருத்துவமனை கிராம மக்களுக்கு தொலைமருத்துவ சேவையைத் தொடங்கியது.,"பொதுவழக்கப்படி சொல்லப்போனால், இதன் அர்த்தம் இதுதான்:
+
+கிராம மக்கள் வெகுதூரம் பயணம் செய்வதைத் தவிர்க்கும் வகையில், ஒரு மருத்துவமனை அருகில் உள்ள கிராம மக்களுக்கு தொலைதூர மருத்துவ சேவைகளை (telemedical services) வழங்கத் தொடங்கியது.",
+66,summarization,en,,human_rating,The park added solar-powered lights to improve evening visibility and reduce grid electricity use.,The public park installed solar-powered lights to increase nighttime visibility while reducing its reliance on grid electricity.,
+67,summarization,en,,human_rating,A university launched scholarships to help low-income students pay for tuition and books.,,
+68,summarization,hi,,human_rating,नगर निगम ने पुरानी बसों की जगह नई बसें चलाने की योजना घोषित की।,नगर निगम ने अपने पुराने बसों को हटाकर नई बसें शुरू करके शहर के पब्लिक ट्रांसपोर्ट सिस्टम को बेहतर बनाने का ऐलान किया है।,
+69,summarization,hi,,human_rating,संग्रहालय ने स्थानीय इतिहास पर नई प्रदर्शनी खोली।,"यहाँ एक म्यूज़ियम की प्रदर्शनी (exhibition) के बारे में एक संक्षिप्त जानकारी दी गई है, जिसे अलग-अलग जगहों और इस्तेमाल के हिसाब से तीन अलग-अलग वर्ज़न में लिखा गया है।
+
+### वर्ज़न 1: स्टैंडर्ड (एक प्रेस रिलीज़ या वेबसाइट के लिए)
+
+**हेडलाइन:** लोकल म्यूज़ियम एक अभूतपूर्व प्रदर्शनी ""Our Town: 200 Years in 200 Objects"" के साथ अपनी विरासत का जश्न मना रहा है
+
+**[शहर/संग्रहालय का नाम], [दिनांक]** — [संग्रहालय का नाम] को अपनी बहुप्रतीक्षित नई प्रदर्शनी, ""Our Town: 200 Years in 200 Objects"" के सार्वजनिक उद्घाटन की घोषणा करते हुए बेहद खुशी हो रही है। यह पूरी तरह से स्थापित प्रदर्श",
+70,summarization,ta,,human_rating,பலத்த காற்றுக்குப் பிறகு மின்சார ஊழியர்கள் சேதமடைந்த கம்பிகளை சரிசெய்தனர்.,கனமான காற்றின் காரணமாக சேதமடைந்த வயர்களை பவர் கார் (Powercorp) சரிசெய்தது.,
+71,summarization,en,,human_rating,A community center started weekend computer classes for older adults.,A community center has started offering weekend classes to teach older adults basic computer skills. These courses aim to help seniors become more comfortable with technology.,
+72,summarization,hi,,human_rating,रेलवे ने यात्रियों के लिए नया ऑनलाइन टिकट सहायता पोर्टल शुरू किया।,"रेलवे ने यात्रियों की मदद और उनकी शिकायतें दूर करने के लिए एक खास ऑनलाइन पोर्टल **RailMadad (mera Rail Madad)** शुरू किया है।
+
+**इस पहल के मुख्य फीचर्स और उद्देश्य यहाँ दिए गए हैं:**
+
+*   **इंटीग्रेटेड शिकायत निवारण:** यात्री एक सिंगल-विंडो सिस्टम के जरिए अपनी शिकायतें दर्ज कर सकते हैं। ट्रेन और स्टेशनों पर सफाई, खाने-पीने, सुरक्षा और पानी जैसी सुविधाओं से जुड़ी समस्याओं के लिए यह सुविधा है।
+*   **प्रोएक्टिव सेवाएं:** यह प्लेटफॉर्म यात्रियों को व्हीलचेयर, एक्स्ट्रा बेड और बुजुर्गों, बच्चों और दिव्यांगों के लिए मदद जैसी खास सेवाओं को पहले से बुक करने की सुविधा देता है।
+*   **मल्टी-चैनल एक्सेस:** ये सेवाएं **RailMadad वेबसाइट** और एक मोबाइल ऐप के जरिए चलती हैं। इसके अलावा, एक खास **139** हेल्पलाइन और सोशल मीडिया (Twitter, X, Facebook) के जरिए भी मदद मिलती है।
+*   **पारदर्शिता और ट्रैकिंग:** यात्रियों को शिकायत नंबर दिए जाते हैं, जिससे वे अपना केस ट्रैक कर सकते हैं और यह पक्का कर सकते हैं कि समस्या का समाधान हो गया है।
+
+यह पहल का मकसद यात्रियों का सफर आसान बनाना, जवाबदेही बढ़ाना और एक ज्यादा पैसेंजर-फ्रेंडली सिस्टम की तरफ बढ़ना है।",
+73,summarization,ta,,human_rating,பள்ளி மாணவர்களுடன் மரம் நடும் சுற்றுச்சூழல் நிகழ்ச்சியை நடத்தியது.,"**சுருக்கம்:**
+
+பள்ளிக் குழந்தைகளுக்காக நடத்தப்பட்ட இந்த சுற்றுச்சூழல் திட்டத்தில், மரக்கன்றுகளை நடுவதும் வளர்ப்பதும் முக்கியமாக இருந்தது. இதன் மூலம், மாணவர்கள் சுற்றுச்சூழல் பாதுகாப்பு பற்றி நேரில் தெரிந்துகொண்டு, இயற்கையை பாதுகாக்கும் பொறுப்பை உணரும் வகையில் ஒரு நடைமுறை கல்வியை அவர்களுக்கு வழங்கப்பட்டது.",
+74,summarization,en,,human_rating,A restaurant reduced food waste by donating safe surplus meals to a community organization.,,
+75,summarization,hi,,human_rating,नगर के पार्क में बच्चों के लिए नया खेल क्षेत्र और नई सुरक्षा रोशनी लगाई गई।,,
+76,reasoning_math,en,1,final_answer_match,36,You would pay $12 × 3 = **$36**.,
+77,reasoning_math,en,1,final_answer_match,240,"The train’s speed is  
+
+\[
+\text{speed} = \frac{60\text{ km}}{1\text{ h}} = 60\text{ km/h}.
+\]
+
+In 4 hours at the same speed the distance covered is  
+
+\[
+\text{distance} = \text{speed} \times \text{time} = 60\text{ km/h} \times 4\text{ h} = 240\text{ km}.
+\]
+
+\[
+\boxed{240\text{ km}}
+\]",
+78,reasoning_math,en,1,final_answer_match,9,"Ravi starts with 15 apples and gives away 6.  
+Remaining apples = 15 − 6 = **9 apples**.",
+79,reasoning_math,en,1,final_answer_match,40,"Each row contains 5 items and there are 8 rows, so the total number of items is  
+
+\[
+8 \times 5 = 40.
+\]
+
+**There are 40 items in the box.**",
+80,reasoning_math,en,1,final_answer_match,10,"\(20\%\) of 50 students is  
+
+\[
+\frac{20}{100}\times 50 = 0.20 \times 50 = 10.
+\]
+
+**So, 10 students are absent.**",
+81,reasoning_math,en,1,final_answer_match,65,"The final price is  
+
+\[
+\$75 - \$10 = \$65.
+\]  
+
+So after the \(10\)‑dollar discount, the item costs **\$65**.",
+82,reasoning_math,en,1,final_answer_match,8,"The farmer divides the 48 eggs by the 6 boxes:
+
+\[
+48 \div 6 = 8
+\]
+
+So each box contains **8 eggs**.",
+83,reasoning_math,en,1,final_answer_match,40,"The area of a rectangle is found by multiplying its length by its width:
+
+\[
+\text{Area} = \text{length} \times \text{width} = 10 \times 4 = 40.
+\]
+
+So the rectangle’s area is **\(40\) square units**.",
+84,reasoning_math,en,0,final_answer_match,15,"The car’s fuel usage is linear, so we can just scale it:
+
+- Consumption: \(5\text{ L per }100\text{ km}\)  
+- 300 km is three times 100 km → fuel needed \(= 3 \times 5\text{ L} = 15\text{ L}\).
+
+**Answer: 15 liters of fuel.**",
+85,reasoning_math,en,1,final_answer_match,140,"The worker’s total pay is  
+
+\[
+\$20\text{ per hour} \times 7\text{ hours} = \boxed{\$140}.
+\]",
+86,reasoning_math,hi,1,final_answer_match,60,"कुल कीमत = 1 पेन की कीमत × पेनों की संख्या  
+= 15 रु. × 4  
+= **60 रु.**",
+87,reasoning_math,hi,1,final_answer_match,150,"बस की दूरी निकालने के लिए, स्पीड को यात्रा में लगे समय से गुणा कर दें:
+
+\[
+\text{Distance} = \text{speed} \times \text{time}
+               = 50\ \text{km/h} \times 3\ \text{h}
+               = 150\ \text{km}.
+\]
+
+**बस 150 किलोमीटर की दूरी तय करेगी।**",
+88,reasoning_math,hi,1,final_answer_match,13,"रीना के पास **13 आम** बचेंगे।
+
+यह एक आसान घटाने वाला सवाल है। हम शुरुआती संख्या में से दी गई संख्या को घटाते हैं:
+
+20 (शुरुआती आम)
+- 7 (दिए गए आम)
+---
+13 (बाकी आम)",
+89,reasoning_math,hi,1,final_answer_match,24,"आइटम्स की कुल संख्या निकालने के लिए, आप रोज़ की संख्या को हर रोज़ में मौजूद आइटम्स की संख्या से गुणा कर सकते हैं:
+
+\[
+6 \text{ रोज़} \times 4 \text{ आइटम्स हर रोज़} = 24 \text{ आइटम्स}
+\]
+
+तो पूरे डिब्बे में **24 आइटम्स** हैं।",
+90,reasoning_math,hi,1,final_answer_match,5,"50 का 10 % निकालने के लिए, 50 को 0.10 से गुणा करें (या इसका दसवां हिस्सा निकालें):
+
+\[
+0.10 \times 50 = 5
+\]
+
+**इसलिए, 5 छात्र अनुपस्थित हैं।**",
+91,reasoning_math,hi,1,final_answer_match,80,"100 रुपये की लिस्ट प्राइस में से 20 रुपये की छूट घटाने के बाद फाइनल प्राइस है  
+
+\[
+100 - 20 = \mathbf{ \text{Rs. } 80 }
+\]",
+92,reasoning_math,hi,0,final_answer_match,6,"48 अंडों को 8 कंटेनरों में बराबर-बराबर बाँटने के लिए, कुल अंडों की संख्या को कंटेनरों की संख्या से भाग दे दें:
+
+\[
+\frac{48}{8} = 6
+\]
+
+तो हर कंटेनर में **6 अंडे** होंगे। (जाँचें: \(6 \times 8 = 48\) अंडे, जो कुल संख्या से मेल खाता है।)",
+93,reasoning_math,hi,1,final_answer_match,45,"एक आयत का क्षेत्रफल निकालने के लिए, आप उसकी लंबाई को उसकी चौड़ाई से गुणा करते हैं।
+
+Area = length × width
+Area = 9 × 5
+Area = 45
+
+आयत का क्षेत्रफल **45 square units** है।",
+94,reasoning_math,hi,1,final_answer_match,12,"कार को **12 लीटर** ईंधन की ज़रूरत होगी।
+
+इसे सॉल्व करने के कुछ तरीके यहाँ दिए गए हैं:
+
+### तरीका 1: आसान तरीका
+
+1.  इंजन 100 किमी के लिए 6 लीटर ईंधन इस्तेमाल करता है।
+2.  200 किमी का सफर 100 किमी के दो सफर के बराबर है।
+3.  चूँकि कार को 100 किमी के सफर के लिए 6 लीटर की ज़रूरत होती है, इसलिए इसे अपने से दोगुने ईंधन की ज़रूरत होगी।
+4.  6 लीटर x 2 = **12 लीटर**।
+
+---
+
+### तरीका 2: अनुपात (Ratio) का इस्तेमाल
+
+आप इसे एक साधारण अनुपात (proportion) के रूप में सेट कर सकते हैं।
+
+*   **दिया गया:** 6 लीटर / 100 किमी = x लीटर / 200 किमी
+*   **x निकालने के लिए (200 किमी के लिए ईंधन):**
+    *   x = (6 लीटर * 200) / 100
+    *   x = 1200 / 100
+    *   x = **12 लीटर**
+
+---
+
+### तरीका 3: प्रति किलोमीटर ईंधन की गणना करना
+
+1.  सबसे पहले, पता लगाएँ कि कार प्रति किलोमीटर कितना ईंधन इस्तेमाल करती है।
+    *   6 लीटर / 100 किमी = 0.06 लीटर प्रति किलोमीटर
+2.  अब, उस मात्रा को कुल दूरी से गुणा करें।
+    *   0.06 लीटर/किमी * 200 किमी = **12 लीटर**।",
+95,reasoning_math,hi,1,final_answer_match,100,"मज़दूर की कुल कमाई है 
+
+\[
+25 \text{ रुपये/घंटा} \times 4 \text{ घंटे} = 100 \text{ रुपये}.
+\]
+
+तो, वह **₹100** कमाता है।",
+96,reasoning_math,ta,1,final_answer_match,60,"3 புத்தகங்களுக்கு, ஒவ்வொன்றுக்கும் ₹20 வீதம்:
+
+\[
+20 \times 3 = 60
+\]
+
+அதனால், மொத்த விலை **₹60**.",
+97,reasoning_math,ta,1,final_answer_match,200,"பயணம் செய்திருக்கும் தூரம் வேகத்தையும் நேரத்தையும் பெருக்கிக் கிடைக்கும் அளவுக்குச் சமம்:
+
+\[
+\text{தூரம்} = \text{வேகம்} \times \text{நேரம்} = 40\ \text{km/h} \times 5\ \text{h} = 200\ \text{km}.
+\]
+
+எனவே, அந்த பஸ் **200 கிலோமீட்டர்** தூரம் பயணிக்கிறது.",
+98,reasoning_math,ta,1,final_answer_match,13,அனிதாbalance-ல் \(18 - 5 = 13\) பேனாக்கள் மீதமுள்ளது.,
+99,reasoning_math,ta,1,final_answer_match,21,"**7 வரிசைகளில்** ஒவ்வொன்றிலும் **3 பொருட்கள்** உள்ளன, அதனால் மொத்த பொருட்களின் எண்ணிக்கை  
+
+\[
+7 \times 3 = 21.
+\]
+
+ஆக, அந்தப் பெட்டியில் **21 பொருட்கள்** உள்ளன.",
+100,reasoning_math,ta,1,final_answer_match,15,"50-இன் 30 %-ஐக் கண்டுபிடிக்க:
+
+1. சதவீதத்தை தசம எண்ணாக மாற்றுங்கள்: \(30\% = \frac{30}{100} = 0.30\).
+2. அந்த தசம எண்ணை 50-ஆல் பெருக்குங்கள்:
+
+\[
+0.30 \times 50 = 15.
+\]
+
+**பதில்:** 50-இன் 30 % என்பது **15**.",

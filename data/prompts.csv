@@ -1,0 +1,101 @@
+id,task,lang,prompt,reference
+1,factual_qa,en,What is the capital of India?,New Delhi
+2,factual_qa,en,How many days are there in a leap year?,366
+3,factual_qa,en,What planet is known as the Red Planet?,Mars
+4,factual_qa,en,What is the largest ocean on Earth?,Pacific Ocean
+5,factual_qa,en,What is 12 multiplied by 8?,96
+6,factual_qa,en,Who wrote the play Romeo and Juliet?,William Shakespeare
+7,factual_qa,en,What gas do plants absorb during photosynthesis?,Carbon dioxide
+8,factual_qa,en,How many continents are there?,7
+9,factual_qa,en,What is the boiling point of water at sea level in Celsius?,100 degrees Celsius
+10,factual_qa,en,Which instrument has black and white keys and is commonly used in classical music?,Piano
+11,factual_qa,hi,भारत की राजधानी क्या है?,नई दिल्ली
+12,factual_qa,hi,एक लीप वर्ष में कितने दिन होते हैं?,366
+13,factual_qa,hi,लाल ग्रह किस ग्रह को कहा जाता है?,मंगल
+14,factual_qa,hi,पृथ्वी का सबसे बड़ा महासागर कौन सा है?,प्रशांत महासागर
+15,factual_qa,hi,12 को 8 से गुणा करने पर कितना होगा?,96
+16,factual_qa,hi,रोमियो और जूलियट नाटक किसने लिखा?,विलियम शेक्सपियर
+17,factual_qa,hi,प्रकाश संश्लेषण के दौरान पौधे कौन सी गैस अवशोषित करते हैं?,कार्बन डाइऑक्साइड
+18,factual_qa,hi,दुनिया में कितने महाद्वीप हैं?,7
+19,factual_qa,hi,समुद्र तल पर पानी का क्वथनांक कितने डिग्री सेल्सियस होता है?,100 डिग्री सेल्सियस
+20,factual_qa,hi,काले और सफेद कुंजियों वाला सामान्य वाद्य यंत्र कौन सा है?,पियानो
+21,factual_qa,ta,இந்தியாவின் தலைநகர் எது?,புது தில்லி
+22,factual_qa,ta,ஒரு லீப் ஆண்டில் எத்தனை நாட்கள் உள்ளன?,366
+23,factual_qa,ta,சிவப்பு கிரகம் என்று அழைக்கப்படும் கிரகம் எது?,செவ்வாய்
+24,factual_qa,ta,பூமியின் மிகப்பெரிய பெருங்கடல் எது?,பசிபிக் பெருங்கடல்
+25,factual_qa,ta,12 ஐ 8 ஆல் பெருக்கினால் என்ன?,96
+26,translation,en,Translate into Hindi: The sun rises in the east.,सूर्य पूर्व में उगता है।
+27,translation,hi,Translate into English: भारत एक विविध देश है।,India is a diverse country.
+28,translation,en,Translate into Tamil: Education can change lives.,கல்வி வாழ்க்கையை மாற்ற முடியும்.
+29,translation,ta,Translate into English: சென்னை தமிழ்நாட்டின் தலைநகரம்.,Chennai is the capital of Tamil Nadu.
+30,translation,en,Translate into Hindi: Water is essential for life.,पानी जीवन के लिए आवश्यक है।
+31,translation,hi,Translate into English: यह पुस्तक बहुत उपयोगी है।,This book is very useful.
+32,translation,en,Translate into Tamil: The train arrived on time.,ரயில் நேரத்திற்கு வந்தது.
+33,translation,ta,Translate into English: இன்று வானிலை நன்றாக உள்ளது.,The weather is good today.
+34,translation,en,Translate into Hindi: Please close the door.,कृपया दरवाज़ा बंद करें।
+35,translation,hi,Translate into English: मुझे संगीत सुनना पसंद है।,I like listening to music.
+36,translation,en,Translate into Tamil: We should protect the environment.,நாம் சுற்றுச்சூழலை பாதுகாக்க வேண்டும்.
+37,translation,ta,Translate into English: அவர் ஒரு நல்ல ஆசிரியர்.,He is a good teacher.
+38,translation,en,Translate into Hindi: The meeting starts at ten o'clock.,बैठक दस बजे शुरू होती है।
+39,translation,hi,Translate into English: भारत में कई भाषाएँ बोली जाती हैं।,Many languages are spoken in India.
+40,translation,en,Translate into Tamil: Practice makes a person better.,பயிற்சி ஒருவரை சிறந்தவராக மாற்றுகிறது.
+41,translation,ta,Translate into English: அவள் தினமும் புத்தகம் படிக்கிறாள்.,She reads a book every day.
+42,translation,en,Translate into Hindi: Technology is useful when used responsibly.,जिम्मेदारी से उपयोग किए जाने पर प्रौद्योगिकी उपयोगी है।
+43,translation,hi,Translate into English: हमें समय का सम्मान करना चाहिए।,We should respect time.
+44,translation,en,Translate into Tamil: Clean water is important for health.,சுத்தமான நீர் ஆரோக்கியத்திற்கு முக்கியமானது.
+45,translation,ta,Translate into English: சென்னை ஒரு பெரிய நகரம்.,Chennai is a large city.
+46,translation,en,Translate into Hindi: The children are playing in the park.,बच्चे पार्क में खेल रहे हैं।
+47,translation,hi,Translate into English: वह हर सुबह जल्दी उठता है।,He wakes up early every morning.
+48,translation,en,Translate into Tamil: Reading improves knowledge.,வாசிப்பு அறிவை மேம்படுத்துகிறது.
+49,translation,ta,Translate into English: இந்த உணவு மிகவும் சுவையாக உள்ளது.,This food is very tasty.
+50,translation,en,Translate into Hindi: Hard work and patience are important.,मेहनत और धैर्य महत्वपूर्ण हैं।
+51,summarization,en,"Summarize in 1-2 sentences: Heavy rain flooded several roads in Mumbai, while local authorities advised commuters to avoid low-lying areas.",Heavy rain flooded roads in Mumbai and authorities advised commuters to avoid low-lying areas.
+52,summarization,en,Summarize in 1-2 sentences: A city library opened a new digital section with thousands of e-books and free computer access for students.,The city library opened a digital section with e-books and free computer access for students.
+53,summarization,en,Summarize in 1-2 sentences: Farmers in a district adopted drip irrigation to reduce water use while maintaining crop yields during a dry season.,Farmers adopted drip irrigation to save water while maintaining crop yields during a dry season.
+54,summarization,en,Summarize in 1-2 sentences: A school introduced a recycling program that collects paper and plastic every Friday and uses the proceeds for classroom materials.,A school started weekly recycling of paper and plastic and uses the proceeds for classroom materials.
+55,summarization,en,Summarize in 1-2 sentences: A local hospital added a telemedicine service so patients in nearby villages can consult doctors without long-distance travel.,A hospital added telemedicine so nearby villagers can consult doctors without traveling long distances.
+56,summarization,hi,संक्षेप में लिखें: शहर में भारी बारिश के बाद कई सड़कें जलमग्न हो गईं और प्रशासन ने लोगों से सावधानी बरतने की अपील की।,भारी बारिश से शहर की कई सड़कें जलमग्न हुईं और प्रशासन ने सावधानी बरतने को कहा।
+57,summarization,hi,संक्षेप में लिखें: एक पुस्तकालय ने विद्यार्थियों के लिए नई डिजिटल किताबें और कंप्यूटर सुविधा शुरू की।,पुस्तकालय ने विद्यार्थियों के लिए डिजिटल किताबें और कंप्यूटर सुविधा शुरू की।
+58,summarization,hi,संक्षेप में लिखें: किसानों ने सूखे के दौरान पानी बचाने के लिए ड्रिप सिंचाई अपनाई।,किसानों ने सूखे में पानी बचाने के लिए ड्रिप सिंचाई अपनाई।
+59,summarization,hi,संक्षेप में लिखें: एक स्कूल ने हर सप्ताह कागज और प्लास्टिक एकत्र करने की पुनर्चक्रण योजना शुरू की।,स्कूल ने कागज और प्लास्टिक के साप्ताहिक पुनर्चक्रण की योजना शुरू की।
+60,summarization,hi,संक्षेप में लिखें: अस्पताल ने दूर के गांवों के मरीजों के लिए टेलीमेडिसिन सेवा शुरू की।,अस्पताल ने गांवों के मरीजों के लिए टेलीमेडिसिन सेवा शुरू की।
+61,summarization,ta,சுருக்கமாக எழுதுக: நகரில் பெய்த கனமழையால் பல சாலைகள் நீரில் மூழ்கின; அதிகாரிகள் மக்கள் கவனமாக இருக்குமாறு கேட்டுக்கொண்டனர்.,கனமழையால் பல சாலைகள் நீரில் மூழ்கியதால் அதிகாரிகள் எச்சரிக்கையுடன் இருக்குமாறு கேட்டுக்கொண்டனர்.
+62,summarization,ta,சுருக்கமாக எழுதுக: ஒரு நூலகம் மாணவர்களுக்காக புதிய மின்னூல்கள் மற்றும் கணினி வசதியைத் தொடங்கியது.,நூலகம் மாணவர்களுக்காக மின்னூல்கள் மற்றும் கணினி வசதியைத் தொடங்கியது.
+63,summarization,ta,சுருக்கமாக எழுதுக: வறண்ட காலத்தில் நீரைச் சேமிக்க விவசாயிகள் சொட்டு நீர்ப்பாசனத்தைப் பயன்படுத்தினர்.,விவசாயிகள் வறட்சியில் நீரைச் சேமிக்க சொட்டு நீர்ப்பாசனத்தைப் பயன்படுத்தினர்.
+64,summarization,ta,சுருக்கமாக எழுதுக: ஒரு பள்ளி ஒவ்வொரு வெள்ளிக்கிழமையும் காகிதம் மற்றும் பிளாஸ்டிக்கை சேகரிக்கும் மறுசுழற்சி திட்டத்தைத் தொடங்கியது.,பள்ளி வாரந்தோறும் காகிதம் மற்றும் பிளாஸ்டிக்கை மறுசுழற்சி செய்யும் திட்டத்தைத் தொடங்கியது.
+65,summarization,ta,சுருக்கமாக எழுதுக: அருகிலுள்ள கிராம மக்கள் நீண்ட பயணம் செய்யாமல் மருத்துவர்களை அணுக மருத்துவமனை தொலைமருத்துவ சேவையைத் தொடங்கியது.,மருத்துவமனை கிராம மக்களுக்கு தொலைமருத்துவ சேவையைத் தொடங்கியது.
+66,summarization,en,Summarize in 1-2 sentences: A public park added solar-powered lights to improve visibility after sunset while reducing reliance on grid electricity.,The park added solar-powered lights to improve evening visibility and reduce grid electricity use.
+67,summarization,en,Summarize in 1-2 sentences: A university launched a scholarship program for students from low-income families to support tuition and books.,A university launched scholarships to help low-income students pay for tuition and books.
+68,summarization,hi,संक्षेप में लिखें: नगर निगम ने पुराने बसों को बदलकर नई बसें चलाने की योजना की घोषणा की।,नगर निगम ने पुरानी बसों की जगह नई बसें चलाने की योजना घोषित की।
+69,summarization,hi,संक्षेप में लिखें: संग्रहालय ने स्थानीय इतिहास पर एक नई प्रदर्शनी खोली।,संग्रहालय ने स्थानीय इतिहास पर नई प्रदर्शनी खोली।
+70,summarization,ta,சுருக்கமாக எழுதுக: பலத்த காற்றுக்குப் பிறகு மின்சார ஊழியர்கள் சேதமடைந்த கம்பிகளை சரிசெய்தனர்.,பலத்த காற்றுக்குப் பிறகு மின்சார ஊழியர்கள் சேதமடைந்த கம்பிகளை சரிசெய்தனர்.
+71,summarization,en,Summarize in 1-2 sentences: A community center started weekend classes in basic computer skills for older adults.,A community center started weekend computer classes for older adults.
+72,summarization,hi,संक्षेप में लिखें: रेलवे ने यात्रियों के लिए एक नया ऑनलाइन टिकट सहायता पोर्टल शुरू किया।,रेलवे ने यात्रियों के लिए नया ऑनलाइन टिकट सहायता पोर्टल शुरू किया।
+73,summarization,ta,சுருக்கமாக எழுதுக: பள்ளி மாணவர்களுக்கு மரங்களை நட்டுப் பராமரிக்கும் சுற்றுச்சூழல் நிகழ்ச்சியை நடத்தியது.,பள்ளி மாணவர்களுடன் மரம் நடும் சுற்றுச்சூழல் நிகழ்ச்சியை நடத்தியது.
+74,summarization,en,Summarize in 1-2 sentences: A restaurant reduced food waste by donating safe surplus meals to a local community organization.,A restaurant reduced food waste by donating safe surplus meals to a community organization.
+75,summarization,hi,संक्षेप में लिखें: नगर के एक पार्क में बच्चों के लिए नया खेल क्षेत्र बनाया गया और सुरक्षा के लिए नई रोशनी लगाई गई。,नगर के पार्क में बच्चों के लिए नया खेल क्षेत्र और नई सुरक्षा रोशनी लगाई गई।
+76,reasoning_math,en,"If a book costs $12 and you buy 3 books, how much do you pay?",36
+77,reasoning_math,en,A train travels 60 km in 1 hour. How far will it travel in 4 hours at the same speed?,240
+78,reasoning_math,en,Ravi has 15 apples and gives 6 away. How many apples remain?,9
+79,reasoning_math,en,A box has 8 rows with 5 items in each row. How many items are there?,40
+80,reasoning_math,en,"If 20% of 50 students are absent, how many students are absent?",10
+81,reasoning_math,en,A shop gives a $10 discount on a $75 item. What is the final price?,65
+82,reasoning_math,en,A farmer has 48 eggs and packs them equally into 6 boxes. How many eggs per box?,8
+83,reasoning_math,en,A rectangle has length 10 and width 4. What is its area?,40
+84,reasoning_math,en,"If a car uses 5 liters of fuel for 100 km, how much fuel is needed for 300 km?",15
+85,reasoning_math,en,A worker earns $20 per hour and works 7 hours. What is the pay?,140
+86,reasoning_math,hi,"यदि एक पेन की कीमत 15 रुपये है और आप 4 पेन खरीदते हैं, तो कुल कीमत कितनी होगी?",60
+87,reasoning_math,hi,एक बस 50 किलोमीटर प्रति घंटे की गति से 3 घंटे चलती है। वह कितनी दूरी तय करेगी?,150
+88,reasoning_math,hi,रीना के पास 20 आम हैं और वह 7 आम दे देती है। कितने आम बचेंगे?,13
+89,reasoning_math,hi,एक डिब्बे में 6 पंक्तियाँ हैं और हर पंक्ति में 4 वस्तुएँ हैं। कुल कितनी वस्तुएँ हैं?,24
+90,reasoning_math,hi,50 छात्रों में से 10% अनुपस्थित हैं। कितने छात्र अनुपस्थित हैं?,5
+91,reasoning_math,hi,एक वस्तु की कीमत 100 रुपये है और उस पर 20 रुपये की छूट है। अंतिम कीमत क्या है?,80
+92,reasoning_math,hi,48 अंडों को 8 डिब्बों में बराबर बाँटा जाए तो प्रत्येक डिब्बे में कितने अंडे होंगे?,6
+93,reasoning_math,hi,एक आयत की लंबाई 9 और चौड़ाई 5 है। उसका क्षेत्रफल कितना है?,45
+94,reasoning_math,hi,एक कार 100 किमी में 6 लीटर ईंधन उपयोग करती है। 200 किमी के लिए कितना ईंधन चाहिए?,12
+95,reasoning_math,hi,एक कर्मचारी प्रति घंटे 25 रुपये कमाता है और 4 घंटे काम करता है। उसकी कमाई कितनी है?,100
+96,reasoning_math,ta,ஒரு புத்தகத்தின் விலை 20 ரூபாய். 3 புத்தகங்களின் விலை எவ்வளவு?,60
+97,reasoning_math,ta,ஒரு பேருந்து மணிக்கு 40 கிமீ வேகத்தில் 5 மணி நேரம் செல்கிறது. அது எவ்வளவு தூரம் செல்லும்?,200
+98,reasoning_math,ta,அனிதாவிடம் 18 பேனாக்கள் உள்ளன; அவள் 5 பேனாக்களை கொடுத்தாள். எத்தனை பேனாக்கள் மீதம்?,13
+99,reasoning_math,ta,ஒரு பெட்டியில் 7 வரிசைகள் உள்ளன; ஒவ்வொரு வரிசையிலும் 3 பொருட்கள் உள்ளன. மொத்தம் எத்தனை?,21
+100,reasoning_math,ta,50 இன் 30 சதவீதம் எவ்வளவு?,15
