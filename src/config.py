@@ -7,7 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 load_dotenv(ROOT / ".env")
 
 SARVAM_API_KEY = os.getenv("SARVAM_API_KEY", "").strip()
-SARVAM_MODEL = os.getenv("SARVAM_MODEL", "sarvam-m").strip()
+SARVAM_MODEL = os.getenv("SARVAM_MODEL", "sarvam-105b").strip()
 SARVAM_API_URL = os.getenv(
     "SARVAM_API_URL",
     "https://api.sarvam.ai/v1/chat/completions",
