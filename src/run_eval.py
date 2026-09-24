@@ -1,161 +1,130 @@
-"""Run the 100-prompt evaluation."""
-
-import argparse
 import csv
-import sys
+import time
+from pathlib import Path
 
-from .config import (
+from src.config import (
     PROMPTS_PATH,
     RESULTS_PATH,
+    SARVAM_API_KEY,
+    SARVAM_API_URL,
     SARVAM_MODEL,
     SARVAM_TEMPERATURE,
-    LOG_PATH,
+    SARVAM_TIMEOUT,
 )
-from .sarvam_client import SarvamClient, SarvamAPIError
-from .utils import setup_logging
+from src.sarvam_client import SarvamClient
 
 
-REQUIRED_COLUMNS = {
-    "id",
-    "task",
-    "lang",
-    "prompt",
-    "reference",
-}
-
-
-EXPECTED_TASK_COUNTS = {
-    "factual_qa": 25,
-    "translation": 25,
-    "summarization": 25,
-    "reasoning_math": 25,
-}
-
-
-def validate_prompts():
-    """Validate prompts.csv before making any API calls."""
-
-    if not PROMPTS_PATH.exists():
-        raise ValueError(
-            f"prompts.csv was not found at: {PROMPTS_PATH}"
-        )
-
+def load_prompts():
     with open(
         PROMPTS_PATH,
-        encoding="utf-8",
+        "r",
+        encoding="utf-8-sig",
         newline=""
     ) as f:
+        return list(csv.DictReader(f))
 
-        rows = list(csv.DictReader(f))
 
-    if not rows:
-        raise ValueError("prompts.csv is empty.")
-
-    missing_columns = REQUIRED_COLUMNS - set(rows[0].keys())
-
-    if missing_columns:
-        raise ValueError(
-            f"Missing required columns: {sorted(missing_columns)}"
+def main():
+    if not SARVAM_API_KEY:
+        raise RuntimeError(
+            "SARVAM_API_KEY is missing. "
+            "Set it as a GitHub Actions secret or in .env."
         )
+
+    rows = load_prompts()
 
     if len(rows) != 100:
         raise ValueError(
-            f"Expected exactly 100 prompts, found {len(rows)}"
+            f"Expected 100 prompts, found {len(rows)}"
         )
 
-    ids = [row["id"] for row in rows]
+    ids = [int(row["id"]) for row in rows]
 
-    if len(set(ids)) != 100:
+    if ids != list(range(1, 101)):
         raise ValueError(
-            "Prompt IDs are not unique."
+            "prompts.csv must contain IDs 1 through 100."
         )
 
-    task_counts = {}
-
-    for row in rows:
-        task = row["task"]
-        task_counts[task] = task_counts.get(task, 0) + 1
-
-    if task_counts != EXPECTED_TASK_COUNTS:
-        raise ValueError(
-            "Unexpected task distribution.\n"
-            f"Found: {task_counts}\n"
-            f"Expected: {EXPECTED_TASK_COUNTS}"
-        )
-
-    return rows
-
-
-def test_connection():
-    """Send one small request to verify API connectivity."""
-
-    print()
-    print("=" * 60)
-    print("SARVAM API CONNECTION TEST")
-    print("=" * 60)
-
-    client = SarvamClient()
-
-    result = client.chat(
-        "Reply with exactly: CONNECTION_OK"
+    client = SarvamClient(
+        api_key=SARVAM_API_KEY,
+        api_url=SARVAM_API_URL,
+        model=SARVAM_MODEL,
+        timeout=SARVAM_TIMEOUT,
     )
 
-    if result["status"] != "success":
+    output_rows = []
 
-        print()
-        print("❌ Connection test FAILED")
-        print()
-        print("Error:")
-        print(result["error"])
+    for index, row in enumerate(rows, start=1):
+        print(
+            f"[{index}/100] "
+            f"Running ID {row['id']} "
+            f"({row['task']}, {row['lang']})"
+        )
 
-        return 1
+        start = time.perf_counter()
 
-    print()
-    print("✅ Connection test SUCCEEDED")
-    print()
-    print("Model:")
-    print(result["model"])
+        try:
+            response = client.chat(
+                prompt=row["prompt"],
+                temperature=SARVAM_TEMPERATURE,
+            )
 
-    print()
-    print("Response:")
-    print(result["output"])
+            latency = time.perf_counter() - start
 
-    print()
-    print("Latency:")
-    print(f"{result['latency_s']} seconds")
+            output = response.get("output", "")
+            usage = response.get("usage", {})
 
-    print()
-    print("=" * 60)
+            input_tokens = int(
+                usage.get("prompt_tokens", 0)
+            )
 
-    return 0
+            output_tokens = int(
+                usage.get("completion_tokens", 0)
+            )
 
+            total_tokens = int(
+                usage.get(
+                    "total_tokens",
+                    input_tokens + output_tokens
+                )
+            )
 
-def run_evaluation():
-    """Run all 100 prompts against the Sarvam API."""
+            output_rows.append({
+                "id": row["id"],
+                "task": row["task"],
+                "lang": row["lang"],
+                "prompt": row["prompt"],
+                "reference": row["reference"],
+                "output": output,
+                "latency_s": round(latency, 4),
+                "status": "success",
+                "error": "",
+                "model": SARVAM_MODEL,
+                "temperature": SARVAM_TEMPERATURE,
+                "input_tokens": input_tokens,
+                "output_tokens": output_tokens,
+                "total_tokens": total_tokens,
+            })
 
-    setup_logging(LOG_PATH)
+        except Exception as exc:
+            latency = time.perf_counter() - start
 
-    print()
-    print("=" * 60)
-    print("SARVAM-M BASELINE EVALUATION")
-    print("=" * 60)
-
-    print()
-    print("Validating prompts.csv...")
-
-    rows = validate_prompts()
-    client = SarvamClient()
-
-    print("✅ Dataset validation successful")
-    print()
-    print("Total prompts:", len(rows))
-    print("Model:", SARVAM_MODEL)
-    print("Temperature:", SARVAM_TEMPERATURE)
-
-    RESULTS_PATH.parent.mkdir(
-        parents=True,
-        exist_ok=True
-    )
+            output_rows.append({
+                "id": row["id"],
+                "task": row["task"],
+                "lang": row["lang"],
+                "prompt": row["prompt"],
+                "reference": row["reference"],
+                "output": "",
+                "latency_s": round(latency, 4),
+                "status": "error",
+                "error": str(exc),
+                "model": SARVAM_MODEL,
+                "temperature": SARVAM_TEMPERATURE,
+                "input_tokens": 0,
+                "output_tokens": 0,
+                "total_tokens": 0,
+            })
 
     fieldnames = [
         "id",
@@ -177,97 +146,30 @@ def run_evaluation():
     with open(
         RESULTS_PATH,
         "w",
-        encoding="utf-8",
+        encoding="utf-8-sig",
         newline=""
-    ) as output_file:
-
+    ) as f:
         writer = csv.DictWriter(
-            output_file,
+            f,
             fieldnames=fieldnames
         )
-
         writer.writeheader()
+        writer.writerows(output_rows)
 
-        for index, row in enumerate(rows, start=1):
-
-            print()
-            print(
-                f"[{index}/100] "
-                f"ID={row['id']} | "
-                f"Task={row['task']} | "
-                f"Language={row['lang']}"
-            )
-
-            result = client.chat(row["prompt"])
-
-            writer.writerow(
-                {
-                    "id": row["id"],
-                    "task": row["task"],
-                    "lang": row["lang"],
-                    "prompt": row["prompt"],
-                    "reference": row["reference"],
-                    "output": result["output"],
-                    "latency_s": result["latency_s"],
-                    "status": result["status"],
-                    "error": result["error"],
-                    "model": result["model"],
-                    "temperature": SARVAM_TEMPERATURE,
-                    "input_tokens": result["input_tokens"],
-                    "output_tokens": result["output_tokens"],
-                    "total_tokens": result["total_tokens"],
-                }
-            )
+    success_count = sum(
+        r["status"] == "success"
+        for r in output_rows
+    )
 
     print()
     print("=" * 60)
-    print("EVALUATION COMPLETED")
+    print("EVALUATION COMPLETE")
     print("=" * 60)
-
-    print()
-    print("Results saved to:")
-    print(RESULTS_PATH)
-
-    return 0
-
-
-def main():
-
-    parser = argparse.ArgumentParser(
-        description="Sarvam-M baseline evaluation"
-    )
-
-    parser.add_argument(
-        "--test-connection",
-        action="store_true",
-        help="Test the Sarvam API with one request",
-    )
-
-    args = parser.parse_args()
-
-    try:
-
-        if args.test_connection:
-            return test_connection()
-
-        return run_evaluation()
-
-    except SarvamAPIError as error:
-
-        print()
-        print("❌ Sarvam API error:")
-        print(error)
-
-        return 1
-
-    except ValueError as error:
-
-        print()
-        print("❌ Validation error:")
-        print(error)
-
-        return 1
+    print(f"Prompts:  {len(output_rows)}")
+    print(f"Success:  {success_count}")
+    print(f"Errors:   {len(output_rows) - success_count}")
+    print(f"Results:  {RESULTS_PATH}")
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    main()
