@@ -1,0 +1,54 @@
+name: Sarvam Evaluation
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run evaluation
+        env:
+          SARVAM_API_KEY: ${{ secrets.SARVAM_API_KEY }}
+          SARVAM_MODEL: sarvam-105b
+          SARVAM_TEMPERATURE: "0"
+        run: |
+          python -m src.run_eval
+
+      - name: Generate scores
+        env:
+          SARVAM_MODEL: sarvam-105b
+        run: |
+          python -m src.scoring
+
+      - name: Run tests
+        run: |
+          pytest -q
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add data/results.csv
+          git add data/scores.csv
+
+          git commit -m "Update evaluation results and scores" || echo "No changes"
+
+          git push
