@@ -25,16 +25,19 @@ def load_prompts():
         return list(csv.DictReader(f))
 
 
-def validate_prompts(prompts):
+def validate_prompts(prompts=None):
     """
     Validate the evaluation prompt dataset.
 
-    Requirements:
-    - Exactly 100 prompts
-    - IDs 1 through 100
-    - Required columns present
-    - 25 prompts per task
+    Can be called as:
+        validate_prompts()
+
+    or:
+        validate_prompts(prompts)
     """
+
+    if prompts is None:
+        prompts = load_prompts()
 
     if len(prompts) != 100:
         raise ValueError(
@@ -109,33 +112,16 @@ def validate_prompts(prompts):
 
 def main():
 
-    # ---------------------------------------------------------
-    # 1. Validate API key
-    # ---------------------------------------------------------
-
     if not SARVAM_API_KEY:
-
         raise RuntimeError(
             "SARVAM_API_KEY is missing. "
             "Set it in the .env file or "
             "GitHub Actions secret."
         )
 
-    # ---------------------------------------------------------
-    # 2. Load prompts
-    # ---------------------------------------------------------
-
     prompts = load_prompts()
 
-    # ---------------------------------------------------------
-    # 3. Validate prompts
-    # ---------------------------------------------------------
-
     validate_prompts(prompts)
-
-    # ---------------------------------------------------------
-    # 4. Create Sarvam client
-    # ---------------------------------------------------------
 
     client = SarvamClient(
         api_key=SARVAM_API_KEY,
@@ -155,10 +141,6 @@ def main():
     print(f"Prompts     : {len(prompts)}")
     print("=" * 70)
     print()
-
-    # ---------------------------------------------------------
-    # 5. Run all 100 prompts
-    # ---------------------------------------------------------
 
     for index, row in enumerate(
         prompts,
@@ -196,10 +178,6 @@ def main():
                 {}
             )
 
-            # -------------------------------------------------
-            # Token usage
-            # -------------------------------------------------
-
             input_tokens = int(
                 usage.get(
                     "prompt_tokens",
@@ -217,51 +195,28 @@ def main():
             total_tokens = int(
                 usage.get(
                     "total_tokens",
-                    input_tokens
-                    + output_tokens
+                    input_tokens + output_tokens
                 ) or 0
             )
 
-            # -------------------------------------------------
-            # Successful result
-            # -------------------------------------------------
-
             results.append({
-
                 "id": row["id"],
-
                 "task": row["task"],
-
                 "lang": row["lang"],
-
                 "prompt": row["prompt"],
-
                 "reference": row["reference"],
-
                 "output": output,
-
                 "latency_s": round(
                     latency,
                     4
                 ),
-
                 "status": "success",
-
                 "error": "",
-
                 "model": SARVAM_MODEL,
-
-                "temperature":
-                    SARVAM_TEMPERATURE,
-
-                "input_tokens":
-                    input_tokens,
-
-                "output_tokens":
-                    output_tokens,
-
-                "total_tokens":
-                    total_tokens,
+                "temperature": SARVAM_TEMPERATURE,
+                "input_tokens": input_tokens,
+                "output_tokens": output_tokens,
+                "total_tokens": total_tokens,
             })
 
             print(
@@ -277,52 +232,29 @@ def main():
                 - start_time
             )
 
-            # -------------------------------------------------
-            # Failed result
-            # -------------------------------------------------
-
             results.append({
-
                 "id": row["id"],
-
                 "task": row["task"],
-
                 "lang": row["lang"],
-
                 "prompt": row["prompt"],
-
                 "reference": row["reference"],
-
                 "output": "",
-
                 "latency_s": round(
                     latency,
                     4
                 ),
-
                 "status": "error",
-
                 "error": str(exc),
-
                 "model": SARVAM_MODEL,
-
-                "temperature":
-                    SARVAM_TEMPERATURE,
-
+                "temperature": SARVAM_TEMPERATURE,
                 "input_tokens": 0,
-
                 "output_tokens": 0,
-
                 "total_tokens": 0,
             })
 
             print(
                 f"       ERROR | {exc}"
             )
-
-    # ---------------------------------------------------------
-    # 6. Write results.csv
-    # ---------------------------------------------------------
 
     fields = [
         "id",
@@ -354,12 +286,7 @@ def main():
         )
 
         writer.writeheader()
-
         writer.writerows(results)
-
-    # ---------------------------------------------------------
-    # 7. Evaluation summary
-    # ---------------------------------------------------------
 
     successful = sum(
         row["status"] == "success"
@@ -380,21 +307,11 @@ def main():
     print("=" * 70)
     print("EVALUATION FINISHED")
     print("=" * 70)
-    print(
-        f"Total prompts : {len(results)}"
-    )
-    print(
-        f"Successful    : {successful}"
-    )
-    print(
-        f"Failed        : {failed}"
-    )
-    print(
-        f"Total tokens  : {total_tokens:,}"
-    )
-    print(
-        f"Results file  : {RESULTS_PATH}"
-    )
+    print(f"Total prompts : {len(results)}")
+    print(f"Successful    : {successful}")
+    print(f"Failed        : {failed}")
+    print(f"Total tokens  : {total_tokens:,}")
+    print(f"Results file  : {RESULTS_PATH}")
     print("=" * 70)
 
 
