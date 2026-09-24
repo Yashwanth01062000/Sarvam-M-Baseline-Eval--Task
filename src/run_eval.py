@@ -107,8 +107,7 @@ def validate_prompts(prompts=None):
             f"found {task_counts}."
         )
 
-    return True
-
+    return prompts
 
 def main():
 
