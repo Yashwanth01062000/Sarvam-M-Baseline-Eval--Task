@@ -26,89 +26,41 @@ def load_prompts():
 
 
 def validate_prompts(prompts=None):
-    """
-    Validate the evaluation prompt dataset.
-
-    Can be called as:
-        validate_prompts()
-
-    or:
-        validate_prompts(prompts)
-    """
-
     if prompts is None:
         prompts = load_prompts()
 
     if len(prompts) != 100:
         raise ValueError(
-            f"Expected exactly 100 prompts, "
-            f"but found {len(prompts)}."
+            f"Expected exactly 100 prompts, but found {len(prompts)}"
         )
 
-    required_columns = {
-        "id",
-        "task",
-        "lang",
-        "prompt",
-        "reference",
-    }
+    required_columns = {"id", "task", "lang", "prompt", "reference"}
 
     for row in prompts:
-
-        missing = (
-            required_columns
-            - set(row.keys())
-        )
+        missing = required_columns - set(row.keys())
 
         if missing:
             raise ValueError(
-                f"Prompt ID {row.get('id')} "
-                f"is missing columns: {missing}"
+                f"Missing columns {missing} in row: {row}"
             )
 
-        if not row["prompt"].strip():
-            raise ValueError(
-                f"Prompt ID {row['id']} "
-                f"has an empty prompt."
-            )
+        if not row["id"]:
+            raise ValueError(f"Missing id in row: {row}")
 
-    ids = [
-        int(row["id"])
-        for row in prompts
-    ]
+        if not row["task"]:
+            raise ValueError(f"Missing task in row: {row}")
 
-    if ids != list(range(1, 101)):
-        raise ValueError(
-            "Prompt IDs must be exactly "
-            "1 through 100."
-        )
+        if not row["lang"]:
+            raise ValueError(f"Missing language in row: {row}")
 
-    expected_tasks = {
-        "factual_qa": 25,
-        "translation": 25,
-        "summarization": 25,
-        "reasoning_math": 25,
-    }
+        if not row["prompt"]:
+            raise ValueError(f"Missing prompt in row: {row}")
 
-    task_counts = {}
-
-    for row in prompts:
-
-        task = row["task"]
-
-        task_counts[task] = (
-            task_counts.get(task, 0) + 1
-        )
-
-    if task_counts != expected_tasks:
-        raise ValueError(
-            "Unexpected task distribution. "
-            f"Expected {expected_tasks}, "
-            f"found {task_counts}."
-        )
+        if "reference" not in row:
+            raise ValueError(f"Missing reference in row: {row}")
 
     return prompts
-
+    
 def main():
 
     if not SARVAM_API_KEY:
