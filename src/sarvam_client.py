@@ -2,6 +2,9 @@ import requests
 
 
 class SarvamClient:
+    """
+    Client for calling the Sarvam Chat Completions API.
+    """
 
     def __init__(
         self,
@@ -15,11 +18,28 @@ class SarvamClient:
         self.model = model
         self.timeout = timeout
 
+    @staticmethod
+    def _extract_content(data):
+        """
+        Extract assistant message content
+        from the Sarvam API response.
+        """
+
+        try:
+            return data["choices"][0]["message"]["content"]
+        except (KeyError, IndexError, TypeError):
+            return ""
+
     def chat(
         self,
         prompt,
         temperature=0,
     ):
+        """
+        Send a prompt to the Sarvam Chat Completions API
+        and return the generated output and token usage.
+        """
+
         headers = {
             "api-subscription-key": self.api_key,
             "Content-Type": "application/json",
@@ -47,12 +67,12 @@ class SarvamClient:
 
         data = response.json()
 
-        output = (
-            data["choices"][0]["message"]
-            .get("content", "")
-        )
+        output = self._extract_content(data)
 
-        usage = data.get("usage", {})
+        usage = data.get(
+            "usage",
+            {}
+        )
 
         return {
             "output": output,
