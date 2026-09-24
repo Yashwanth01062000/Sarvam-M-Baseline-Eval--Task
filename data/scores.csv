@@ -1,101 +1,101 @@
-id,task,lang,score,metric,reference,output,notes
-1,factual_qa,en,1,correctness,New Delhi,"The capital of India is **New Delhi**. It is the seat of the central government and lies within the National Capital Territory (NCT) of Delhi.","Correct"
-2,factual_qa,en,1,correctness,366,"A leap year has **366 days**. It gains one extra day in February, which has **29 days** instead of the usual 28.","Correct"
-3,factual_qa,en,1,correctness,Mars,"Mars is known as the “Red Planet” because of its reddish appearance, caused by iron-oxide (rust) in its soil.","Correct"
-4,factual_qa,en,1,correctness,Pacific Ocean,"The **Pacific Ocean** is the largest ocean on Earth.","Correct"
-5,factual_qa,en,1,correctness,96,"\(12 \times 8 = 96\).","Correct"
-6,factual_qa,en,1,correctness,William Shakespeare,"William Shakespeare wrote *Romeo and Juliet*.","Correct"
-7,factual_qa,en,1,correctness,Carbon dioxide,"Plants take in **carbon dioxide (CO₂)** from the atmosphere. Through photosynthesis, they use this gas to produce glucose and release oxygen.","Correct"
-8,factual_qa,en,1,correctness,7,"The most-commonly taught answer is **seven continents**.","Correct"
-9,factual_qa,en,0,correctness,100 degrees Celsius,"At standard atmospheric pressure, pure water boils at **100 °C**.","Reference-format mismatch: output is factually equivalent but does not exactly match the reference wording."
-10,factual_qa,en,1,correctness,Piano,"The piano is a keyboard instrument with distinctive black-and-white keys.","Correct"
-11,factual_qa,hi,1,correctness,नई दिल्ली,"भारत की राजधानी **नई दिल्ली** है।","Correct"
-12,factual_qa,hi,1,correctness,366,"एक लीप ईयर में **366 दिन** होते हैं।","Correct"
-13,factual_qa,hi,0,correctness,मंगल,"लाल ग्रह **Mars** है। इसका लाल-भूरा रंग इसकी सतह पर मौजूद आयरन ऑक्साइड की वजह से होता है।","Fact is correct, but output uses English 'Mars' instead of Hindi reference 'मंगल'."
-14,factual_qa,hi,1,correctness,प्रशांत महासागर,"**प्रशांत महासागर (Pacific Ocean)** पृथ्वी पर सबसे बड़ा महासागर है।","Correct"
-15,factual_qa,hi,1,correctness,96,"12 को 8 से गुणा करने पर **96** आता है।","Correct"
-16,factual_qa,hi,1,correctness,विलियम शेक्सपियर,"*रोमियो एंड जूलियट* नाटक **विलियम शेक्सपियर** ने लिखा था।","Correct"
-17,factual_qa,hi,1,correctness,कार्बन डाइऑक्साइड,"पौधे प्रकाश संश्लेषण के दौरान **कार्बन डाइऑक्साइड (CO₂)** नामक गैस को सोख लेते हैं।","Correct"
-18,factual_qa,hi,1,correctness,7,"मुख्य बात: दुनिया में आम परिभाषा के अनुसार कुल सात महाद्वीप हैं।","Correct"
-19,factual_qa,hi,0,correctness,100 डिग्री सेल्सियस,"समुद्र तल पर शुद्ध पानी **100 °C** पर उबलता है।","Fact is correct, but scorer does not match the Hindi reference phrase exactly."
-20,factual_qa,hi,1,correctness,पियानो,"क्लासिक जवाब है **पियानो**।","Correct"
-21,factual_qa,ta,1,correctness,புது தில்லி,"இந்தியாவின் தலைநகரம் **புது தில்லி**.","Correct"
-22,factual_qa,ta,1,correctness,366,"ஒரு லீப் வருஷத்துல **366** நாட்கள் இருக்கும்.","Correct"
-23,factual_qa,ta,0,correctness,செவ்வாய்,"""ரெட் பிளானட்"" என்ற பட்டப்பெயர் **மார்ஸ்**-க்கு உண்டு.","Fact is correct, but output uses 'மார்ஸ்' instead of Tamil reference 'செவ்வாய்'."
-24,factual_qa,ta,1,correctness,பசிபிக் பெருங்கடல்,"பூமியின் மிகப்பெரிய அங்கமான **பசிபிக் பெருங்கடல்** ஆகும்.","Correct"
-25,factual_qa,ta,1,correctness,96,"12 × 8 = **96**.","Correct"
-26,translation,en,0.0,chrF_extracted,सूर्य पूर्व में उगता है।,,"Empty output; score 0."
-27,translation,hi,0.0,chrF_extracted,India is a diverse country.,भारत एक विविध देश है।,"Wrong target language: reference is English but output is Hindi; score 0."
-28,translation,en,0.0,chrF_extracted,கல்வி வாழ்க்கையை மாற்ற முடியும்.,,"Empty output; score 0."
-29,translation,ta,100.0,chrF_extracted,Chennai is the capital of Tamil Nadu.,Chennai is the capital of Tamil Nadu.,"Extracted valid English translation; exact match."
-30,translation,en,58.1807,chrF_extracted,पानी जीवन के लिए आवश्यक है।,"यहाँ ""Water is essential for life"" के कुछ अनुवाद दिए गए हैं, जिनमें से हर एक का अपना थोड़ा अलग मतलब या अंदाज़ है।","Extracted Hindi translation from the verbose response; chrF calculated on the extracted translation only."
-31,translation,hi,100.0,chrF_extracted,This book is very useful.,"This is a straightforward sentence, and its most direct translation is also the most common and natural-sounding one.","Extracted English translation from the verbose response."
-32,translation,en,43.2741,chrF_extracted,ரயில் நேரத்திற்கு வந்தது.,"**ரயில் சரியான நேரத்தில் வந்துள்ளது.**","Extracted Tamil translation; wording differs from reference."
-33,translation,ta,0.0,chrF_extracted,The weather is good today.,இந்தப் பேரத்தைத் தேவையான ஆடைகளைத் தேர்ந்தெடுக்கவும்.,"Wrong target language/content; score 0."
-34,translation,en,68.132,chrF_extracted,कृपया दरवाज़ा बंद करें।,"**कृपया, दरवाज़ा बंद करो।**","Extracted Hindi translation; minor wording difference."
-35,translation,hi,100.0,chrF_extracted,I like listening to music.,"I like listening to music.","Extracted English translation; exact match."
-36,translation,en,0.0,chrF_extracted,நாம் சுற்றுச்சூழலை பாதுகாக்க வேண்டும்.,,"Empty output; score 0."
-37,translation,ta,0.0,chrF_extracted,He is a good teacher.,,"Empty output; score 0."
-38,translation,en,100.0,chrF_extracted,बैठक दस बजे शुरू होती है।,"बैठक दस बजे शुरू होती है।","Extracted Hindi translation; exact match."
-39,translation,hi,0.0,chrF_extracted,Many languages are spoken in India.,भारत में कई भाषाएँ बोली जाती हैं।,"Wrong target language: reference is English but output is Hindi; score 0."
-40,translation,en,0.0,chrF_extracted,பயிற்சி ஒருவரை சிறந்தவராக மாற்றுகிறது.,,"Empty output; score 0."
-41,translation,ta,0.0,chrF_extracted,She reads a book every day.,"அவள் தினமும் புத்தகம் படிக்கிறாள்.","Wrong target language: reference is English but output is Tamil; score 0."
-42,translation,en,0.0,chrF_extracted,जिम्मेदारी से उपयोग किए जाने पर प्रौद्योगिकी उपयोगी है।,,"Empty output; score 0."
-43,translation,hi,0.0,chrF_extracted,We should respect time.,हमें समय का सम्मान करना चाहिए।,"Wrong target language: reference is English but output is Hindi; score 0."
-44,translation,en,79.7767,chrF_extracted,சுத்தமான நீர் ஆரோக்கியத்திற்கு முக்கியமானது.,"The most direct and common translation is: **சுத்தமான தண்ணீர் ஆரோக்கியத்திற்கு முக்கியம்.**","Extracted Tamil translation from the verbose response."
-45,translation,ta,0.0,chrF_extracted,Chennai is a large city.,சென்னையில ஒரு பெரிய நகரம்.,"Wrong target language: reference is English but output is Tamil; score 0."
-46,translation,en,100.0,chrF_extracted,बच्चे पार्क में खेल रहे हैं।,बच्चे पार्क में खेल रहे हैं।,"Extracted valid Hindi translation; exact match."
-47,translation,hi,100.0,chrF_extracted,He wakes up early every morning.,"Of course. Here are a few ways to translate that sentence into English, from the most direct to more natural variations.","Extracted English translation from the verbose response."
-48,translation,en,100.0,chrF_extracted,வாசிப்பு அறிவை மேம்படுத்துகிறது.,"இதோ சில நல்ல மொழிபெயர்ப்பு வழிகள், ஒவ்வொன்றின் நுணுக்கங்களையும் விளக்குகின்றன.","Extracted Tamil translation from the verbose response."
-49,translation,ta,44.8038,chrF_extracted,This food is very tasty.,"The most direct and common way to translate this is: **This food is delicious.**","Extracted English translation; semantically similar but not exact."
-50,translation,en,95.722,chrF_extracted,मेहनत और धैर्य महत्वपूर्ण हैं。,"Here are a few excellent ways to say ""Hard work and patience are","Extracted translation is incomplete; score reflects partial character overlap."
-51,summarization,en,100,human_rating,Heavy rain flooded roads in Mumbai and authorities advised commuters to avoid low-lying areas.,"Heavy rain in Mumbai flooded several roads, and local authorities advised commuters to avoid low-lying areas.","Faithfulness 5/5; Fluency 5/5."
-52,summarization,en,100,human_rating,The city library opened a digital section with e-books and free computer access for students.,"A city library has opened a new digital section, offering thousands of e-books and free computer access for students. The new resources are designed to support the educational and technological needs of the community.","Faithfulness 5/5; Fluency 5/5."
-53,summarization,en,100,human_rating,Farmers adopted drip irrigation to save water while maintaining crop yields during a dry season.,Farmers in the district adopted drip irrigation to conserve water during a dry season while successfully maintaining their crop yields.,"Faithfulness 5/5; Fluency 5/5."
-54,summarization,en,100,human_rating,A school started weekly recycling of paper and plastic and uses the proceeds for classroom materials.,"A school introduced a weekly recycling program that collects paper and plastic, using the proceeds to fund classroom materials.","Faithfulness 5/5; Fluency 5/5."
-55,summarization,en,100,human_rating,A hospital added telemedicine so nearby villagers can consult doctors without traveling long distances.,"To improve healthcare access, a local hospital has launched a telemedicine service, allowing patients in nearby villages to consult with doctors remotely and avoid long-distance travel.","Faithfulness 5/5; Fluency 5/5."
-56,summarization,hi,80,human_rating,भारी बारिश से शहर की कई सड़कें जलमग्न हुईं और प्रशासन ने सावधानी बरतने को कहा।,"भारी बारिश के बाद शहर में जगह-जगह जलभराव हो गया है, जिसकी वजह से प्रशासन ने जनता को सावधानी बरतने की सलाह दी है।","Faithfulness 5/5; Fluency 3/5."
-57,summarization,hi,80,human_rating,पुस्तकालय ने विद्यार्थियों के लिए डिजिटल किताबें और कंप्यूटर सुविधा शुरू की।,"यहाँ कुछ समरी ऑप्शन दिए गए हैं, सबसे छोटे से लेकर थोड़े ज़्यादा डिटेल के साथ।","Faithfulness 5/5; Fluency 3/5."
-58,summarization,hi,80,human_rating,किसानों ने सूखे में पानी बचाने के लिए ड्रिप सिंचाई अपनाई।,"सूखे के दौरान, किसानों ने ड्रिप इरिगेशन का इस्तेमाल करके पानी बचाने का एक असरदार तरीका निकाल लिया।","Faithfulness 4/5; Fluency 4/5."
-59,summarization,hi,80,human_rating,स्कूल ने कागज और प्लास्टिक के साप्ताहिक पुनर्चक्रण की योजना शुरू की।,"स्कूल ने हर हफ्ते कागज़ और प्लास्टिक को रीसायकल करने का एक प्रोग्राम शुरू किया है।","Faithfulness 4/5; Fluency 4/5."
-60,summarization,hi,100,human_rating,अस्पताल ने गांवों के मरीजों के लिए टेलीमेडिसिन सेवा शुरू की।,"एक अस्पताल ने दूर-दराज के गांवों के मरीजों की देखभाल तक पहुंच बेहतर बनाने के लिए एक टेलीमेडिसिन सर्विस शुरू की है।","Faithfulness 5/5; Fluency 5/5."
-61,summarization,ta,100,human_rating,கனமழையால் பல சாலைகள் நீரில் மூழ்கியதால் அதிகாரிகள் எச்சரிக்கையுடன் இருக்குமாறு கேட்டுக்கொண்டனர்.,"நகரத்தில் பலமான மழை பெய்ததால், பல சாலைகளில் தண்ணீர் தேங்கியுள்ளது, இதனால் போக்குவரத்து பாதிக்கப்பட்டுள்ளது. மக்கள் கவனமாக இருக்குமாறும், தண்ணீர் தேங்கியுள்ள பகுதிகளைத் தவிர்க்குமாறும் அதிகாரிகள் அறிவுறுத்தியுள்ளனர்.","Faithfulness 5/5; Fluency 5/5."
-62,summarization,ta,100,human_rating,நூலகம் மாணவர்களுக்காக மின்னூல்கள் மற்றும் கணினி வசதியைத் தொடங்கியது.,நூலகம் மாணவர்களுக்காக மின் புத்தகங்கள் (e-book) மற்றும் கணினி வசதிகளை அறிமுகப்படுத்தியது.,"Faithfulness 5/5; Fluency 5/5."
-63,summarization,ta,0,human_rating,விவசாயிகள் வறட்சியில் நீரைச் சேமிக்க சொட்டு நீர்ப்பாசனத்தைப் பயன்படுத்தினர்.,,"No model output was provided."
-64,summarization,ta,50,human_rating,பள்ளி வாரந்தோறும் காகிதம் மற்றும் பிளாஸ்டிக்கை மறுசுழற்சி செய்யும் திட்டத்தைத் தொடங்கியது.,"அரசு மேல்நிலைப் பள்ளி ஒரு கிரீன் ரீசைக்கிளிங் திட்டத்தை தொடங்கியுள்ளது. ஒவ்வொரு வெள்ளிக்கிழமையும், பிள்ளைகள் பள்ளியிலிருந்தோ அல்லது வீட்டிலிருந்தோ சேகரித்த காகித துண்டுகளையும், பிளாஸ்டிக் பாட்டில்களையும் கொண்டு வருவார்கள். ஆசிரியை திருமதி. கவிதா, அந்தப் பொருட்களைத் தனித்தனியாக வகைப்படுத்தி, உள்ளூர் ரீசைக்கிளிங் மையத்திற்கு அனுப்ப ஏற்பாடு செய்கிறார்.","Faithfulness 2/5; Fluency 3/5. Adds multiple unsupported details."
-65,summarization,ta,100,human_rating,மருத்துவமனை கிராம மக்களுக்கு தொலைமருத்துவ சேவையைத் தொடங்கியது.,"கிராம மக்கள் வெகுதூரம் பயணம் செய்வதைத் தவிர்க்கும் வகையில், ஒரு மருத்துவமனை அருகில் உள்ள கிராம மக்களுக்கு தொலைதூர மருத்துவ சேவைகளை வழங்கத் தொடங்கியது.","Faithfulness 5/5; Fluency 5/5."
-66,summarization,en,100,human_rating,The park added solar-powered lights to improve evening visibility and reduce grid electricity use.,The public park installed solar-powered lights to increase nighttime visibility while reducing its reliance on grid electricity.,"Faithfulness 5/5; Fluency 5/5."
-67,summarization,en,0,human_rating,A university launched scholarships to help low-income students pay for tuition and books.,,"No model output was provided."
-68,summarization,hi,100,human_rating,नगर निगम ने पुरानी बसों की जगह नई बसें चलाने की योजना घोषित की।,नगर निगम ने अपने पुराने बसों को हटाकर नई बसें शुरू करके शहर के पब्लिक ट्रांसपोर्ट सिस्टम को बेहतर बनाने का ऐलान किया है।,"Faithfulness 5/5; Fluency 5/5."
-69,summarization,hi,40,human_rating,संग्रहालय ने स्थानीय इतिहास पर नई प्रदर्शनी खोली।,"यहाँ एक म्यूज़ियम की प्रदर्शनी के बारे में एक संक्षिप्त जानकारी दी गई है, जिसे अलग-अलग जगहों और इस्तेमाल के हिसाब से तीन अलग-अलग वर्ज़न में लिखा गया है।","Faithfulness 2/5; Fluency 2/5. Output is verbose and introduces unsupported exhibition details."
-70,summarization,ta,80,human_rating,பலத்த காற்றுக்குப் பிறகு மின்சார ஊழியர்கள் சேதமடைந்த கம்பிகளை சரிசெய்தனர்.,கனமான காற்றின் காரணமாக சேதமடைந்த வயர்களை பவர் கார் (Powercorp) சரிசெய்தது.,"Faithfulness 4/5; Fluency 4/5. Main event preserved, but Powercorp is unsupported."
-71,summarization,en,100,human_rating,A community center started weekend computer classes for older adults.,A community center has started offering weekend classes to teach older adults basic computer skills. These courses aim to help seniors become more comfortable with technology.,"Faithfulness 5/5; Fluency 5/5."
-72,summarization,hi,80,human_rating,रेलवे ने यात्रियों के लिए नया ऑनलाइन टिकट सहायता पोर्टल शुरू किया।,"रेलवे ने यात्रियों की मदद और उनकी शिकायतें दूर करने के लिए एक खास ऑनलाइन पोर्टल RailMadad शुरू किया है।","Faithfulness 4/5; Fluency 4/5."
-73,summarization,ta,100,human_rating,பள்ளி மாணவர்களுடன் மரம் நடும் சுற்றுச்சூழல் நிகழ்ச்சியை நடத்தியது.,"பள்ளிக் குழந்தைகளுக்காக நடத்தப்பட்ட இந்த சுற்றுச்சூழல் திட்டத்தில், மரக்கன்றுகளை நடுவதும் வளர்ப்பதும் முக்கியமாக இருந்தது.","Faithfulness 5/5; Fluency 5/5."
-74,summarization,en,0,human_rating,A restaurant reduced food waste by donating safe surplus meals to a community organization.,,"No model output was provided."
-75,summarization,hi,0,human_rating,नगर के पार्क में बच्चों के लिए नया खेल क्षेत्र और नई सुरक्षा रोशनी लगाई गई।,,"No model output was provided."
-76,reasoning_math,en,1,final_answer_match,36,"You would pay $12 × 3 = **$36**.","Correct"
-77,reasoning_math,en,1,final_answer_match,240,"The train’s speed is 60 km/h. In 4 hours the distance is 240 km.","Correct"
-78,reasoning_math,en,1,final_answer_match,9,"Ravi starts with 15 apples and gives away 6. Remaining apples = **9 apples**.","Correct"
-79,reasoning_math,en,1,final_answer_match,40,"Each row contains 5 items and there are 8 rows, so 8 × 5 = **40**.","Correct"
-80,reasoning_math,en,1,final_answer_match,10,"20% of 50 students is **10**.","Correct"
-81,reasoning_math,en,1,final_answer_match,65,"$75 - $10 = **$65**.","Correct"
-82,reasoning_math,en,1,final_answer_match,8,"48 ÷ 6 = **8 eggs**.","Correct"
-83,reasoning_math,en,1,final_answer_match,40,"Area = 10 × 4 = **40 square units**.","Correct"
-84,reasoning_math,en,1,final_answer_match,15,"The car uses 5 L per 100 km. For 300 km: 3 × 5 = **15 liters**.","Correct"
-85,reasoning_math,en,1,final_answer_match,140,"$20 per hour × 7 hours = **$140**.","Correct"
-86,reasoning_math,hi,1,final_answer_match,60,"15 रुपये × 4 pens = **60 रुपये**.","Correct"
-87,reasoning_math,hi,1,final_answer_match,150,"50 km/h × 3 h = **150 km**.","Correct"
-88,reasoning_math,hi,1,final_answer_match,13,"20 - 7 = **13 आम**.","Correct"
-89,reasoning_math,hi,1,final_answer_match,24,"6 × 4 = **24 items**.","Correct"
-90,reasoning_math,hi,1,final_answer_match,5,"10% of 50 = **5**.","Correct"
-91,reasoning_math,hi,1,final_answer_match,80,"100 - 20 = **80 रुपये**.","Correct"
-92,reasoning_math,hi,1,final_answer_match,6,"48 ÷ 8 = **6** eggs per container.","Correct"
-93,reasoning_math,hi,1,final_answer_match,45,"9 × 5 = **45 square units**.","Correct"
-94,reasoning_math,hi,1,final_answer_match,12,"6 L per 100 km × 200 km = **12 liters**.","Correct"
-95,reasoning_math,hi,1,final_answer_match,100,"25 रुपये/hour × 4 hours = **100 रुपये**.","Correct"
-96,reasoning_math,ta,1,final_answer_match,60,"20 × 3 = **60**.","Correct"
-97,reasoning_math,ta,1,final_answer_match,200,"40 km/h × 5 h = **200 km**.","Correct"
-98,reasoning_math,ta,1,final_answer_match,13,"18 - 5 = **13** pens.","Correct"
-99,reasoning_math,ta,1,final_answer_match,21,"7 × 3 = **21** items.","Correct"
-100,reasoning_math,ta,1,final_answer_match,15,"30% of 50 = **15**.","Correct"
+﻿id,task,lang,score,score_type,latency_s,input_tokens,output_tokens,total_tokens,estimated_cost_inr,status,error
+1,factual_qa,en,1,exact_match,18.2426,20,843,863,0.062293,success,
+2,factual_qa,en,0,exact_match,4.0847,18,209,227,0.015826,success,
+3,factual_qa,en,1,exact_match,2.4606,18,120,138,0.009311,success,
+4,factual_qa,en,1,exact_match,5.4175,19,283,302,0.021272,success,
+5,factual_qa,en,1,exact_match,16.9976,19,1020,1039,0.07522,success,
+6,factual_qa,en,1,exact_match,21.104,23,1247,1270,0.091954,success,
+7,factual_qa,en,1,exact_match,31.7093,17,1763,1780,0.129549,success,
+8,factual_qa,en,1,exact_match,3.3164,21,132,153,0.010277,success,
+9,factual_qa,en,1,exact_match,9.6345,17,580,597,0.042954,success,
+10,factual_qa,hi,1,exact_match,16.4933,18,1135,1153,0.083609,success,
+11,factual_qa,hi,1,exact_match,5.9247,18,279,297,0.02095,success,
+12,factual_qa,hi,1,exact_match,4.8702,17,323,340,0.024141,success,
+13,factual_qa,hi,1,exact_match,5.3271,19,344,363,0.025737,success,
+14,factual_qa,hi,1,exact_match,6.7866,21,462,483,0.034433,success,
+15,factual_qa,hi,1,exact_match,18.5422,19,1293,1312,0.095204,success,
+16,factual_qa,hi,0,exact_match,5.777,23,371,394,0.027831,success,
+17,factual_qa,hi,1,exact_match,6.5618,20,449,469,0.033452,success,
+18,factual_qa,ta,1,exact_match,14.7627,17,1018,1035,0.075015,success,
+19,factual_qa,ta,1,exact_match,14.5317,18,1038,1056,0.076509,success,
+20,factual_qa,ta,1,exact_match,25.9491,19,1817,1836,0.133561,success,
+21,factual_qa,ta,1,exact_match,5.516,21,317,338,0.023819,success,
+22,factual_qa,ta,0,exact_match,12.8434,22,841,863,0.062205,success,
+23,factual_qa,ta,0,exact_match,21.8551,19,1625,1644,0.119506,success,
+24,factual_qa,ta,0,exact_match,3.5262,19,208,227,0.015782,success,
+25,factual_qa,ta,1,exact_match,5.2857,18,355,373,0.026513,success,
+26,translation,en,0,chrF,29.3602,26,2048,2074,0.150675,success,
+27,translation,en,0,chrF,28.6485,24,2048,2072,0.150616,success,
+28,translation,en,0,chrF,30.2579,24,2048,2072,0.150616,success,
+29,translation,en,0,chrF,32.9542,25,2048,2073,0.150646,success,
+30,translation,en,0,chrF,28.7062,23,2048,2071,0.150587,success,
+31,translation,en,34.8184,chrF,28.5267,24,2048,2072,0.150616,success,
+32,translation,en,0,chrF,28.4657,24,2048,2072,0.150616,success,
+33,translation,en,0,chrF,35.0623,22,2048,2070,0.150558,success,
+34,translation,hi,7.9062,chrF,36.1876,24,2048,2072,0.150616,success,
+35,translation,hi,0,chrF,34.2343,25,2048,2073,0.150646,success,
+36,translation,hi,0,chrF,33.3681,25,2048,2073,0.150646,success,
+37,translation,hi,0,chrF,32.0609,26,2048,2074,0.150675,success,
+38,translation,hi,2.7046,chrF,31.3021,26,1762,1788,0.12974,success,
+39,translation,hi,22.3474,chrF,30.3426,26,1958,1984,0.144087,success,
+40,translation,hi,0.0,chrF,19.9775,24,1273,1297,0.093886,success,
+41,translation,hi,0,chrF,33.4735,24,2048,2072,0.150616,success,
+42,translation,ta,0.3623,chrF,26.9099,26,1647,1673,0.121322,success,
+43,translation,ta,43.096,chrF,22.9042,24,1473,1497,0.108526,success,
+44,translation,ta,10.4251,chrF,34.0132,27,2047,2074,0.150631,success,
+45,translation,ta,0.0,chrF,34.8102,29,2048,2077,0.150763,success,
+46,translation,ta,11.4348,chrF,32.8731,25,2048,2073,0.150646,success,
+47,translation,ta,0,chrF,33.8398,25,2048,2073,0.150646,success,
+48,translation,ta,0,chrF,34.0227,24,2048,2072,0.150616,success,
+49,translation,ta,33.5452,chrF,33.0043,29,2048,2077,0.150763,success,
+50,translation,ta,0.0815,chrF,29.6519,32,1792,1824,0.132111,success,
+51,summarization,en,,human_rating_pending,32.6376,38,2048,2086,0.151026,success,
+52,summarization,en,,human_rating_pending,22.553,36,1408,1444,0.10412,success,
+53,summarization,en,,human_rating_pending,26.649,39,1708,1747,0.126168,success,
+54,summarization,en,,human_rating_pending,33.0572,37,2048,2085,0.150997,success,
+55,summarization,en,,human_rating_pending,36.4754,37,2048,2085,0.150997,success,
+56,summarization,en,,human_rating_pending,37.5779,36,2048,2084,0.150968,success,
+57,summarization,en,,human_rating_pending,38.3833,34,2048,2082,0.150909,success,
+58,summarization,en,,human_rating_pending,12.818,37,703,740,0.052543,success,
+59,summarization,hi,,human_rating_pending,35.4702,35,1997,2032,0.147205,success,
+60,summarization,hi,,human_rating_pending,33.4441,33,2048,2081,0.15088,success,
+61,summarization,hi,,human_rating_pending,23.2329,33,1440,1473,0.106374,success,
+62,summarization,hi,,human_rating_pending,19.9592,30,1400,1430,0.103358,success,
+63,summarization,hi,,human_rating_pending,23.5732,34,1660,1694,0.122508,success,
+64,summarization,hi,,human_rating_pending,23.9831,35,1525,1560,0.112655,success,
+65,summarization,hi,,human_rating_pending,29.6597,34,1973,2007,0.145419,success,
+66,summarization,hi,,human_rating_pending,24.8114,31,1495,1526,0.110342,success,
+67,summarization,ta,,human_rating_pending,20.3359,37,1245,1282,0.092217,success,
+68,summarization,ta,,human_rating_pending,23.5421,38,1363,1401,0.100884,success,
+69,summarization,ta,,human_rating_pending,27.9962,38,1751,1789,0.129286,success,
+70,summarization,ta,,human_rating_pending,36.5713,39,2037,2076,0.15025,success,
+71,summarization,ta,,human_rating_pending,28.8708,36,1520,1556,0.112318,success,
+72,summarization,ta,,human_rating_pending,20.8282,39,1269,1308,0.094033,success,
+73,summarization,ta,,human_rating_pending,22.4169,36,1355,1391,0.10024,success,
+74,summarization,ta,,human_rating_pending,21.1759,39,1381,1420,0.102231,success,
+75,summarization,ta,,human_rating_pending,26.9523,41,1713,1754,0.126592,success,
+76,reasoning_math,en,1,final_answer_match,3.4777,32,187,219,0.014625,success,
+77,reasoning_math,en,1,final_answer_match,4.379,32,242,274,0.018651,success,
+78,reasoning_math,en,1,final_answer_match,4.9557,34,274,308,0.021052,success,
+79,reasoning_math,en,1,final_answer_match,5.4482,33,314,347,0.023951,success,
+80,reasoning_math,en,1,final_answer_match,6.6136,37,381,418,0.028973,success,
+81,reasoning_math,en,1,final_answer_match,3.7331,33,210,243,0.016338,success,
+82,reasoning_math,en,1,final_answer_match,4.872,36,269,305,0.020745,success,
+83,reasoning_math,en,1,final_answer_match,4.0785,32,224,256,0.017334,success,
+84,reasoning_math,en,0,final_answer_match,3.43,28,188,216,0.014581,success,
+85,reasoning_math,hi,1,final_answer_match,6.0477,35,326,361,0.024888,success,
+86,reasoning_math,hi,1,final_answer_match,3.0504,36,148,184,0.011888,success,
+87,reasoning_math,hi,1,final_answer_match,5.2706,31,269,300,0.020598,success,
+88,reasoning_math,hi,1,final_answer_match,7.8034,38,431,469,0.032662,success,
+89,reasoning_math,hi,1,final_answer_match,5.2567,30,253,283,0.019398,success,
+90,reasoning_math,hi,1,final_answer_match,6.0558,36,321,357,0.024551,success,
+91,reasoning_math,hi,1,final_answer_match,7.5741,32,368,400,0.027875,success,
+92,reasoning_math,hi,1,final_answer_match,8.4823,37,411,448,0.031169,success,
+93,reasoning_math,ta,1,final_answer_match,4.6556,31,215,246,0.016646,success,
+94,reasoning_math,ta,1,final_answer_match,4.6232,45,232,277,0.0183,success,
+95,reasoning_math,ta,1,final_answer_match,5.4565,33,283,316,0.021682,success,
+96,reasoning_math,ta,1,final_answer_match,4.7341,34,213,247,0.016587,success,
+97,reasoning_math,ta,1,final_answer_match,5.8134,43,294,337,0.02278,success,
+98,reasoning_math,ta,1,final_answer_match,8.4907,39,458,497,0.034668,success,
+99,reasoning_math,ta,1,final_answer_match,4.4828,45,255,300,0.019984,success,
+100,reasoning_math,ta,0,final_answer_match,35.7138,36,2048,2084,0.150968,success,

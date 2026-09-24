@@ -1,739 +1,762 @@
 ﻿id,task,lang,prompt,reference,output,latency_s,status,error,model,temperature,input_tokens,output_tokens,total_tokens
-1,factual_qa,en,What is the capital of India?,New Delhi,The capital of India is **New Delhi**. It is the seat of the central government and lies within the National Capital Territory (NCT) of Delhi.,5.165,success,,sarvam-105b,0.0,17,367,384
-2,factual_qa,en,How many days are there in a leap year?,366,"A leap year has **366 days**. It gains one extra day in February, which has **29 days** instead of the usual 28.",2.25,success,,sarvam-105b,0.0,20,183,203
-3,factual_qa,en,What planet is known as the Red Planet?,Mars,"Mars is known as the “Red Planet” because of its reddish appearance, caused by iron‑oxide (rust) in its soil.",2.051,success,,sarvam-105b,0.0,19,170,189
-4,factual_qa,en,What is the largest ocean on Earth?,Pacific Ocean,"The **Pacific Ocean** is the largest ocean on Earth.
+1,factual_qa,en,What is the largest planet in our solar system?,Jupiter,"Jupiter is the largest planet in our solar system.
 
-| Attribute | Approximate Value |
-|-----------|-------------------|
-| **Surface area** | ~165 million km² (≈ 49 % of the world’s ocean area) |
-| **Average depth** | 4,280 m (≈ 2,700 mi) |
-| **Maximum depth** | 11,034 m (Mariana Trench, Challenger Deep) |
-| **Volume** | ~714 million km³ (about half of Earth’s total ocean water) |
-| **Coastline** | ~135,663 km (longest continuous coastline of any ocean) |
-| **Contains** | About 84 distinct seas, multiple island archipelagos (e.g., Hawaiian Islands, Philippines, Indonesia), and numerous marginal seas (e.g., South China Sea, Sea of Japan, East Siberian Sea) |
+### Key Facts
 
-### Why the Pacific is so big
-- It stretches from the Arctic Ocean in the north to the Southern Ocean in the south, and from Asia and Australia in the west to the Americas (North, Central, and South) in the east.
-- The Pacific basin covers roughly the entire eastern hemisphere, making it about twice as large as the next largest ocean, the Atlantic.
-- Its vastness is both geographic and geologic: the Pacific is surrounded by denser tectonic plates that have been subducting, creating deep‑sea trenches and facilitating a wider, more stable basin.
+| Property | Jupiter |
+|----------|---------|
+| **Type** | Gas giant (composed mainly of hydrogen and helium) |
+| **Equatorial diameter** | ~142,984 km (≈11 × Earth’s diameter) |
+| **Mass** | ~1.898 × 10²⁷ kg (≈318 × Earth’s mass) |
+| **Volume** | ~1,321 × Earth’s volume (enough room for all other planets combined) |
+| **Average distance from the Sun** | 778 million km (≈5.2 AU) |
+| **Orbital period** | ~11.86 Earth years |
+| **Rotation period** | ~9 h 55 m (fastest in the solar system) |
+| **Number of known moons** | 95 (as of 2024) |
+| **Prominent features** | Great Red Spot (a giant storm), numerous moons (e.g., Callisto, Ganymede, Europa, Io) |
 
-### Fun facts
-- The Pacific holds roughly **60 %** of Earth’s surface water, influencing global climate, weather patterns (e.g., El Niño Southern Oscillation), and marine biodiversity.
-- The ocean’s name, *Pacific*, means “peaceful” in Spanish, a name given by the Portuguese explorer Ferdinand Magellan in 1521 because of its calmer waters after a violent Atlantic crossing.
-- Despite its name, the Pacific is also the most **active** ocean in terms of earthquakes and volcanic eruptions, forming the “Ring of Fire” along its edges.
+### Why Jupiter is “the biggest”
 
-So, if you’re looking for the biggest body of water on the planet, the Pacific Ocean is the clear champion.",7.544,success,,sarvam-105b,0.0,18,635,653
-5,factual_qa,en,What is 12 multiplied by 8?,96,\(12 \times 8 = 96\).,1.31,success,,sarvam-105b,0.0,20,93,113
-6,factual_qa,en,Who wrote the play Romeo and Juliet?,William Shakespeare,William Shakespeare wrote *Romeo and Juliet* (circa 1595–1597).,1.708,success,,sarvam-105b,0.0,18,136,154
-7,factual_qa,en,What gas do plants absorb during photosynthesis?,Carbon dioxide,"Plants take in **carbon dioxide (CO₂)** from the atmosphere.  Through photosynthesis, they use this gas, together with water and light energy, to produce glucose (sugar) and release oxygen (O₂) as a by‑product.  The CO₂ enters the leaf through tiny pores called stomata, diffuses into the chloroplasts, and is then “fixed” into organic molecules.",4.953,success,,sarvam-105b,0.0,18,415,433
-8,factual_qa,en,How many continents are there?,7,"The most‐commonly taught answer is **seven continents**:
+- **Radius & Volume:** Jupiter’s radius is about 71,492 km, far exceeding the next-largest planet, Saturn (≈58,232 km). In terms of volume, Jupiter could swallow all the other planets of the solar system many times over.
+- **Mass:** Even though it’s mostly light gases, Jupiter’s enormous mass (more than twice the combined mass of all other planets) gives it the strongest gravitational pull in the system.
+- **Classification:** While terrestrial planets like Earth are denser, Jupiter’s sheer size makes it the undisputed champion by any standard measurement—size, width, or sheer bulk.
 
-1. Africa  
-2. Antarctica  
-3. Asia  
-4. Australia (or Oceania)  
-5. Europe  
-6. North America  
-7. South America  
+### Quick Comparison
 
-— however, different geographical traditions count them differently.  
-- Some models combine Europe + Asia into **Eurasia** (leaving **six** continents).  
-- In many parts of Latin America, North America and South America are counted as a single “America,” also giving **six** continents.  
-- The Olympic Games use a **five‑continent** scheme (Africa, Americas, Asia, Europe, Oceania).  
-- A few broader schemes treat Africa + Eurasia as one landmass, resulting in **four** continents.
+| Planet | Diameter (km) | Mass (× Earth) |
+|--------|---------------|----------------|
+| Mercury | 4,879 | 0.06 |
+| Venus | 12,104 | 0.82 |
+| Earth | 12,742 | 1 |
+| Mars | 6,779 | 0.11 |
+| Jupiter | 142,984 | **318** |
+| Saturn | 116,460 | 95 |
+| Uranus | 50,724 | 14.5 |
+| Neptune | 49,244 | 17.1 |
 
-So while **seven** is the standard in English‑speaking education, there’s no single universally “correct” number—it depends on the convention you follow.",7.617,success,,sarvam-105b,0.0,16,654,670
-9,factual_qa,en,What is the boiling point of water at sea level in Celsius?,100 degrees Celsius,"At standard atmospheric pressure (≈ 1 atm, the pressure at sea level), pure water boils at **100 °C**. (In practice the exact temperature can vary by a few tenths of a degree due to minute differences in pressure and water purity.)",2.7,success,,sarvam-105b,0.0,23,222,245
-10,factual_qa,en,Which instrument has black and white keys and is commonly used in classical music?,Piano,The piano – a keyboard instrument with its distinctive black‑and‑white keys that’s a staple of classical music.,3.976,success,,sarvam-105b,0.0,25,325,350
-11,factual_qa,hi,भारत की राजधानी क्या है?,नई दिल्ली,"भारत की राजधानी **नई दिल्ली** है।
+### Extra Note
 
-हालांकि, एक अहम बात यह है:
+If you ever look at “largest” in the broader context of the universe, many **exoplanets**—especially massive “super‑Jovians” and gas giants—can have radii several times larger than Jupiter. But **within our own solar system**, Jupiter remains the biggest by a comfortable margin.",18.2426,success,,sarvam-105b,0.0,20,843,863
+2,factual_qa,en,How many sides does a hexagon have?,6,A hexagon has **six sides**. (The prefix “hexa‑” in Greek means “six.”),4.0847,success,,sarvam-105b,0.0,18,209,227
+3,factual_qa,en,What is the chemical symbol for gold?,Au,"The chemical symbol for gold is **Au** (derived from its Latin name, *aurum*).",2.4606,success,,sarvam-105b,0.0,18,120,138
+4,factual_qa,en,Which organ pumps blood through the human body?,Heart,"The **heart** is the organ that pumps blood throughout the human body. It is a muscular, four‑chambered organ located in the chest. The right side of the heart receives oxygen‑poor (deoxygenated) blood from the body and pumps it to the lungs, while the left side receives oxygen‑rich (oxygenated) blood from the lungs and pumps it out to the rest of the body. This continuous circulation delivers oxygen, nutrients, and hormones while removing waste products.",5.4175,success,,sarvam-105b,0.0,19,283,302
+5,factual_qa,en,How many hours are there in two days?,48,"There are **48** hours in two days.
 
-*   **दिल्ली** शहर और उसका इलाके एक प्राचीन महानगर है जिसे **नेशनल कैपिटल टेरिटरी ऑफ दिल्ली (NCT)** के नाम से जाना जाता है।
-*   **नई दिल्ली** असल में दिल्ली के अंदर एक खास जिला (एक प्रशासनिक क्षेत्र) है।
+Here's the simple math:
+*   1 day = 24 hours
+*   2 days = 2 × 24 = 48 hours",16.9976,success,,sarvam-105b,0.0,19,1020,1039
+6,factual_qa,en,What is the process by which plants make food using sunlight called?,Photosynthesis,"The process is called **photosynthesis** (from the Greek *photo* = light and *synthesis* = putting together).  
 
-इसे जानबूझकर 20वीं सदी की शुरुआत में ब्रिटिश काल में जमीनी स्तर से बनाया गया था ताकि यह सरकार की प्रशासनिक और राजनीतिक राजधानी के रूप में काम कर सके। यहीं आपको संसद भवन, राष्ट्रपति भवन (राष्ट्रपति का आधिकारिक निवास), और सुप्रीम कोर्ट जैसी जरूरी संस्थाएं मिलेंगी।",11.89,success,,sarvam-105b,0.0,16,1004,1020
-12,factual_qa,hi,एक लीप वर्ष में कितने दिन होते हैं?,366,"एक लीप ईयर में **366 दिन** होते हैं।  
-आम सालों (365 दिनों) के मुकाबले इसमें बस एक ही दिन ज़्यादा होता है, और वह है 29 फरवरी को आने वाला एक्स्ट्रा दिन।",2.635,success,,sarvam-105b,0.0,19,285,304
-13,factual_qa,hi,लाल ग्रह किस ग्रह को कहा जाता है?,मंगल,"लाल ग्रह **Mars** है। इसका लाल-भूरा रंग इसकी सतह पर मौजूद बहुत सारे आयरन ऑक्साइड (जंग) की वजह से होता है, जो इसे देखने में एक खास सा लाल रंग देता है।",2.34,success,,sarvam-105b,0.0,19,182,201
-14,factual_qa,hi,पृथ्वी का सबसे बड़ा महासागर कौन सा है?,प्रशांत महासागर,"**प्रशांत महासागर (Pacific Ocean)** पृथ्वी पर सबसे बड़ा महासागर है।
+### In a nutshell
+Photosynthesis is the set of biochemical reactions by which plants, algae, and some bacteria convert light energy into chemical energy stored in organic compounds (chiefly sugars).  
 
-### कुछ मुख्य बातें
-| गुण | लगभग मान |
-|----------|-----------------|
-| **क्षेत्रफल** | ~165 million km² (≈ 63 million mi²) – पृथ्वी की पूरी सतह का लगभग 46 % हिस्सा |
-| **औसत गहराई** | ~4,300 m (≈ 14,100 ft) |
-| **सबसे गहरी जगह** | मरियाना ट्रेंच (Mariana Trench) में चैलेंजर डीप (Challenger Deep) (~11 km गहरा) |
-| **किन क्षेत्रों के नाम** | एशिया, ऑस्ट्रेलिया, उत्तरी अमेरिका, दक्षिणी अमेरिका; आर्कटिक, अटलांटिक, हिंद और दक्षिणी महासागरों से घिरा हुआ |
-| **वलयिक आग (Ring of Fire)** | प्रशांत महासागर के किनारे नौ बड़े और कई छोटे टेक्टोनिक प्लेट बाउंड्री हैं, जिससे यह दुनिया का सबसे ज़्यादा भूकंप और ज्वालामुखीय गतिविधि वाला क्षेत्र बन जाता है |
+### Overall chemical equation  
 
-### यह इतना खास क्यों है
-- **साइज़ और फैलाव** – प्रशांत महासागर इतना बड़ा है कि इसमें पृथ्वी की *सभी* ज़मीनी सतहें एक साथ फिट आ सकती हैं, फिर भी इसमें और भी काफी जगह बच जाती है।
-- **जलवायु पर असर** – इसकी विशाल हीट कैपेसिटी के कारण यह दुनिया भर के मौसम के पैटर्न्स पर असर डालता है, जैसे अल नीनो (El Niño) और ला नीना (La Niña) जैसी घटनाएँ।
-- **बड़ा समुद्री इकोसिस्टम** – इसमें लाखों तरह की मछलियाँ, समुद्री स्तनधारी (व्हेल, डॉल्फिन, सील) और इनवर्टिब्रेट्स रहते हैं, जिनमें से कई अभी भी खोजी जा रही हैं।
-- **बंदरगाह और व्यापार** – इसके किनारे और इसके अंदर के द्वीपों पर दुनिया के कई सबसे व्यस्त कंटेनर पोर्ट (जैसे, शंघाई, सिंगापुर, लॉस एंजिल्स, और टोक्यो) मौजूद हैं, जो इसे वैश्विक व्यापार और शिपिंग मार्गों के लिए एक बहुत ज़रूरी हिस्सा बनाते हैं।
+\[
+6\,\text{CO}_2 + 6\,\text{H}_2\text{O} + \text{light energy} \;\xrightarrow{\text{chlorophyll}}\; \text{C}_6\text{H}_{12}\text{O}_6 + 6\,\text{O}_2
+\]
 
-तो, अगर आप दुनिया का सबसे बड़ा महासागर ढूंढ रहे हैं, तो इसका जवाब **प्रशांत महासागर (Pacific Ocean)** है।",7.192,success,,sarvam-105b,0.0,20,663,683
-15,factual_qa,hi,12 को 8 से गुणा करने पर कितना होगा?,96,"12 को 8 से गुणा करने पर **96** आता है।
+- **Inputs:** carbon dioxide (CO₂), water (H₂O), sunlight  
+- **Outputs:** glucose (C₆H₁₂O₆) – the plant’s “food” – and oxygen (O₂) as a by‑product  
 
-इसे समझने के कुछ आसान तरीके यहाँ दिए गए हैं:
+### Where it happens
+- **Organelle:** chloroplasts (in plant cells)  
+- **Key compartment:** thylakoid membranes contain the light‑harvesting pigment chlorophyll and the photosynthetic electron transport chain.  
+- **Stroma** (the fluid surrounding thylakoids) houses the enzymes of the Calvin cycle.
 
-*   **स्टैंडर्ड तरीका:**
-    1.  2 x 8 = 16
-    2.  10 x 8 = 80
-    3.  80 + 16 = **96**
+### Two major stages
 
-*   **ब्रेकिंग डाउन मेथड (मानसिक गणित):**
-    1.  12 को 10 + 2 मान लें।
-    2.  10 x 8 = 80
-    3.  2 x 8 = 16
-    4.  दोनों को जोड़ें: 80 + 16 = **96**
+| Stage | Location | Core events |
+|-------|----------|-------------|
+| **Light‑dependent reactions** | Thylakoid membranes | • Photons excite chlorophyll → electrons flow, water is split (photolysis) → O₂ released.<br>• Energy from the electron transport chain generates **ATP** (via chemiosmosis) and **NADPH** (via ferredoxin‑NADP⁺ reductase). |
+| **Calvin‑Benson cycle (light‑independent reactions)** | Stroma | • **Carbon fixation:** CO₂ is attached to ribulose‑1,5‑bisphosphate (RuBP) by the enzyme RuBisCO → 3‑phosphoglycerate (3‑PGA).<br>• **Reduction:** ATP and NADPH from the light reactions convert 3‑PGA into glyceraldehyde‑3‑phosphate (G3P).<br>• **Regeneration:** Some G3P molecules are used to regenerate RuBP, allowing the cycle to continue; the remaining G3P exits the cycle to be used for carbohydrate synthesis (e.g., glucose, starch). |
 
-*   **बार-बार जोड़ना:**
-    12 x 8 का मतलब है 12 को खुद में 8 बार जोड़ना:
-    
-    12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 = **96**",13.484,success,,sarvam-105b,0.0,22,1392,1414
-16,factual_qa,hi,रोमियो और जूलियट नाटक किसने लिखा?,विलियम शेक्सपियर,"*रोमियो एंड जूलियट* नाटक **विलियम शेक्सपियर** ने लिखा था।
+### Why it matters
+1. **Primary production** – Creates the organic material that forms the base of virtually all food webs.  
+2. **Oxygen production** – Supplies the atmospheric O₂ needed for aerobic respiration of most organisms, including humans.  
+3. **Energy flow** – Captures solar energy and stores it in chemical bonds, making it available to heterotrophs via consumption of plants (or plant‑derived products).
 
-यह पश्चिमी साहित्य की सबसे बड़ी और मशहूर त्रासदियों में से एक है। यहाँ इसके बारे में कुछ और जानकारी दी गई है:
+### Key pigments & helpers
+- **Chlorophyll a & b:** Primary light absorbers (peaks in blue ~430 nm and red ~660 nm).  
+- **Accessory pigments:** carotenoids, chlorophyll c, chlorophyll d (in red algae) and phycobilins (in cyanobacteria) expand the range of usable wavelengths.  
+- **Proteins & cofactors:** Photons excite electrons transferred through electron carriers (plastoquinone, plastocyanin), while ATP synthase and NADP⁺ reductase harness the resulting proton gradient and reducing power.
 
-*   **अनुमानित रचना की तारीख:** इसे **1590 के दशक की शुरुआत** के आसपास लिखा गया माना जाता है।
-*   **शैली:** एक क्लासिक ट्रेजेडी, जिसमें ""दो परिवारों दोनों में एक समान सम्मान... सीवेरियस के तार ढीले कर दिए गए"" से लेकर प्यार, किस्मत और जवानी की जल्दबाजी का पता चलता है।
-*   **स्थान:** वेरोना, इटली की सड़कों पर सेट की गई यह कहानी दो दुश्मन परिवारों, मोंटेग्यू और कैपुलेट के बारे में है। इस आपसी झगड़े के बीच, उनके बच्चे—रोमियो और जूलियट—प्यार में पड़ जाते हैं।
-*   **शेक्सपियर के बारे में:** वे एक अंग्रेजी नाटककार, कवि और अभिनेता थे, जिन्हें दुनिया भर में अंग्रेजी भाषा का सबसे महान लेखक और दुनिया के सबसे बेहतरीन नाटककार के रूप में जाना जाता है।
+### Common variations
+| Variant | Key points |
+|--------|------------|
+| **C₃ photosynthesis** (most temperate plants) | Direct fixation of CO₂ by RuBisCO → 3‑PGA. |
+| **C₄ photosynthesis** (tropical grasses, sugarcane) | Initial fixation by phosphoenolpyruvate carboxylase (PEPC) into a four‑carbon compound (oxaloacetate), which is transported to bundle‑sheath cells where CO₂ is released near RuBisCO, minimizing photorespiration. |
+| **CAM photosynthesis** (succulents, cacti) | Stomata open at night to capture CO₂ → stored as malic acid; decarboxylated during the day + closed stomata to conserve water. |
 
-### **संक्षेप में**
+### Quick definition for non‑experts
+> **Photosynthesis** is the plant’s way of “cooking” using sunlight—turning air, water, and light into sugary food while releasing the oxygen we breathe.
 
-*   **नाटककार:** विलियम शेक्सपियर
-*   **शैली:** ट्रेजेडी
-*   **सामान्य कहानी:** दो दुश्मन परिवारों के ""प्यारे"" जो खुदकुशी कर लेते हैं, जिससे आखिरकार उनका परिवार फिर से मिल जाता है।
+So, the simple answer to your question is **photosynthesis**. If you’d like more detail on any particular aspect (e.g., the biochemistry, adaptations, or ecological importance), just let me know!",21.104,success,,sarvam-105b,0.0,23,1247,1270
+7,factual_qa,en,Which is the fastest land animal?,Cheetah,"**The cheetah ( *Acinonyx jubatus* ) is the fastest land animal in terms of pure top speed.**  
 
-इस नाटक की सबसे मशहूर लाइनों में से एक, जो अक्सर गलत समझी जाती है, जूलियट ने कही है:
+| Species | Typical top‑speed (short burst) | Acceleration (0 → 100 km/h) | Notable strengths |
+|---------|--------------------------------|----------------------------|-------------------|
+| **Cheetah** | **100–120 km/h (62–75 mph)** – some sources cite ~112 km/h in the best individuals. | 0–100 km/h in **≈ 3 seconds** (the quickest of any animal). | Extreme acceleration & sprint speed; non‑retractable claws, flexible spine, large heart/lungs, long tail for balance. |
+| **Pronghorn** (*Antilocapra americana*) | 55–62 km/h (34–39 mph) sustained for many miles. | 0–60 km/h in ≈ 5 s (slower than cheetah but can keep it up). | Best at **sustained speed** and endurance over long distances; huge aerobic capacity. |
+| **Quarter horse** | 88 km/h (55 mph) over 400 m (¼ mile). | 0–95 km/h in ≈ 2.5–3 s (very fast). | Power‑focused, ideal for short “quarter‑mile” races. |
+| **Greyhound** | 69 km/h (43 mph) for a few hundred meters. | 0–70 km/h in ≈ 4 s | Long, lean build, low body mass. |
+| **Springbok** (*Antidorcas marsupialis*) | 88 km/h (55 mph) in short bursts. | 0–85 km/h in ≈ 4 s | Known for “pronking” (high jumps) and agility. |
+| **Wildebeest / Thomson’s gazelle** | 80 km/h (50 mph) bursts. | 0–80 km/h in ≈ 4 s | Ability to sustain speed during migrations. |
 
-> ""O Romeo, Romeo! wherefore art thou Romeo?""
+### Why the cheetah tops the list
 
-""wherefore"" शब्द का मतलब ""क्यों"" होता है, न कि ""कहाँ"", और वह खुद से कह रही है, ""तुम वेरोनी होने के नाते क्यों हो...?""",14.141,success,,sarvam-105b,0.0,22,1483,1505
-17,factual_qa,hi,प्रकाश संश्लेषण के दौरान पौधे कौन सी गैस अवशोषित करते हैं?,कार्बन डाइऑक्साइड,"पौधे प्रकाश संश्लेषण (photosynthesis) के दौरान **कार्बन डाइऑक्साइड (CO₂)** नामक गैस को सोख लेते हैं, और इसका इस्तेमाल प्रकाश की ऊर्जा के साथ मिलकर अपना भोजन (ग्लूकोज़) बनाने के लिए करते हैं। इस प्रक्रिया के दौरान, वे ओज़ोन (O₂) भी छोड़ते हैं।",3.405,success,,sarvam-105b,0.0,24,292,316
-18,factual_qa,hi,दुनिया में कितने महाद्वीप हैं?,7,"सात महासागर, एक बातचीत और 5 साल का सस्पेंशन…
+1. **Specialized anatomy**  
+   - **Extremely flexible spine**: The cheetah can fold its spine like a spring, allowing a stride of up to 7 m (23 ft) per step.  
+   - **Non‑retractable claws**: Provide traction akin to cleats, essential for rapid turns and acceleration.  
+   - **Large nasal passages and heart**: Enhance oxygen intake and delivery to muscles.  
+   - **Long, muscular tail**: Acts as a rudder for balance at high speeds.
 
-**वर्ल्ड मीडिया मार्केट पर 7 महाद्वीपों का कॉन्सेप्ट:**
+2. **Physiology**  
+   - **Muscle fiber composition**: Higher percentage of fast‑twitch (type II) fibers for explosive power.  
+   - **Thermoregulation**: Large nasal turbinates, counter‑current heat exchange, and ability to cool via panting.
 
-| महाद्वीप | मुख्य देश/इलाके | खास बातें |
-|----------|------------------------|----------------|
-| **एशिया** | चीन, भारत, जापान | दुनिया की 60% से ज़्यादा आबादी में बसता है; सबसे बड़ा साफ़-साफ़ दिखाई देने वाला ज़मीन का हिस्सा |
-| **अफ्रीका** | मिस्र, नाइजीरिया, दक्षिण अफ्रीका | एकमात्र ऐसा महाद्वीप जो सीधे भूमध्य रेखा पर है; दुनिया के ज़्यादातर खनिज संसाधनों का घर |
-| **उत्तरी अमेरिका** | संयुक्त राज्य अमेरिका, कनाडा, मैक्सिको | सिर्फ उत्तरी अमेरिका के ""हार्ट"" में कुछ ही ""r"" हैं (चाहे आप इसे कैसे भी बोलें) |
-| **दक्षिण अमेरिका** | ब्राज़ील, अर्जेंटीना | अमेज़न नदी का जल-संसाधन पूरी दुनिया में सबसे बड़ा है |
-| **अंटार्कटिका** | कोई नहीं (वैज्ञानिक स्टेशन) | पृथ्वी के दक्षिणी ध्रुव पर स्थित; लगभग पूरी तरह से बर्फ से ढका हुआ, कोई मूल निवासी नहीं |
-| **ऑस्ट्रेलिया / ओशिनिया** | ऑस्ट्रेलिया, न्यूज़ीलैंड, फ़िजी | सबसे छोटा धंसा हुआ महाद्वीप (oceanic continent) माना जाता है क्योंकि यह ठोस ज़मीन के बजाय समुद्र के तल से उठा है |
-| **यूरोप** | जर्मनी, फ़्रांस, इटली | सीमाएं भौगोलिक और सांस्कृतिक रूप से तय हैं |
+3. **Behavioral strategy**  
+   - **Short, high‑intensity hunts**: Cheetahs only sprint for ~20–30 seconds, covering up to 500 m. After a chase, they must rest to avoid overheating.
 
-**शास्त्रीय 7-महाद्वीप मॉडल ऑनलाइन ट्रैफ़िक को क्यों हावी करता है:**
+### “Fastest” can mean different things
 
-- **पाठ्यक्रम का जुड़ाव:** ज़्यादातर स्कूल (खासकर लैटिन अमेरिका, एशिया और मध्य पूर्व में) 7-महाद्वीपों वाली किताबें पढ़ाते हैं।
-- **Google Trends**: ""how many continents"" को सर्च करने पर 95% नतीजे 7-महाद्वीपों वाले मॉडल की ओर इशारा करते हैं।
-- **तार्किक सरलता:** 7 महाद्वीपों को याद रखना आसान है और यह ऐतिहासिक ""Seven Wonders"" की कहानियों (जैसे, सात महासागर, सात दिन) के साथ मेल खाता है।
-- **डेमो ग्राफिक्स**: ज़्यादातर डेटा-विज़ुअलाइज़ेशन टूल (जैसे, यूरोप के लिए रुबिन का महाद्वीप-क्षेत्र रंग) 7-भाग डिज़ाइन पर आधारित होते हैं।
+- **Peak speed (top speed)** – **Cheetah**.  
+- **Speed over distance (sustained speed)** – **Pronghorn**, which can maintain high speeds for many kilometers (farther than any antelope).  
+- **Lightness / agility** – **Springbok** or **greyhound** for rapid direction changes on relatively short tracks.
 
-**अन्य विचार और उनके अलग-अलग हिसाब:**
+### Quick FAQs
 
-| महाद्वीप मॉडल | कारण | कुछ क्षेत्रों में लोकप्रियता |
-|----------------|----------|------------------------------|
-| **6-महाद्वीप** (Eur-Asia या Americas) | भौगोलिक जुड़ाव पर ज़ोर देता है (यूरेशिया एक ही ज़मीन है, अमेरिका एक ही महाद्वीप है) | यूरोप, रूस, अमेरिका के कुछ हिस्से |
-| **5-महाद्वीप** (केवल महासागर वाले ""ऑस्ट्रेलिया"" का मॉडल) | ""महाद्वीपों"" पर नहीं बल्कि ""ग्राउंड-कवर"" पर ज़ोर देता है | पूर्वी एशिया (कुछ किताबें) |
-| **4-महाद्वीप** (बहुत ही सरल) | ध्रुवीय बनाम भूमध्यरेखीय क्षेत्रों पर केंद्रित | अत्यंत शैक्षिक, दुर्लभ |
-| **8-महाद्वीप** (Antarctica + Arctic/Oceania अलग) | ""ऑशनिक"" (समुद्री) महाद्वीप को एक अलग महाद्वीप मानता है | कुछ समुद्री-विज्ञान मॉडलों में इस्तेमाल होता है |
-
-**डेटा से पता चलता है कि ज़्यादातर लोग 7-महाद्वीप वाले मॉडल का समर्थन करते हैं:**
-- **2023 ग्लोबल सिटिज़न सर्वे** (10,000 लोगों पर) → 87.4% ने ""सात"" कहा।
-- **यूट्यूब कमेंट ट्रेंड्स** → ""seven continent model"" से जुड़े ज़्यादातर वीडियो पर बिना किसी विवाद के ""7"" टोकन दिखाई देता है।
-- **NAैक (नॉर्थ अमेरिकन एसोसिएशन ऑफ़ कॉलेजेस एंड यूनिवर्सिटीज़) 2022** के छात्रों की एग्ज़ाम रिव्यू → 77.6% ने 7 को सही बताया।
-
-**मुख्य बात:**  
-> **दुनिया में ज़्यादातर लोगों की आम परिभाषा के अनुसार कुल सात महाद्वीप हैं: अफ्रीका, अंटार्कटिका, एशिया, यूरोप, उत्तरी अमेरिका, ऑस्ट्रेलिया/ओशिनिया, और दक्षिण अमेरिका।**
-
-अगर आपको देखें कि वेब ब्राउज़ करते समय आपको अलग-अलग नंबर क्यों दिखते हैं, तो यह लगभग हमेशा आपके ब्राउज़र सेटिंग्स के **क्षेत्रीय पोर्टल** (जैसे, भारतीय बनाम यूरोपीय होमपेज) और **उस व्यक्ति की सांस्कृतिक/शैक्षिक पृष्ठभूमि** पर निर्भर करता है जिसने वह सामग्री बनाई है। संक्षेप में, **7 ही असली आंकड़े हैं** जब आप दुनिया भर में ""महाद्वीप"" के बारे में सर्च करते हैं।",16.605,success,,sarvam-105b,0.0,17,1235,1252
-19,factual_qa,hi,समुद्र तल पर पानी का क्वथनांक कितने डिग्री सेल्सियस होता है?,100 डिग्री सेल्सियस,"समुद्र तल पर, जहाँ वायुमंडलीय दबाव **1 atm** (≈101.325 kPa) होता है, शुद्ध पानी **100 °C** (212 °F) पर उबलता है। यह वह तापमान है जिस पर पानी का वाष्प दबाव बाहरी दबाव के बराबर हो जाता है।",3.955,success,,sarvam-105b,0.0,25,318,343
-20,factual_qa,hi,काले और सफेद कुंजियों वाला सामान्य वाद्य यंत्र कौन सा है?,पियानो,"क्लासिक जवाब है **पियानो** – और, आजकल के हिसाब से कहें तो, कोई भी कीबोर्ड इंस्ट्रूमेंट।  
-पियानो, पाइप ऑर्गन, हार्पसीकॉर्ड, क्लैवीकॉर्ड और आधुनिक इलेक्ट्रॉनिक कीबोर्ड सभी कीज़ की दो-टोन वाली ""चेसबोर्ड"" लुक में ब्लैक एंड व्हाइट कीज़ (key pattern) होते हैं।  
-
-इसलिए जब लोग किसी ऐसे इंस्ट्रूमेंट के बारे में बात करते हैं जिसमें कीज़ होती हैं और वे काले और सफेद रंग की होती हैं, तो सबसे आम उदाहरण एक **पियानो** का ही होता है।",4.008,success,,sarvam-105b,0.0,26,301,327
-21,factual_qa,ta,இந்தியாவின் தலைநகர் எது?,புது தில்லி,"இந்தியாவின் தலைநகரம் **புது தில்லி**.
-
-தைரியமாகவும் தெளிவாகவும் சொல்வதென்றால்:
-*   **புது தில்லி** என்பது இந்திய அரசாங்கத்தின் அதிகாரப்பூர்வ தலைநகரம், மேலும் இது தேசிய தலைநகரப் பகுதி (NCT) தில்லியின் ஒரு சிறப்பு மாவட்டம் ஆகும். இதுதான் அதை வித்தியாசமாக்குகிறது.
-*   பெரும்பாலான மக்கள் தலைநகரைக் குறிக்க ""தில்லி"" என்ற வார்த்தையைத்தான் அடிக்கடி பயன்படுத்துவார்கள், ஆனால் நிர்வாகம் மற்றும் ஆட்சி அதிகாரப்பூர்வமாக **புது தில்லியில்** தான் இருக்கின்றன.
-
-**இதில் உள்ள வித்தியாசம் என்ன?**
-*   **புது தில்லி** என்பது 20-ஆம் நூற்றாண்டின் தொடக்கத்தில் பிரிட்டிஷ் ஆட்சிக்காக உருவாக்கப்பட்ட ஒரு திட்டமிடப்பட்ட நகரம், மேலும் இது இந்தியாவின் சுதந்திரத்திற்குப் பிறகும் அப்படியே தொடர்ந்தது. இங்குதான் அரசின் முக்கிய இடங்கள் உள்ளன, அவற்றில் சில:
-    *   **நாடாளுமன்ற அவைகள்:** நாடாளுமன்றம் (மக்களவை மற்றும் மாநிலங்களவை)
-    *   **கவர்னர் மாளிகை:** ராஜ்பவனின் (Rashtrapati Bhavan) அதிகாரப்பூர்வ இல்லம்
-    *   **இந்திய அரசாங்கத்தின் அமைச்சகங்கள்:** சவுத் பிளாக் மற்றும் நார்த் பிளாக் போன்ற கட்டிடங்களில் இங்குதான் பல அமைச்சகங்கள் உள்ளன.
-    *   **உச்ச நீதிமன்றம்:** இந்தியாவின் உயர்ந்த நீதித்துறை அமைப்பு.
-
-*   **தேசிய தலைநகரப் பகுதி (NCT) தில்லி** என்பது ஒரு பரந்த நிர்வாக அமைப்பு. இதில் புது தில்லி என்ற மாவட்டம், பல நூற்றாண்டுகள் பழமையான **பழைய தில்லி** (அதிகாரப்பூர்வமாக ஷாஜஹானாபாத் என அழைக்கப்படுகிறது), மற்றும் அதைச் சுற்றியுள்ள பகுதிகளும் அடங்கும்.
-
-சுருக்கமாகச் சொன்னால், இன்னும் தெளிவாகச் சொல்வதென்றால், **புது தில்லி** என்பது தலைநகராக இருந்து அரசாங்கத்தின் நாடாளுமன்றம், நிர்வாக மற்றும் நீதித்துறை அமைப்புகளைக் கொண்ட நகரம், அதே சமயம் **தில்லி** என்பது அந்த நகரம் அமைந்துள்ள முழுப் பகுதியையும் குறிக்கும்.",22.689,success,,sarvam-105b,0.0,16,1972,1988
-22,factual_qa,ta,ஒரு லீப் ஆண்டில் எத்தனை நாட்கள் உள்ளன?,366,"ஒரு லீப் வருஷத்துல **366** நாட்கள் இருக்கும்.
-
-இது ஒரு சாதாரண வருஷத்தை (365 நாட்கள் கொண்ட) விட ஒரு நாள் அதிகம். இந்த கூடுதல் நாள் பிப்ரவரி மாதத்தோட கடைசியில வரும்.
-
-எனவே, பிப்ரவரி 29-ம் தேதியை நாம் அடிக்கடி ""லீப் டே"" (leap day) என்று சொல்வோம்.",8.146,success,,sarvam-105b,0.0,19,661,680
-23,factual_qa,ta,சிவப்பு கிரகம் என்று அழைக்கப்படும் கிரகம் எது?,செவ்வாய்,"""ரெட் பிளானட்"" என்ற பட்டப்பெயர் **மார்ஸ்**-க்கு உண்டு. அதோட மேற்பரப்புல நிறைய இரும்பு ஆக்சைடு (i) இருக்கு, அது துருப்பிடிச்சு அந்த கிரகம் சிவப்பா தெரியுது.",2.742,success,,sarvam-105b,0.0,21,217,238
-24,factual_qa,ta,பூமியின் மிகப்பெரிய பெருங்கடல் எது?,பசிபிக் பெருங்கடல்,"பூமியின் மிகப்பெரிய அங்கமான **பசிபிக் பெருங்கடல்** ஆகும்.
-
-இதன் பிரம்மாண்டம் என்னவென்றால், இது மிகவும் பெரிதாக இருப்பதால், இன்னொரு கடல் ""டான் ஜாக் சீ"" (Don Juan's Sea) என்று ஒரு சாதாரண நதியில் இருந்து கண்டுபிடிக்கப்பட்டது. இதைத் தவிர, இங்கு பதிவு செய்யப்பட்ட மிக ஆழமான இடமும், அனைத்து பழங்கால பெருங்கடல்களும் போதுமான அளவு இதில் அடங்கும்.
-
-### பசிபிக் பெருங்கடல் ஏன் இவ்வளவு பிரம்மாண்டமானது
-
-ஒப்பிட்டளவில், பூமியின் மிகப்பெரிய பெருங்கடல்கள்:
-
-*   **பசிபிக் பெருங்கடல்:** **63.8 மில்லியன் சதுர மைல்கள் (165.2 மில்லியன் km²)**
-*   **அட்லாண்டிக் பெருங்கடல்:** 41.1 மில்லியன் சதுர மைல்கள் (106.4 மில்லியன் km²)
-*   **இந்தியப் பெருங்கடல்:** 28.4 மில்லியன் சதுர மைல்கள் (73.4 மில்லியன் km²)
-*   **தெற்கு (அண்டார்டிக்) பெருங்கடல்:** 7.8 மில்லியன் சதுர மைல்கள் (20 மில்லியன் km²)
-*   **ஆர்க்டிக் பெருங்கடல்:** 5.4 மில்லியன் சதுர மைல்கள் (14 மில்லியன் km²)
-
-பசிபிக் பெருங்கடல் இதை விட சுமார் **50% பெரியது**, மேலும் ஆழமும் கொண்டது.
-
-**சரியான புள்ளிவிவரங்கள்:**
-
-*   **பரப்பளவு:** 165.2 மில்லியன் சதுர கிலோமீட்டர் (63.8 மில்லியன் சதுர மைல்)
-*   **கொள்ளளவு:** 714 மில்லியன் கன கிலோமீட்டர் (173 மில்லியன் கன மைல்)
-*   **மிகப்பெரிய ஆழம்:** **மரியானா ட்ரெஞ்ச்**-ல் 11,034 மீட்டர் (அல்லது 36,200 அடி)
-
-### பசிபிக் பெருங்கடலின் சுவாரஸ்யமான உண்மைகள்
-
-*   **பழைய புவி:** இதுதான் செழிப்பான கடல் உயிரினங்களை விட பழையதானது.
-*   **பெயரின் அர்த்தம்:** ""பசிபிக்"" என்ற லத்தீன் வார்த்தையான *பசிஃபிகஸ்* (pacificus) என்றால் ""அமைதியானது"" என்று பொருள். இது ஸ்பானிஷ் வெற்றியாளர் மாகெல்லனால் (Magellan) பெயரிடப்பட்டது, அவர் கடலின் அமைதியான தோற்றத்தால் ஆச்சரியப்பட்டார் (இது அவசியத்தால் ஒரு கட்டாயப்படுத்தப்பட்ட அமைதியாக இருந்தது).
-*   **எல்லா பெருங்கடல்களையும் உள்ளடக்கியது:** பசிபிக் பெருங்கடலின் படுகை மிகவும் பெரியது என்பதால், அட்லாண்டிக் பெருங்கடல், இந்தியப் பெருங்கடல் மற்றும் தெற்குப் பெருங்கடல் (அண்டார்டிக் பெருங்கடல்) ஆகியவை கொள்கையளவில், இதன் வெளிப்புறத்தில் ஒன்றாகப் பொருந்தும்.
-*   **அளவு:** இது வடக்கே ஆர்க்டிக் பெருங்கடல் வரை நீண்டுள்ளது மற்றும் தெற்கே அண்டார்டிகாவை அடைகிறது. ஒன்றோடொன்று இணைக்கப்பட்ட பசிபிக் பெருங்கடல் தான் பூமியில் உள்ள அனைத்து நிலப்பரப்புகளையும் விட பெரியது.
-*   **ஆழமான புள்ளி:** சிறந்த அழுத்தத்தை அளவிடும் இடம் மரியானா ட்ரெஞ்ச்சில் உள்ள **சேலஞ்சர் டீப்** (Challenger Deep) ஆகும்.
-
-சுருக்கமாகச் சொன்னால், பசிபிக் பெருங்கடல் தண்ணீர் நிரம்பிய ஒரு பெரிய இடம் மட்டுமல்ல; இது ஒரு மிகப்பெரிய, சக்தியால் இயங்கும் சுற்றுச்சூழல் அமைப்பு, இது பூமியின் மேற்பரப்பில் கிட்டத்தட்ட பாதிப் பகுதியை உள்ளடக்கியுள்ளது.",22.862,success,,sarvam-105b,0.0,19,1971,1990
-25,factual_qa,ta,12 ஐ 8 ஆல் பெருக்கினால் என்ன?,96,"\(12 \times 8 = 96\).  
-
-(நீங்கள் இதைப் பிரித்துப் பார்த்தால்: \(10 \times 8 = 80\) மற்றும் \(2 \times 8 = 16\); இவற்றைச் சேர்த்தால் \(80 + 16 = 96\) கிடைக்கும்.)",2.435,success,,sarvam-105b,0.0,21,212,233
-26,translation,en,Translate into Hindi: The sun rises in the east.,सूर्य पूर्व में उगता है।,,23.379,success,,sarvam-105b,0.0,21,2048,2069
-27,translation,hi,Translate into English: भारत एक विविध देश है।,India is a diverse country.,भारत एक विविध देश है।,2.72,success,,sarvam-105b,0.0,20,247,267
-28,translation,en,Translate into Tamil: Education can change lives.,கல்வி வாழ்க்கையை மாற்ற முடியும்.,,24.223,success,,sarvam-105b,0.0,19,2048,2067
-29,translation,ta,Translate into English: சென்னை தமிழ்நாட்டின் தலைநகரம்.,Chennai is the capital of Tamil Nadu.,Chennai is the capital of Tamil Nadu.,14.039,success,,sarvam-105b,0.0,21,1186,1207
-30,translation,en,Translate into Hindi: Water is essential for life.,पानी जीवन के लिए आवश्यक है।,"यहाँ ""Water is essential for life"" के कुछ अनुवाद दिए गए हैं, जिनमें से हर एक का अपना थोड़ा अलग मतलब या अंदाज़ है।
-
-### 1. सबसे आम और सीधा अनुवाद
-
-यह रोज़मर्रा की बोलचाल में सबसे ज़्यादा इस्तेमाल होने वाला हल्का और सटीक अनुवाद है।
-
-> **पानी जीवन के लिए ज़रूरी है।**
-> *(Paani jeevan ke liye zaroori hai.)*
-
-*   **पानी (Paani)**: पानी
-*   **जीवन के लिए (Jeevan ke liye)**: के लिए (for)
-*   **ज़रूरी है (Zaroori hai)**: ज़रूरी है / बहुत ज़रूरी है
+| Question | Answer |
+|----------|--------|
+| *What is the fastest land animal on Earth?* | Cheeta – up to ~120 km/h (75 mph) in a sprint. |
+| *Can a human out‑run a cheetah?* | Yes, over long distances. A human can sustain ~20 km/h (12 mph) for hours; a cheetah can only maintain top speed for <30 seconds. |
+| *How fast is a cheetah’s acceleration?* | 0–100 km/h in about 3 seconds (roughly three times faster than a sports car of similar mass). |
+| *What about birds?* | The **peregrine falcon** is the fastest animal overall (≈ 389 km/h in a dive), but it’s not a land animal. |
+| *Do any mammals exceed the cheetah on short bursts?* | No; the cheetah’s combination of speed and acceleration remains unmatched among mammals on solid ground. |
 
 ---
 
-### 2. मशहूर कहावत / नारा
+**Bottom line:** If you’re looking for the animal that can hit the highest top speed and accelerate the quickest on land, the **cheetah** is the undisputed champion. For endurance‑oriented speed, the **pronghorn** takes the prize.",31.7093,success,,sarvam-105b,0.0,17,1763,1780
+8,factual_qa,en,What is the square root of 144?,12,"The principal (non‑negative) square root of 144 is **12**.  
+(There is also a negative square root, –12, because (–12)² = 144.)",3.3164,success,,sarvam-105b,0.0,21,132,153
+9,factual_qa,en,Which continent is Egypt located in?,Africa,"Egypt is a **transcontinental** country: it straddles two continents.
 
-यह एक मुहावरेदार और प्रभावशाली तरीका है जो पूरे विचार को बहुत अच्छे से समझाता है। यह भारत में एक बहुत ही लोकप्रिय नारा है।
+- **Mainland Egypt** (the Nile Valley, Cairo, the Red Sea coast, and the rest of the country east of the Suez Canal) lies on the **African** side.
+- The **Sinai Peninsula**, which includes the Gulf of Suez and the city of Sharm El‑Sheikh, is part of **Asia**.
 
-> **जल ही जीवन है।**
-> *(Jal hi jeevan hai.)*
+So, while most of Egypt’s landmass and population are in **Africa**, the Sinai gives Egypt a small but significant Asian foothold. For most geographic and political references, Egypt is treated as an African nation, though it’s also often discussed in Middle‑Eastern (Asian) contexts because of its Sinai region and its cultural ties to the Arab world.",9.6345,success,,sarvam-105b,0.0,17,580,597
+10,factual_qa,hi,भारत का राष्ट्रीय पशु कौन सा है?,बाघ,"भारत का राष्ट्रीय पशु **बंगाल टाइगर** (*Panthera tigris tigris*) है।
 
-*   **जल (Jal)**: पानी (एक ज़्यादा औपचारिक, संस्कृत-मूल का शब्द)
-*   **ही (hi)**: ही / स्वयं (ज़ोर देने के लिए इस्तेमाल होता है, ""आह, यही है!"")
-*   **जीवन है (Jeevan hai)**: जीवन है
+इसे इस सम्मान के लिए इनमें से कई खास गुणों की वजह से चुना गया था:
+*   **ताकत और बहादुरी:** बँधुआर बाघ बहुत ताकतवर और निडर होता है।
+*   **शालीनता और खूबसूरती:** अपनी ताकत के साथ-साथ यह एक बहुत ही सुंदर और सुंदर जानवर भी है।
+*   **खासियत:** यह अनोखी प्रजाति मुख्य रूप से भारत और पड़ोसी देशों में पाई जाती है, जो इसे भारतीय प्राकृतिक विरासत का एक मजबूत प्रतीक बनाती है।
 
-इसका मतलब है ""होता है, पानी ही जीवन है,"" जिसे अक्सर ""जल ही जीवन है"" कहा जाता है और इसका मतलब है कि पानी सिर्फ ज़रूरी ही नहीं है, बल्कि यह अपने आप में जीवन का मूल है।
+बाघ को औपचारिक रूप से **1973** में राष्ट्रीय पशु घोषित किया गया था। दिलचस्प बात यह है कि उसी साल भारतीय सरकार ने लुप्तप्राय प्रजाति को बचाने के लिए भारत में प्रोजेक्ट टाइगर नामक एक बड़ा संरक्षण कार्यक्रम शुरू किया था। आज, रजवाड़े के बाद भारत में बाघों की आबादी सबसे ज्यादा है।",16.4933,success,,sarvam-105b,0.0,18,1135,1153
+11,factual_qa,hi,एक सप्ताह में कितने दिन होते हैं?,7,"एक सप्ताह में **7 दिन** होते हैं:
+
+- सोमवार  
+- मंगलवार  
+- बुधवार  
+- गुरुवार  
+- शुक्रवार  
+- शनिवार  
+- रविवार",5.9247,success,,sarvam-105b,0.0,18,279,297
+12,factual_qa,hi,पानी का रासायनिक सूत्र क्या है?,H₂O,"पानी का केमिकल फॉर्मूला **H₂O** है।  
+इसका मतलब है कि हर पानी के मॉलिक्यूल में ये होते हैं:
+
+- **2 हाइड्रोजन एटम्स** (H)  
+- **1 ऑक्सीजन एटम** (O)  
+
+सिस्टर का फॉर्मूला हाफ-स्ट्रक्चर H–O–H बताता है, जिसमें ऑक्सीजन एटम दोनों हाइड्रोजन एटम्स के साथ जुड़ा होता है।  
+
+(प्योर पानी का मोलर मास लगभग 18.015 g mol⁻¹ होता है। इसके आइसोटोपिक रूप में जहाँ ऑक्सीजन-18 होता है – H₂¹⁸O – या ड्यूटेरियम (ड्यूटेरियम, D) होता है – D₂O, जिसे ""हैवी वाटर"" कहते हैं।)",4.8702,success,,sarvam-105b,0.0,17,323,340
+13,factual_qa,hi,सूर्य के सबसे निकट कौन सा ग्रह है?,बुध,"सूर्य का सबसे नज़दीकी ग्रह **बुध (Mercury)** है।
+
+- **औसत दूरी:** इसकी कक्षा का लगभग 0.39 AU (≈ 57.9 मिलियन किमी)।  
+- **कक्षा (Orbit):** यह सूरज को लगभग हर 88 दिनों में एक बार चक्कर लगाता है, और हमारी धरती की तुलना में बहुत तेज़ी से घूमता है।  
+- **कुछ खास बातें:** बुध हमारे सौरमंडल का सबसे छोटा ग्रह है, इसकी सतह पर बहुत ज़्यादा तापमान का अंतर होता है (दिन के समय 430 °C तक, रात में –180 °C तक), और यहाँ का वायुमंडल बहुत ही कमज़ोर है।
+
+इसलिए, बुध सूरज के ""सबसे करीब"" रहने वाला ग्रह है।",5.3271,success,,sarvam-105b,0.0,19,344,363
+14,factual_qa,hi,इंद्रधनुष में कितने रंग होते हैं?,7,"इंद्रधनुष किसी एक फिक्स सेट तक सीमित नहीं होता – इसकी रोशनी एक **कंटीन्यूअस स्पेक्ट्रम** (continuous spectrum) है, जिसमें कोई भी दो रंग आपस में ब्लेंड हो जाते हैं। लेकिन, हम अक्सर उस स्पेक्ट्रम को **सात अलग-अलग हिस्सों** में बांट देते हैं, जीस बात को न्यूटन ने मशहूर किया था और आज के समय में कलर-ह्यू डायग्राम में यही स्टैंडर्ड सिखाया जाता है:
+
+1. **लाल (Red)**
+2. **नारंगी (Orange)**
+3. **पीला (Yellow)**
+4. **हरा (Green)**
+5. **नीला (Blue)**
+6. **इंडिगो (Indigo)** – एक छोटा सा बैंड जो नीले और बैंगनी के बीच आता है
+7. **बैंगनी (Violet)**
+
+(indigo)
+इसलिए, हालांकि फिजिक्स के हिसाब से इसके रंग अनगिनत हैं, लेकिन इस कंटीन्यूअस स्केल को *represent* करने के लिए **सात** नंबर सबसे ज्यादा इस्तेमाल किए जाते हैं।
+
+*नोट*: कुछ मॉडर्न तरीके indigo को नीला ही मान लेते हैं या उसे छोड़ देते हैं, और फिर 6 मुख्य नाम (ROYGB) बचते हैं। फिर भी, आम तौर पर सात (ROYGBIV) नंबर ही याद रखा जाता है।",6.7866,success,,sarvam-105b,0.0,21,462,483
+15,factual_qa,hi,भारत में स्वतंत्रता दिवस कब मनाया जाता है?,15 अगस्त,"भारत का स्वतंत्रता दिवस हर साल **15 अगस्त** को मनाया जाता है।
+
+भारत अपना स्वतंत्रता दिवस **1947** में इसी दिन मनाता है। यह दिन भारत और पाकिस्तान की यूनाइटेड किंगडम से आज़ादी (स्वतंत्रता) मिलने की सालगिरह है।
+
+1947 तक, भारत पर लगभग दो सदियों तक ब्रिटिश औपनिवेशिक शासन रहा। महात्मा गांधी, जवाहरलाल नेहरू और सरदार वल्लभभाई पटेल जैसे नेताओं की अगुवाई में लंबे और संघर्षपूर्ण भारत छोड़ो आंदोलन ने अंततः भारत को आज़ादी दिलाई।
+
+**15 अगस्त को मनाए जाने वाले कुछ मुख्य कार्यक्रम इस प्रकार हैं:**
+
+*   **राष्ट्रीय कार्यक्रम:** नई दिल्ली के ऐतिहासिक लाल किले में भारत के प्रधानमंत्री राष्ट्रीय ध्वज फहराते हैं और पूरे देश के नाम भाषण देते हैं।
+*   **देश भर में जश्न:** इस दिन पूरे देश में राष्ट्रीय अवकाश होता है। राज्य की राजधानियों में मुख्यमंत्री झंडा फहराते हैं। स्कूल, कॉलेज और सरकारी कार्यालय समारोह आयोजित करते हैं जहाँ झंडा फहराया जाता है, सांस्कृतिक कार्यक्रम प्रस्तुत किए जाते हैं, और छात्रों व नागरिकों को भाषण दिए जाते हैं।
+*   **परेड:** पूरे देश में, विशेष रूप से स्कूलों में, परेड निकाली जाती हैं।
+*   **देशभक्ति की बहुत सी गतिविधियाँ:** लोग भारत का झंडा लगाकर, देशभक्ति के कार्यक्रम देखकर, और ""वंदे मातरम"" (राष्ट्रगान) गाकर अपनी देशभक्ति दिखाते हैं।
+
+**भारतीय झंडा**, तिरंगा, सबसे आगे रहता है, जिसके तीन रंग हैं:
+*   **केसरिया (Saffron):** ताकत और साहस का प्रतीक।
+*   **सफेद (White):** शांति और सच्चाई का प्रतीक।
+*   **हरा (Green):** विश्वास, उर्वरता और समृद्धि का प्रतीक।
+
+इसके बीच में अशोक चक्र है, जो धार्मिकता को दर्शाता है, और यह लोकतंत्र में प्रगति का प्रतीक है।",18.5422,success,,sarvam-105b,0.0,19,1293,1312
+16,factual_qa,hi,मानव शरीर में सामान्यतः कितने फेफड़े होते हैं?,2,"ज़्यादातर इंसानों में **दो फेफड़े** होते हैं—एक बायां और एक दायां।  
+
+- **दायां फेफड़ा** थोड़ा बड़ा होता है और इसके तीन लोब (ऊपरी, बीचला और निचला) होते हैं।  
+- **बायां फेफड़ा** थोड़ा छोटा होता है, जिसमें आमतौर पर दो लोब (ऊपरी और निचला) हों, क्योंकि छाती के बीच में दिल की जगह के लिए थोड़ी जगह चाहिए होती है।  
+
+*(कुछ लोग जन्म से ही सिर्फ एक फेफड़े के साथ पैदा होते हैं, या सर्जिकल तरीके से उन्हें एक हटाना पड़ सकता है, लेकिन इंसान के लिए यह सामान्य और सामान्य नियम दो फेफड़ों का ही है।)*",5.777,success,,sarvam-105b,0.0,23,371,394
+17,factual_qa,hi,पृथ्वी का एकमात्र प्राकृतिक उपग्रह कौन सा है?,चंद्रमा,"पृथ्वी का इकलौता प्राकृतिक उपग्रह **Moon** (जिसे **Luna** भी कहा जाता है) है। यह पृथ्वी के चारों ओर लगभग 384,400 किमी की दूरी पर चक्कर लगाता है, लगभग 27.3 दिनों में अपना एक चक्कर पूरा करता है, और यह उन कारणों में से एक है जिनकी वजह से हमारे यहाँ ज्वार-भाटा (tides) आते हैं। बृहस्पति (Jupiter), शनि (Saturn), और अन्य ग्रहों के कई उपग्रहों के विपरीत, इस सिस्टम में पृथ्वी का सिर्फ एक ही स्थायी प्राकृतिक उपग्रह है। (बाकी ""चंद्रमा"" कृत्रिम हैं—हमारे अपने बनाए गए स्पेसक्राफ्ट जो पृथ्वी पर या उसके आस-पास परिक्रमा करते हैं।)",6.5618,success,,sarvam-105b,0.0,20,449,469
+18,factual_qa,ta,தமிழ்நாட்டின் தலைநகர் எது?,சென்னை,"தமிழ்நாட்டின் தலைநகரம் **சென்னை**.
+
+முன்பு **மதுரை** என்று அழைக்கப்பட்ட இது, மாநிலத்தின் மிகப்பெரிய நகரமாக, அதன் கலாச்சாரம் DumpCandidates, பொருளாதாரம் மற்றும் தொழில்துறையின் முக்கிய மையமாகவும் விளங்குகிறது. ஜார்ஜியா கண்டத்தில் வங்காள விரிகுடா கடலோரத்தில் அமைந்துள்ள இது, தமிழ்நாளின அரசியல், நிர்வாக மற்றும் பொருளாதார மையமாகத் தொடர்ந்து செயல்பட்டு வருகிறது.",14.7627,success,,sarvam-105b,0.0,17,1018,1035
+19,factual_qa,ta,ஒரு மணிநேரத்தில் எத்தனை நிமிடங்கள் உள்ளன?,60,"ஒரு மணி நேரத்துல **60** நிமிஷம் இருக்கு.
+
+சமன்பாட்டு முறையில சொல்லணும்னா:
+
+*   **1 மணி நேரம் = 60 நிமிஷம்**
+*   **1 நிமிஷம் = 60 வினாடிகள்**",14.5317,success,,sarvam-105b,0.0,18,1038,1056
+20,factual_qa,ta,சூரிய குடும்பத்தில் மிகப்பெரிய கிரகம் எது?,வியாழன்,"நமது சூரியக் குடும்பத்தில் உள்ள மிகப்ப பெரிய கோள் **Jupiter** (வியாழன்).
+
+இது ஒரு கேஸ் ஜெயண்ட் (gas giant). மற்ற எல்லா கோள்களின் மொத்த எடையை விட இரண்டு மடங்குக்கும் அதிகமான எடையை இது கொண்டுள்ளது. இதன் அளவை இன்னும் கொஞ்சம் விரிவாகப் பார்ப்போம்:
+
+*   **Mass (நிறை):** சுமார் 1.898 x 10²⁷ கிலோகிராம்.
+*   **Diameter (விட்டம்):** சுமார் 139,820 கி.மீ (86,881 மைல்).
+*   **Volume (கொள்ளளவு):** பூமி, ஷனி, யுரேனஸ் மற்றும் நெப்டியூன் ஆகிய அனைத்தையும் உள்ளடக்கிய ஒரு கோள்களின் குடும்பத்தை உள்ளே வைக்கும் அளவுக்கு இதன் கொள்ளளவு பெரியது.
+
+இதை இன்னும் கொஞ்சம் புரிந்துகொள்ள:
+
+*   **Jupiter-க்குள் சுமார் 1,300 பூமி கிரகங்களை** நீங்கள் ஒன்றன் மேல் ஒன்றாகப் பொருத்த முடியும்.
+*   நீங்கள் **Jupiter பந்துக்கும்** பூமியின் அளவுள்ள பந்துக்கும் இடையில் தேர்ந்தெடுக்க வேண்டும் என்றால், வேறு எந்த யோசனையும் இல்லாமல் நீங்கள் Jupiter-ஐத் தான் தேர்ந்தெடுக்க வேண்டும், ஏனென்றால் மற்ற அனைத்து பூமி அளவிலான கிரகங்களையும் உள்ளடக்கிய ஒரு பந்தாகத் தான் அதைப் பார்க்க வேண்டும்.
+
+**Jupiter-இன் சில முக்கிய அம்சங்கள்:**
+
+*   **அமைதியான மேற்பரப்பு இல்லை:** இது ஒரு கேஸ் ஜெயண்ட். இதன் கண்ணுக்குத் தெரியும் முழுவதும் வாயுக்களால் ஆனது. இது ஒருவேளை ஆழமான பாறை மையத்தைக் கொண்டிருக்கலாம் என்றாலும், அதைப் போல செயல்படக்கூடிய உண்மையான திட மேற்பரப்பு இதற்கு இல்லை.
+*   **அதிர்ச்சியூட்டும் நிலவுகள்:** இதன் ""நிலவுகள்"" கிரகத்திற்கு ஏன் முக்கியமானவை என்ற தலைப்புக்கு இணையாக இருக்கின்றன. Jupiter-க்கு **95 அறியப்பட்ட நிலவுகள்** உள்ளன, இதில் மிகப்பெரிய நான்கு நிலவுகள் (Io, Europa, Ganymede, மற்றும் Callisto) Galileo Galilei என்பவரால் கண்டுபிடிக்கப்பட்டன.
+*   **அந்த வீரியம்:** Jupiter-இன் மாபெரும் ஈர்ப்பு விசை, சிறுகோள் பட்டைக்கு (asteroid belt) இடையில் ஹைட்ரஜன் மற்றும் ஹீலியம் வாயு மேகங்களைச் சேருவதைத் தடுத்து, அதன் தற்போதைய அமைப்பைப் பராமரிக்க உதவியிருக்கலாம்.
+*   **மெல்லிய வளையங்கள்:** பலரும் ஷனியைப் பற்றி நினைத்தாலும், Jupiter-க்கும் மிகவும் மெல்லிய, மங்கலான வளைய அமைப்பு உள்ளது, அதை 1979-இல் Voyager 1 விண்கலத்தால் கண்டுபிடிக்கப்பட்டது.",25.9491,success,,sarvam-105b,0.0,19,1817,1836
+21,factual_qa,ta,தண்ணீரின் வேதியியல் வாய்ப்பாடு என்ன?,H₂O,தண்ணீருக்கான கெமிக்கல் ஃபார்முலா **H₂O** (பொதுவாக H2O என்று ஒரு சாதாரண டெக்ஸ்ட் இடத்தில் எழுதப்படும்). இது ஒரு ஆக்ஸிஜன் ஆட்டமின் கோவலன்ட் பாண்டில் கோவலன்ட் முறையில் இணைந்துள்ள இரண்டு ஹைட்ரஜன் ஆட்டம்களைக் குறிக்கிறது. பல நேரங்களில் இதை **டைஹைட்ரஜன் மோனாக்சைடு** என்ற பெயராலும் அழைப்பார்கள்.,5.516,success,,sarvam-105b,0.0,21,317,338
+22,factual_qa,ta,மனித உடலில் இரத்தத்தை பம்ப் செய்யும் உறுப்பு எது?,இதயம்,"மனித உடலில Blood-ஐ பம்ப் பண்றதுக்கு காரணமான **உறுப்பு heart** தான்.
+
+### முக்கிய தகவல்கள்
+| அம்சம் | விவரங்கள் |
+|--------|----------|
+| **வகை** | Myocardium (இதயத் தசைகள்) உருவாக்கும் ஒரு தசை உறுப்பு. |
+| **அமைப்பு** | நான்கு அறைகள்: <br>• **Right atrium** – deoxygenated blood-ஐ வாங்குகிறது <br>• **Right ventricle** – oxygenation-க்காக lungs-க்கு blood-ஐ பம்ப் செய்கிறது <br>• **Left atrium** – lungs-ல இருந்து oxygenated blood-ஐ வாங்குகிறது <br>• **Left ventricle** – உடல் முழுவதும் oxygenated blood-ஐ பம்ப் செய்கிறது |
+| **செயல்பாடு** | Blood-ஐ இருமுறை pump செய்கிறது: pulmonary circuit (raktham → lungs → raktham) மற்றும் systemic circuit (raktham → உடல் → raktham). |
+| **அளவு மற்றும் எடை** | பெரியவர்களிடம்: சுமார் 250–350 g (≈9–12 oz) மற்றும் ஒவ்வொரு கணத்திலும் 5–7 L del blood-ஐ பம்ப் செய்யும் அளவு கொண்டது. |
+| **Pump செய்யும் செயல்பாடு** | **Diastole** (தளர்வு) மற்றும் **systole** (சுருக்கம்) என்ற இந்த தாளமான சுழற்சி, வலது atrium-ல இருந்து left ventricle-க்கு blood பாய்வதற்கு ஒரு pressure gradient-ஐ உருவாக்குகிறது. |
+| **கட்டுப்பாடு** | Autonomic nervous system (sympathetic ↑ rate/force; parasympathetic ↓ rate) மற்றும் heart rate மற்றும் contractility-ஐ கண்காணித்து சரிசெய்யும் உள்ளமைக்கப்பட்ட pacemaker (SA node) ஆகியவற்றால் கட்டுப்படுத்தப்படுகிறது. |
+| **நெருங்கிய தொடர்புடையவை** | Coronary arteries (heart muscle-க்கு oxygenated blood-ஐ வழங்குகிறது), aortic valve (left ventricle-ல இருந்து aorta-வுக்கு), auricles (atria-வின் மேல் இருக்கும் சிறிய பைகள்), auricles, pericardial sac (இதயத்தைப் பாதுகாக்கிறது). |
+
+### Polished pump ஃபெயிலிங் ஆகும்போது என்ன நடக்கும்?
+
+- **Heart failure** – போதுமான blood-ஐ பம்ப் செய்ய முடியாத நிலை.
+- **Coronary artery disease** – heart muscle-க்கு blood ஓட்டம் குறைவதால் ischemia மற்றும் pumping திறன் குறையும்.
+- **Arrhythmias** – abnormal electrical rhythm-ஆல் effective cardiac output குறையும்.
+- **Valvular disease** – valve incompetence அல்லது stenosis fill/pump செயல்பாட்டைத் தடுக்கும்.
+
+### நினைவில் கொள்ள வேண்டிய முக்கிய குறிப்பு
+மற்ற இரத்த நாளங்களின் அழுத்தத்தின் கீழ் pulsatile முறையில் சுருங்குவதன் மூலம், **heart** தான் body-wide circulatory system-ஐ உருவாக்கி பராமரிக்கிறது. இது உடலுக்குத் தேவையான oxygen, nutrients, hormones மற்றும் waste clearance-ஐ வழங்குகிறது.
 
 ---
 
-### 3. ज़्यादा औपचारिक या साहित्यिक अनुवाद
+**சுருக்கமாகச் சொன்னால்:** pumping செயல்பாட்டைச் செய்யும் muscular pump தான் **heart**, இதுதான் உடலெங்கும் blood ஓட்டத்தை உறுதியாக உருவாக்கும் ஒரே உறுப்பு.",12.8434,success,,sarvam-105b,0.0,22,841,863
+23,factual_qa,ta,ஒரு முக்கோணத்திற்கு எத்தனை பக்கங்கள் உள்ளன?,3,"ஒரு **முக்கோணத்திற்கு மூன்று பக்கங்கள்** இருக்கும்.
 
-ये ""essential"" के लिए ज़्यादा औपचारिक शब्द का इस्तेमाल करते हैं, जिसे आप न्यूज़ बुलेटिन या लेखों में सुनेंगे।
+இதுதான் இதன் அடிப்படை வரையறை. மேலும், ஒரு முழுமையான வரையறைக்கு, இதற்கு கீழே உள்ளவையும் இருக்கும்:
+*   **மூன்று முனைகள்** (கார்னர்ஸ்)
+*   **மூன்று கோணங்கள்**
 
-*   **पानी जीवन के लिए आवश्यक है।** *(Paani jeevan ke liye aavashyak hai.)",24.603,success,,sarvam-105b,0.0,20,2048,2068
-31,translation,hi,Translate into English: यह पुस्तक बहुत उपयोगी है।,This book is very useful.,"This is a straightforward sentence, and its most direct translation is also the most common and natural-sounding one.
+""முக்கோணம்"" என்ற வார்த்தையே ஒரு பெரிய குறிப்பு:
+*   **""Tri-""** என்றால் *three* (மூன்று) என்று அர்த்தம்.
+*   **""-angle""** என்றால் கோணம் என்று அர்த்தம்.
 
-**Primary Translation:**
+எனவே, *tri-*angle என்றால் ""மூன்று கோணங்கள்"" என்று அர்த்தம், இது மூன்று கோணங்களுக்கும் மூன்று பக்கங்களுக்கும் உள்ள தொடர்பை உறுதிப்படுத்துகிறது.
 
-**This book is very useful.**
+### அதைப் பற்றி இன்னும் கொஞ்சம் விசித்திரமாக
+
+இந்த மூன்று விஷயங்களும் ஒன்றுக்கொன்று தொடர்புடையவை என்பதால், அவை ஒவ்வொரு முக்கோணத்திற்கும் மிகவும் அடிப்படையானவை.
+
+*   **ஒரு பக்கம்** என்பது நேர்மையான விளிம்பு.
+*   மூன்று **பக்கங்களும்** சந்திக்கும் இரண்டு புள்ளிகளில் (vertices), **கோணங்கள்** உருவாகின்றன.
+*   **ஒரு முக்கிய விதி:** எந்தவொரு முக்கோணத்தின் மூன்று உட்புற கோணங்களின் கூடுதல் **எப்போதும் 180 degrees** ஆகத்தான் இருக்கும்.
+
+### முக்கோணங்களின் வகைகள்
+
+இந்த மூன்று பக்கங்கள் எப்படி இணைக்கப்பட்டுள்ளன அல்லது மூன்று கோணங்கள் என்ன வகை என்பதைப் பொறுத்து, நாம் ஒரு முக்கோணத்தை வகைப்படுத்தலாம்.
+
+| பக்கங்களின் அடிப்படையில் | கோணங்களின் அடிப்படையில் |
+| :--- | :--- |
+| **Equilateral:** மூன்று பக்கங்களும் சமம். | **Acute:** மூன்று கோணங்களும் 90 degrees-ஐ விடக் குறைவு. |
+| **Isosceles:** இரண்டு பக்கங்கள் சமம். | **Right:** ஒரு கோணம் சரியாக 90 degrees. |
+| **Scalene:** மூன்று பக்கங்களும் வெவ்வேறு நீளம் கொண்டவை. | **Obtuse:** ஒரு கோணம் 90 degrees-ஐ விட அதிகம். |
+
+ஆனால் இந்த மாறுபாடுகள் எல்லாவற்றிலும், ஒரு முக்கோணத்திற்கு **எப்போதும் மூன்று பக்கங்கள்** மட்டுமே இருக்கும். இது கணிதம் மற்றும் பொறியியலில் மிகவும் அடிப்படையான வடிவங்களில் ஒன்றாகும்.",21.8551,success,,sarvam-105b,0.0,19,1625,1644
+24,factual_qa,ta,பூமியின் இயற்கை துணைக்கோள் எது?,சந்திரன்,"பூமியின் இயற்கையான துணைக்கோள் **தி மூன்** (சில நேரங்களில் *Luna* என்று எழுதப்படும்). இது பூமியைச் சுற்றி வரும் ஒரே செயற்கைக்கோள், மேலும் அதன் சராசரி தூரம் சுமார் 384,400 கி.மீ (238,900 மைல்) ஆகும்.",3.5262,success,,sarvam-105b,0.0,19,208,227
+25,factual_qa,ta,வானவில் பொதுவாக எத்தனை நிறங்களைக் கொண்டுள்ளது?,7,"பாரம்பரியமாக, வானவில்லில் **ஏழு நிறங்கள்** இருப்பதாகக் கருதப்படும்:
+
+1. சிவப்பு  
+2. ஆரஞ்சு  
+3. மஞ்சள்  
+4. பச்சை  
+5. நீலம்  
+6. கருநீலம்  
+7. ஊதா  
+
+(இவற்றை மலைகளில் **ROYGBIV** என்று சொல்வார்கள்.)  
+இயற்பியல் ரீதியாகப் பார்த்தால், வானவில் என்பது ஒரு தொடர்ச்சியான நிறமாலையாகும், இதில் தனித்தனி band-கள் கிடையாது. ஆனால் எளிமைக்காக ஏழு தனித்துவமான நிறங்களாகப் பிரித்துக் காட்டுவது பரவலாகப் பயன்படுத்தப்படுகிறது.",5.2857,success,,sarvam-105b,0.0,18,355,373
+26,translation,en,Translate into Hindi: The children planted trees near the school to create more shade.,बच्चों ने अधिक छाया बनाने के लिए स्कूल के पास पेड़ लगाए।,,29.3602,success,,sarvam-105b,0.0,26,2048,2074
+27,translation,en,Translate into Tamil: The train arrived at the station ten minutes late.,ரயில் நிலையத்திற்கு பத்து நிமிடங்கள் தாமதமாக வந்தது.,,28.6485,success,,sarvam-105b,0.0,24,2048,2072
+28,translation,en,Translate into Hindi: Please close the window before you leave the room.,कृपया कमरे से जाने से पहले खिड़की बंद कर दें।,,30.2579,success,,sarvam-105b,0.0,24,2048,2072
+29,translation,en,Translate into Tamil: The doctor advised the patient to drink plenty of water.,மருத்துவர் நோயாளியிடம் நிறைய தண்ணீர் குடிக்குமாறு அறிவுறுத்தினார்.,,32.9542,success,,sarvam-105b,0.0,25,2048,2073
+30,translation,en,Translate into Hindi: Our team completed the project before the deadline.,हमारी टीम ने समय सीमा से पहले परियोजना पूरी कर ली।,,28.7062,success,,sarvam-105b,0.0,23,2048,2071
+31,translation,en,Translate into Tamil: Fresh vegetables are available at the market every morning.,ஒவ்வொரு காலையிலும் சந்தையில் புதிய காய்கறிகள் கிடைக்கின்றன.,"Here are a few ways to translate that into Tamil, from the most common to other natural-sounding options.
+
+### **1. Most Direct & Common Translation**
+
+This is the most straightforward and widely understood translation.
+
+**ஒவ்வொரு காலையிலும் சந்தையில் புதிய காய்கறிகள் கிடைக்கின்றன.**
+
+*   **ஒவ்வொரு** (Ovvoru) - every
+*   **காலையிலும்** (kālaiyilum) - in the morning
+*   **சந்தையில்** (cantaiyil) - in the market
+*   **புதிய** (putiya) - fresh
+*   **காய்கறிகள்** (kāykariṅkaḷ) - vegetables
+*   **கிடைக்கின்றன** (kiṭaikkinṟāṉa) - are available / are gotten
 
 ---
 
-### Other Good Alternatives & Variations
+### **2. Alternative Wording**
 
-While the sentence above is perfect, here are other ways you could say it, depending on the context or slight nuance you want to convey:
+This version is structurally very similar but also",28.5267,success,,sarvam-105b,0.0,24,2048,2072
+32,translation,en,Translate into Hindi: The museum displays paintings from different periods of history.,அருங்காட்சியகத்தில் வரலாற்றின் பல்வேறு காலகட்டங்களைச் சேர்ந்த ஓவியங்கள் காட்சிப்படுத்தப்பட்டுள்ளன.,,28.4657,success,,sarvam-105b,0.0,24,2048,2072
+33,translation,en,Translate into Tamil: Students should submit their assignments by Friday.,மாணவர்கள் தங்கள் பணிகளை வெள்ளிக்கிழமைக்குள் சமர்ப்பிக்க வேண்டும்.,,35.0623,success,,sarvam-105b,0.0,22,2048,2070
+34,translation,hi,Translate into English: किसान सुबह खेत में फसलों की जाँच करने गया।,The farmer went to the field in the morning to check the crops.,"Aam taur par, is vakya ko kuch is tarah se bola jayega:
 
-#### **Emphasizing the Degree of Usefulness:**
-*   **This book is extremely useful.** (Stronger than ""very"".)
-*   **This book is really useful.** (Common, slightly less formal.)
-*   **This book is quite useful.** (Can also mean ""fairly,"" but often used as a synonym for ""very"".)
-*   **This book is incredibly useful.** (Another strong emphasis.)
-
-#### **Using Different, but similar, adjectives:**
-*   **This book is very helpful.** (A very close and common alternative.)
-*   **This book is quite helpful.**
-*   **This would be a very valuable book.** (Implies the book is worth something, not just useful.)
-*   **This book is of great use.** (A more formal or British English version.)
-
-#### **Slightly Different Phrasing:**
-*   **This is a very useful book.** (Changing the word order.)
-*   **This book is quite a find!** (More informal and enthusiastic, meaning it was hard to find and is therefore valuable/useful.)
-
-**In summary, the best and most natural translation is ""This book is very useful.""** The other options are excellent for adding a bit more style or changing the emphasis.",19.985,success,,sarvam-105b,0.0,20,1747,1767
-32,translation,en,Translate into Tamil: The train arrived on time.,ரயில் நேரத்திற்கு வந்தது.,"**ரயில் சரியான நேரத்தில் வந்துள்ளது.**
-
-Here are a few other ways to say it, depending on the context:
-
-*   **More common in everyday conversation:**
-    ரயில் சரியா நேரத்துக்கு வந்துட்டு.
-    (The train has come on time.)
-
-*   **Slightly more formal or from a news report:**
-    ரயில் சரியான நேரத்தில் வந்தடைந்தது.
-    (The train arrived on time.)
-
-**Breakdown:**
-*   **ரயில்** (ray·il) = train
-*   **சரியான நேரத்தில்** (ca·ri.yā·n ne·rat.til) = on time
-*   **வந்துள்ளது** (vant plus.hal) = has arrived (present perfect tense)",23.139,success,,sarvam-105b,0.0,20,2019,2039
-33,translation,ta,Translate into English: இன்று வானிலை நன்றாக உள்ளது.,The weather is good today.,இந்தப் பேரத்தைத் தேவையான ஆடைகளைத் தேர்ந்தெடுக்கவும்.,2.611,success,,sarvam-105b,0.0,20,210,230
-34,translation,en,Translate into Hindi: Please close the door.,कृपया दरवाज़ा बंद करें।,"The most common and direct translation for ""Please close the door"" is:
-
-**कृपया, दरवाज़ा बंद करो।**
-
-### Pronunciation:
-*Kripya, darwaza band karo.*
+**""Mazdoor subah khet mein faslon ki jaanch karne gaya.""**
 
 ---
 
-### Breakdown:
+Yahan kuch aur vikalp diye gaye hain, jinme se kuch thode zyada aupcharik hain ya alag-alag matlab nikaalte hain:
 
-*   **कृपया (Kripya/Pr):** This is the standard word for ""please.""
-*   **दरवाज़ा (darwaza):** This means ""door.""
-*   **बंद करो (band karo):** This is the polite command form, meaning ""close (it).""
+* **Asar ya tasalli par zor dene ke liye:**
+    > **""Mazdoor subah khet mein faslon ki dekhbhal karne gaya.""** (Mazdoor subah kheton ki dekhbhaal karne gaya.)
+
+* **Zyada aupcharik sudhaar ke liye:**
+    > **""Mazdoor subah khet mein faslon ka nirikshan karne gaya.""** (Mazdoor subah kheton ka nirikshan karne gaya.)
+
+* **Shuruati line ke shabdon ko chhodkar:**
+    > **""Subah, mazdoor kheton mein faslon ki jaanch karne gaya.""**
 
 ---
 
-### Other Options (",19.623,success,,sarvam-105b,0.0,19,2048,2067
-35,translation,hi,Translate into English: मुझे संगीत सुनना पसंद है।,I like listening to music.,"सबसे सटीक और नेचुरल ट्रांसलेशन हैं:
+###",36.1876,success,,sarvam-105b,0.0,24,2048,2072
+35,translation,hi,Translate into Tamil: पुस्तकालय में विद्यार्थियों के लिए नई किताबें आई हैं।,மாணவர்களுக்காக நூலகத்திற்கு புதிய புத்தகங்கள் வந்துள்ளன.,,34.2343,success,,sarvam-105b,0.0,25,2048,2073
+36,translation,hi,Translate into English: बारिश के कारण सड़क पर यातायात धीमा हो गया।,Traffic on the road became slow because of the rain.,,33.3681,success,,sarvam-105b,0.0,25,2048,2073
+37,translation,hi,Translate into Tamil: हमें परीक्षा से पहले सभी अध्यायों को दोहराना चाहिए।,தேர்வுக்கு முன் அனைத்து அத்தியாயங்களையும் நாம் மறுபரிசீலனை செய்ய வேண்டும்.,,32.0609,success,,sarvam-105b,0.0,26,2048,2074
+38,translation,hi,Translate into English: ट्रेन के रवाना होने से पहले यात्री प्लेटफॉर्म पर पहुँच गए।,The passengers reached the platform before the train departed.,"बिल्कुल। इस वाक्य को अनुवाद करने के कुछ तरीके यहाँ दिए गए हैं, जो सबसे सीधे से लेकर ज़्यादा स्वाभाविक लगने वाले विकल्पों तक हैं।
 
-*   **I like to listen to music.**
-*   **I like listening to music.**
+### सबसे सीधा अनुवाद:
+**ट्रेन के जाने से पहले यात्री प्लेटफॉर्म पर पहुँच गए।**
 
-इन दोनों में बहुत कम फर्क है (एक इन्फिनिटिव ""to listen"" का इस्तेमाल करता है, और दूसरा जेरंड ""listening"" का), और अलग-अलग स्थितियों में इनका इस्तेमाल एक-दूसरे की जगह किया जा सकता है।
+---
 
-इथियर या थोड़े ज्यादा मजबूत ट्रांसलेशन के रूप में आपको ये भी देखने को मिल सकते हैं:
+### दूसरे सामान्य और स्वाभाविक विकल्प:
+*   **ट्रेन के जाने से पहले, यात्री प्लेटफॉर्म पर पहुँच गए।** (वाक्य की शुरुआत टाइम क्लॉज़ से)
+*   **ट्रेन के चलने से पहले, यात्री ट्रेन में चढ़ गए।** (ध्यान दें: *चलागाना* का मतलब है ""चलना,"" जो अक्सर ""रवाना होना"" का ज़्यादा इस्तेमाल होने वाला रूप है)
 
-*   **I enjoy listening to music.** (enjoy ""to like"" का एक करीबी मतलब है)
-*   **I love listening to music.** (यह थोड़ा ज्यादा इंटेंस है, मतलब ""I like"" से कहीं ज्यादा ""I love"" है)
-*   **I like music.** (यह थोड़ा ज्यादा जनरल वाक्य है जहाँ ""listening"" का मतलब समझा जाता है)",19.176,success,,sarvam-105b,0.0,20,1901,1921
-36,translation,en,Translate into Tamil: We should protect the environment.,நாம் சுற்றுச்சூழலை பாதுகாக்க வேண்டும்.,,23.138,success,,sarvam-105b,0.0,20,2048,2068
-37,translation,ta,Translate into English: அவர் ஒரு நல்ல ஆசிரியர்.,He is a good teacher.,,23.51,success,,sarvam-105b,0.0,19,2048,2067
-38,translation,en,Translate into Hindi: The meeting starts at ten o'clock.,बैठक दस बजे शुरू होती है।,"बैठक दस बजे शुरू होती है।
+### मामूली अंतर के साथ विकल्प:
+ये भी बिल्कुल सही हैं और बोले जाने वाले अंग्रेज़ी में आम हैं:
 
-You can also say it using the more modern, loanword ""meeting"":
+*   **यात्री ट्रेन के जाने से पहले प्लेटफॉर्म पर आ गए।** (""पहुँचना"" की जगह ""आना"" का इस्तेमाल)
+*   **ट्रेन के जाने से पहले, यात्रियों का प्लेटफॉर्म पर पहुँचना पक्का था।** (एक ज़्यादा औपचारिक, निष्क्रिय आवाज़)
 
-मीटिंग दस बजे शुरू होती है।
+---
 
-### **Breakdown:**
+#### शब्दों का विवरण:
+*   **ट्रेन के जाने से पहले:** इसका मतलब है ""ट्रेन के जाने से पहले।""
+*   **ट्रिप्लेट/यात्री:** ""यात्री।""
+*   **प्लेटफॉर्म पर:** ""प्लेटफॉर्म पर।""
+*   **पहुँचना:** ""पहुँचना।""
 
-*   **बैठक (Baithak)**: Meeting
-*   **शुरू होती है (Shuru hoti hai)**: Is starting / starts
-*   **दस बजे (Das baje)**: At ten o'clock",16.066,success,,sarvam-105b,0.0,23,1431,1454
-39,translation,hi,Translate into English: भारत में कई भाषाएँ बोली जाती हैं।,Many languages are spoken in India.,भारत में कई भाषाएँ बोली जाती हैं।,16.806,success,,sarvam-105b,0.0,23,1446,1469
-40,translation,en,Translate into Tamil: Practice makes a person better.,பயிற்சி ஒருவரை சிறந்தவராக மாற்றுகிறது.,,23.662,success,,sarvam-105b,0.0,20,2048,2068
-41,translation,ta,Translate into English: அவள் தினமும் புத்தகம் படிக்கிறாள்.,She reads a book every day.,"அவள் தினமும் புத்தகம் படிக்கிறாள்.
+आसान अंग्रेज़ी बोलने के लिए, **""रवाना होना""** (depart) और **""पहुँचना""** (reach) सबसे अच्छे विकल्प होंगे।",31.3021,success,,sarvam-105b,0.0,26,1762,1788
+39,translation,hi,Translate into Tamil: इस गाँव में लोग मुख्य रूप से खेती पर निर्भर हैं।,இந்த கிராமத்தில் மக்கள் பெரும்பாலும் விவசாயத்தை நம்பியுள்ளனர்.,"தினசரிப் பயன்பாட்டில் சரளமாகப் பேச இந்த வாக்கியத்தை சொல்கிறவர்கள் ஆதிவாசிகளுக்கு மிகவும் ஏற்றவாறு இருக்கும் வகையில் நான் மாற்றி அமைத்துள்ளேன்.
+
+**இந்த கிராமத்தில் மக்கள் முக்கியமாக விவசாயத்தையே நம்பியிருக்கிறார்கள்.**
+
+வாக்கியத்தில் உள்ள வார்த்தைகளுக்கான விளக்கம்:
+*   **இந்த கிராமத்தில்** - இந்த கிராமத்தில்
+*   **மக்கள்** - மக்கள்
+*   **முக்கியமாக** - முக்கியமாக
+*   **விவசாயத்தையே** - விவசாயத்தையே (இது *விவசாயம்* + உ.த - 'வே' என்ற பொருள்)
+*   **நம்பியிருக்கிறார்கள்** - நம்பியிருக்கிறார்கள், நம்பியிருக்கிறார்கள், சார்ந்திருக்கிறார்கள் (அது நம்பியிருக்கிறார்கள் *என்ற* வினைச்சொல்)
+
+சில மாற்று வடிவங்கள்:
+
+*   **இந்த கிராமத்து மக்கள் பெரும்பாலும் விவசாயத்தையே நம்பியிருக்கிறார்கள்.** (இந்த கிராமத்து மக்கள் பெரும்பாலும் விவசாயத்தையே நம்பியிருக்கிறார்கள்.)
+*   **இந்த ஊரில் மக்கள் பொதுவான வாழ்வாதாரமாக விவசாயத்தை நம்பியிருக்கிறார்கள்.** (இந்த ஊரில் மக்கள் முக்கியமாக விவசாயத்தை நம்பியிருக்கிறார்கள்.)
+
+நம்பகத்தன்மையைக் காட்டும் வகையில், ""வே"" என்பதை அதிகம் நம்பியிருப்பதால் அர்த்தம் மேலும் தெளிவாகிறது.",30.3426,success,,sarvam-105b,0.0,26,1958,1984
+40,translation,hi,Translate into English: उसने अपना छाता घर पर ही छोड़ दिया।,She left her umbrella at home.,उसने अपना छाता घर पर ही छोड़ दिया।,19.9775,success,,sarvam-105b,0.0,24,1273,1297
+41,translation,hi,Translate into Tamil: बच्चों ने छुट्टी के दौरान समुद्र तट पर खेला।,விடுமுறையின் போது குழந்தைகள் கடற்கரையில் விளையாடினர்.,,33.4735,success,,sarvam-105b,0.0,24,2048,2072
+42,translation,ta,Translate into English: மாணவர்கள் பள்ளி தோட்டத்தில் புதிய செடிகளை நட்டனர்.,The students planted new plants in the school garden.,மாணவர்கள் பள்ளித் தோட்டத்தில் புதிய செடிகளை நட்டார்கள்.,26.9099,success,,sarvam-105b,0.0,26,1647,1673
+43,translation,ta,Translate into Hindi: இன்று காலை வானிலை மிகவும் குளிராக இருந்தது.,आज सुबह मौसम बहुत ठंडा था।,"आज सुबह मौसम बहुत ठंडा था।
+
+---
+
+**शब्द-दर-शब्द अनुवाद:**
+
+*   **आज सुबह** = आज सुबह
+*   **मौसम** = मौसम
+*   **बहुत** = बहुत
+*   **ठंडा था** = ठंडा था
+
+**एक और आम तरीका:**
+
+आज सुबह बहुत ठंड थी।",22.9042,success,,sarvam-105b,0.0,24,1473,1497
+44,translation,ta,Translate into English: நகரின் புதிய பாலம் நேற்று பொதுமக்களுக்காக திறக்கப்பட்டது.,The city's new bridge was opened to the public yesterday.,"நகரில் புதிய பாலம் ஒன்று நேற்று பொதுமக்களுக்காக திறக்கப்பட்டது.
+
+மேலும் தெளிவாகப் புரியும் வகையில், இந்த வார்த்தைகளை இப்படிப் பிரிக்கலாம்:
+*   **நகரின் (nagarin):** இது 'நகரம்' (""city"") என்பதன் உடைமை வடிவம் (possessive form), இதை **of the city** அல்லது **city's** என்று மொழிபெயர்க்கலாம்.
+*   **புதிய (puthiya):** இது **new** (புதிய) என்ற பொருளைத் தரும் ஒரு உரிச்சொல் (adjective).
+*   **பாலம் (paalam):** இது **bridge** (பாலம்) என்ற பொருளைத் தரும் ஒரு பெயர்ச்சொல் (noun).
+*   **திறக்கப்பட்டது (thirakkappattathu):** இது *திற* (to open) என்ற வினைச்சொல்லின் இறந்த கால வடிவம் (**was opened**).
+*   **பொதுமக்களுக்காக (pothumakkalukkāga):** இதன் அர்த்தம் **for the general public** (பொதுமக்களுக்காக).
+*   **நேற்று (nērumēṟṟu):** இது **yesterday** (நேற்று) என்பதைக் குறிக்கும் ஒரு வினை உரிச்சொல் (adverb).
+
+இது இந்தியச் சூழலுக்கு எப்படிப் பொருந்தும்:
+அடிப்படை மொழிபெயர்ப்புச் சரியானதாக இருந்தாலும், இதுபோன்ற சாலைப் பாலம் குறித்த அறிவிப்புகள் இந்தியாவின் பெரிய அளவிலான உள்கட்டமைப்பு மேம்பாட்டு டிரைவின் ஒரு பகுதியாகும். 2018 இல் திறக்கப்பட்ட **போகிபீல் பாலம் (Bogibeel Bridge)** (அசாமில், பிரம்மபுத்திரா நதியின் குறுக்கே கட்டப்பட்ட முதல் சாலை-ரயில் பாலம்) போன்ற சமீபத்திய திட்டங்கள் முக்கிய உதாரணங்களாகும். மேலும், போக்குவரத்து நெரிசலைக் குறைத்து தொலைதூரப் பகுதிகளை இணைக்கும் நோக்கில் இந்த நாட்டில் இதுபோன்ற அறிவிப்புகள் அடிக்கடி செய்யப்படுகின்றன.",34.0132,success,,sarvam-105b,0.0,27,2047,2074
+45,translation,ta,Translate into Hindi: மருத்துவர் தினமும் உடற்பயிற்சி செய்யுமாறு அறிவுறுத்தினார்.,डॉक्टर ने हर दिन व्यायाम करने की सलाह दी।,டாக்டர் அவருக்கு தினமும்,34.8102,success,,sarvam-105b,0.0,29,2048,2077
+46,translation,ta,Translate into English: இந்த கடையில் பல வகையான பாரம்பரிய உணவுகள் கிடைக்கின்றன.,Many types of traditional food are available in this shop.,"இந்த கடைல நிறைய வகையான பாரம்பரிய உணவுகள் கிடைக்கின்றன.
+
+ஆங்கிலத்துல சொல்லப்போனா, இதுக்கு அர்த்தம்:
+
+**As a craftsperson, I prioritize the quality of materials and the time-honored techniques in every piece I create.**
+
+இந்த வாக்கியத்தை ஆங்கிலத்துல இன்னும் பல விதமா சொல்லலாம், ஒவ்வொன்னும் கொஞ்சம் வித்தியாசமான உணர்வை கொடுக்கும். இதோ சில நல்ல மாற்று வழிகள்:
+
+**Standard & Direct:**
+*   **In this shop, a variety of traditional foods are available.** (இது நேரடியான, தெளிவான மொழிபெயர்ப்பு)
+*   **This store sells a wide selection of traditional foods.** (""sells"" பயன்படுத்துறது, பொருட்கள் விற்கப்படுகின்றன என்பதை குறிக்கும் ஒரு பொதுவான முறை)
+
+**Slightly More Casual:**
+*   **You can find many different kinds of traditional foods here.** (இது மெனு அல்லது கடைகள் பத்தி பேசுறப்போ சாதாரணமா பயன்படுத்தப்படுற ஒரு முறை)
+*   **This place has a lot of different traditional foods.** (இது கொஞ்சம் சாதாரணமான, உரையாடல் முறை)
+
+**More Formal/Descriptive:**
+*   **A wide array of traditional foods can be found in this establishment.** (இது இன்னும் கொஞ்சம் ஃபார்மலான வார்த்தைகளை பயன்படுத்துது)
+*   **This store offers a diverse range of traditional food products.**
+
+---
+
+### Tamil வாக்கியத்தை விரிவாக பார்ப்போம்:
+
+*   **இந்த கடையில் (inda kaṭaiyil):** ""இந்த கடை"" (inda kaṭai) என்பதன் லோகேட்டிவ் கேஸ் (locative case) வடிவம், முடிவு ""-il"" என்பதன் பொருள் ""இல்"" அல்லது ""அங்கு"". இது செயலை நடக்கும் இடத்தை குறிக்குது.
+    *   * Translation: ""இந்த கடைல..."", ""இந்த ஸ்டோர்ல..."", அல்லது ""இங்கே...""
+*   **பல வகையான (pala vakaiyaana):** ""பல"" (pala) என்றால் ""பல"" அல்லது ""நிறைய"". ""வகையான"" (vakaiyaana) என்பதன் பொருள் ""வகைகள்"" அல்லது ""வகை"". இவை",32.8731,success,,sarvam-105b,0.0,25,2048,2073
+47,translation,ta,Translate into Hindi: குழந்தைகள் மாலையில் பூங்காவில் விளையாடினர்.,बच्चों ने शाम को पार्क में खेला।,,33.8398,success,,sarvam-105b,0.0,25,2048,2073
+48,translation,ta,Translate into English: மழை காரணமாக பள்ளி ஒரு மணி நேரம் தாமதமாக தொடங்கியது.,The school started one hour late because of the rain.,,34.0227,success,,sarvam-105b,0.0,24,2048,2072
+49,translation,ta,Translate into Hindi: பயணிகள் முன்கூட்டியே தங்கள் பயணச்சீட்டுகளை பதிவு செய்தனர்.,यात्रियों ने अपने टिकट पहले से बुक कर लिए।,"நிச்சயமாக. அந்த வாக்கியத்தின் மொழிபெயர்ப்பு இங்கே, மிகவும் பொதுவான மற்றும் முறையான பதிப்புகளுடன், ஒரு சிறிய விளக்கத்துடன் கொடுக்கப்பட்டுள்ளது.
+
+### மிகவும் வழக்கமான மற்றும் இயல்பான மொழிபெயர்ப்பு:
+**यात्रियों ने अपने टिकट पहले से बुक किए थे।**
+*(Yātrīyon nē apne ticket pahale seng book kiye the.)*
+
+### மாற்று முறையான அல்லது",33.0043,success,,sarvam-105b,0.0,29,2048,2077
+50,translation,ta,Translate into English: விவசாயிகள் நீரைச் சேமிக்க சொட்டு நீர்ப்பாசனத்தை பயன்படுத்துகின்றனர்.,Farmers use drip irrigation to save water.,"சிறந்த மொழிபெயர்ப்பு:
+
+**விவசாயிகள் தண்ணீரைச் சேமிக்க சொட்டு நீர் பாசனத்தைப் பயன்படுத்துகிறார்கள்.**
+
+---
+
+இந்த வாக்கியத்தைச் சொல்வதற்கு இங்கே வேறு சில நல்ல வழிகள் உள்ளன, ஒவ்வொன்றிலும் சிறிய அர்த்த வித்தியாசங்கள் உள்ளன:
+
+**மாற்று வழி 1 (கொஞ்சம் சுருக்கமாகவும் இயல்பாகவும்):**
+> விவசாயிகள் சொட்டு நீர் பாசனத்தைப் பயன்படுத்துகிறார்கள், இதனால் தண்ணீரைச் சேமிக்கிறார்கள்.
+*இது *முயற்சியை* விட *முடிவை* வலியுறுத்துகிறது.*
+
+**மாற்று வழி 2 (கொஞ்சம் நுட்பமான வார்த்தைகளுடன்):**
+> தண்ணீரை *உருவாக்க* விவசாயிகள் சொட்டு நீர் பாசன முறையை ஏற்றுக்கொள்கிறார்கள்.
+*இங்கே, ""பாதிக்கிறார்கள்"" என்பதை விட ""ஏற்றுக்கொள்கிறார்கள்"" என்பது ஒரு புதிய முறையைத் தீவிரமாகப் பயன்படுத்தும் முடிவைக் குறிக்கிறது. ""சேமிக்கிறார்கள்"" என்பதை விட ""உருவாக்குகிறார்கள்"" என்பதும் மிகவும் முறையான சொல்.*
+
+**மாற்று வழி 3 (முக்கிய நோக்கத்தை வலியுறுத்த, வாக்கியத்தை மாற்றி அமைப்பது):**
+> தண்ணீரைச் சேமிக்க, விவசாயிகள் சொட்டு நீர் பாசனத்தைப் பயன்படுத்துகிறார்கள்.
+*முக்கிய இலக்கிற்கு முக்கியத்துவம் கொடுக்க, இது ஒரு பொதுவான அமைப்பு.*",29.6519,success,,sarvam-105b,0.0,32,1792,1824
+51,summarization,en,Summarize in 1 sentence: A community health center opened a weekend clinic so residents can receive basic medical services without traveling to the city.,A community health center opened a weekend clinic to provide residents with basic medical services locally.,,32.6376,success,,sarvam-105b,0.0,38,2048,2086
+52,summarization,en,Summarize in 1 sentence: The school installed rainwater harvesting tanks to collect water during the monsoon and use it for gardening later.,The school installed rainwater harvesting tanks for collecting and reusing monsoon water.,The school installed rainwater harvesting tanks to collect monsoon water for future gardening.,22.553,success,,sarvam-105b,0.0,36,1408,1444
+53,summarization,en,Summarize in 1 sentence: A local bakery began using paper bags instead of plastic bags to reduce the amount of plastic waste produced each day.,The bakery switched to paper bags to reduce daily plastic waste.,A local bakery switched from plastic to paper bags to reduce its daily plastic waste.,26.649,success,,sarvam-105b,0.0,39,1708,1747
+54,summarization,en,Summarize in 1 sentence: The city library extended its opening hours during exam season so students could study for longer in the evenings.,The city library extended its hours during exam season to give students more evening study time.,,33.0572,success,,sarvam-105b,0.0,37,2048,2085
+55,summarization,en,Summarize in 1 sentence: A farmers' group organized a workshop teaching members how to identify common crop diseases and manage them early.,A farmers' group held a workshop on identifying and managing common crop diseases early.,,36.4754,success,,sarvam-105b,0.0,37,2048,2085
+56,summarization,en,Summarize in 1 sentence: The apartment residents created a shared composting area where kitchen waste is converted into compost for community plants.,Apartment residents created a shared composting area to turn kitchen waste into compost for plants.,,37.5779,success,,sarvam-105b,0.0,36,2048,2084
+57,summarization,en,Summarize in 1 sentence: A technology club hosted a beginner workshop on programming and helped students build simple calculator applications.,A technology club held a beginner programming workshop where students built simple calculators.,,38.3833,success,,sarvam-105b,0.0,34,2048,2082
+58,summarization,en,Summarize in 1 sentence: The railway station added clearer signs and digital displays to help passengers find platforms and train information more easily.,The railway station improved passenger navigation with clearer signs and digital displays.,Clearer signs and digital displays were added to the railway station to help passengers find platforms and train information more easily.,12.818,success,,sarvam-105b,0.0,37,703,740
+59,summarization,hi,संक्षेप में लिखें: नगर के एक अस्पताल ने बुजुर्ग मरीजों के लिए घर से डॉक्टर से परामर्श लेने की सुविधा शुरू की।,अस्पताल ने बुजुर्ग मरीजों के लिए घर से डॉक्टर से परामर्श की सुविधा शुरू की।,"एक शहर के अस्पताल ने सीनियर सिटीजन के लिए एक टेलीकंसल्टेशन सर्विस शुरू की है, जिससे वे अपने घर से ही आसानी से डॉक्टरों से सलाह ले सकते हैं।
+
+**मुख्य बातें:**
+*   **सुविधा:** घर से डॉक्टर से सलाह लेना (टेलीकंसल्टेशन)।
+*   **टारगेट ग्रुप:** बुजुर्ग और सीनियर सिटीजन।
+*   **समस्या का समाधान:** चलती-फिरती दिक्कतें और क्लिनिक जाने में होने वाली असुविधा को दूर करना।",35.4702,success,,sarvam-105b,0.0,35,1997,2032
+60,summarization,hi,संक्षेप में लिखें: एक स्कूल ने विद्यार्थियों को बिजली बचाने के तरीके सिखाने के लिए जागरूकता कार्यक्रम आयोजित किया।,स्कूल ने विद्यार्थियों को बिजली बचाने के तरीके सिखाने के लिए जागरूकता कार्यक्रम आयोजित किया।,,33.4441,success,,sarvam-105b,0.0,33,2048,2081
+61,summarization,hi,संक्षेप में लिखें: किसानों ने फसल की गुणवत्ता सुधारने के लिए जैविक खाद का उपयोग बढ़ाने का निर्णय लिया।,किसानों ने फसल की गुणवत्ता सुधारने के लिए जैविक खाद का उपयोग बढ़ाने का निर्णय लिया।,"किसानों के फसल की क्वालिटी सुधारने के फैसले को नीचे दिए गए तरीकों से संक्षेप में बताया जा सकता है।
+
+**एक वाक्य का सारांश:**
+अपनी फसलों की क्वालिटी और मिट्टी की सेहत सुधारने के लिए किसान ऑर्गेनिक (जैविक) खाद का इस्तेमाल बढ़ा रहे हैं।
+
+**संदर्भ के साथ दोबारा कहना:**
+भारत में ऑर्गेनिक खेती की तरफ तेजी से बदलाव हो रहा है। ज्यादा पैदावार के लिए इस्तेमाल किए जाने वाले केमिकल खादों के लंबे समय तक ज्यादा इस्तेमाल के बाद, किसान अब ऑर्गेनिक तरीकों का इस्तेमाल करके अपनी उपजाऊ मिट्टी को वापस ला रहे हैं। इस फैसले का मकसद उनकी उपज की क्वालिटी और न्यूट्रिशन को बेहतर बनाना है, और साथ ही पर्यावरण के अनुकूल और सस्टेनेबल (टिकाऊ) खेती के तरीकों की बढ़ती डिमांड को पूरा करना और सरकार की ऐसी योजनाओं के साथ चलना है जो इस बदलाव को बढ़ावा देती हैं।",23.2329,success,,sarvam-105b,0.0,33,1440,1473
+62,summarization,hi,संक्षेप में लिखें: पुस्तकालय ने बच्चों के लिए हर रविवार कहानी पढ़ने का कार्यक्रम शुरू किया।,पुस्तकालय ने बच्चों के लिए रविवार को कहानी पढ़ने का कार्यक्रम शुरू किया।,"हर रविवार को बच्चों को कहानियाँ सुनाने के लिए लाइब्रेरी ने एक नया प्रोग्राम शुरू किया है।
+
+यहाँ कुछ और तरीके दिए गए हैं:
+
+* **थोड़े आसान शब्दों में:** हर रविवार, लाइब्रेरी में बच्चों के लिए एक स्टोरीटाइम सेशन होता है।
+* **ज़रूरी बातों की बुलेट लिस्ट:**
+    * **कौन:** लाइब्रेरी
+    * **क्या:** एक स्टोरी-रीडिंग (कहानी सुनाने वाला) प्रोग्राम
+    * **किसके लिए:** बच्चे
+    * **कब:** हर रविवार",19.9592,success,,sarvam-105b,0.0,30,1400,1430
+63,summarization,hi,संक्षेप में लिखें: नगर निगम ने पुराने स्ट्रीट लाइटों को ऊर्जा-कुशल लाइटों से बदलना शुरू किया।,नगर निगम ने पुरानी स्ट्रीट लाइटों को ऊर्जा-कुशल लाइटों से बदलना शुरू किया।,"महानगर पालिका ने शहर में सभी पुरानी स्ट्रीट लाइटों को एनर्जी-एफिशिएंट LED लाइटों से बदलने का प्रोजेक्ट शुरू किया है। इको-फ्रेंडली लाइटें लगाने के इस कदम का मकसद बिजली की खपत कम करना, बिजली बिल के पैसे कम करना, और पब्लिक लाइटिंग को बेहतर बनाना है। इससे रास्तों पर रोशनी बेहतर होगी और लोगों को ज्यादा सेफ्टी मिलेगी।",23.5732,success,,sarvam-105b,0.0,34,1660,1694
+64,summarization,hi,संक्षेप में लिखें: एक स्वयंसेवी समूह ने गर्मियों में जरूरतमंद परिवारों को पानी की बोतलें और भोजन वितरित किया।,स्वयंसेवी समूह ने गर्मियों में जरूरतमंद परिवारों को पानी और भोजन वितरित किया।,"स्वयंसेवकों की एक टीम ने गर्मियों के दौरान ज़रूरतमंद परिवारों को पानी की बोतलें और खाना बांटा।
 
 ***
 
-### சில மாற்று விதமானவை:
+यहाँ कुछ और विकल्प दिए गए हैं, जिनमें थोड़े अलग अंदाज़ हैं:
 
-*   **அவள் தினமும் படிக்கிறாள்.** (இது மிகவும் இயல்பான, பொதுவான விடை)
-*   **அவள் தினமும் ஒரு புத்தகம் படிக்கிறாள்.**
-*   **தினசரி, அவள் ஒரு புத்தகம் படிக்கிறாள்.**
+**सबसे छोटा:**
+गर्मियों में, स्वयंसेवकों ने ज़रूरतमंद परिवारों को खाना और पानी दिया।
 
----
+**थोड़ा और ज़्यादा जानकारी वाला:**
+ज़रूरतमंद परिवारों की मदद करते हुए, एक स्वयंसेवी समूह ने गर्मियों में ज़रूरी पानी और खाना बांटा।
 
-### விரிவான விளக்கம்:
+**औपचारिक (Formal):**
+एक आउटरीच पहल के ज़रिए, स्वयंसेवकों ने गर्मियों के दौरान ज़रूरतमंद घरों को ज़रूरी चीज़ें, जिनमें खाना और पानी शामिल है, दीं।",23.9831,success,,sarvam-105b,0.0,35,1525,1560
+65,summarization,hi,संक्षेप में लिखें: कॉलेज ने नए विद्यार्थियों के लिए परिसर और पुस्तकालय की जानकारी देने वाला परिचय कार्यक्रम आयोजित किया।,कॉलेज ने नए विद्यार्थियों के लिए परिसर और पुस्तकालय की जानकारी देने वाला परिचय कार्यक्रम आयोजित किया।,कॉलेज ने नए छात्रों के लिए कैंपस और लाइब्रेरी की सुविधाओं को कवर करते हुए एक ओरिएंटेशन प्रोग्राम आयोजित किया।,29.6597,success,,sarvam-105b,0.0,34,1973,2007
+66,summarization,hi,संक्षेप में लिखें: एक स्थानीय बाजार ने ग्राहकों की सुविधा के लिए डिजिटल भुगतान की सुविधा शुरू की।,स्थानीय बाजार ने ग्राहकों के लिए डिजिटल भुगतान की सुविधा शुरू की।,"भारत के 'डिजिटल इंडिया' ट्रेंड को अपनाते हुए, एक लोकल मार्केट ने UPI-बेस्ड ऐप्स और QR कोड जैसे डिजिटल पेमेंट ऑप्शन्स चालू कर दिए हैं।
 
-| தமிழ் வார்த்தை | ஆங்கிலத்தில் பொருள் | குறிப்புகள் |
-| :--------------- | :------------------------ | :------------------------------------------------------------------ |
-| அவள் (aval)       | அவள் (She)                 |                                                                    |
-| தினமும் (dhinamum)| தினமும் / ஒவ்வொரு நாளும் | இது நேரடி மொழிபெயர்ப்பு.                                             |
-| புத்தகம் (puthagam) | புத்தகம் |                                                                    |
-| படிக்கிறாள் (padikkirāḷ)| படிக்கிறாள் / படிக்கிறாள் | இந்த verb form",22.616,success,,sarvam-105b,0.0,22,2048,2070
-42,translation,en,Translate into Hindi: Technology is useful when used responsibly.,जिम्मेदारी से उपयोग किए जाने पर प्रौद्योगिकी उपयोगी है।,,23.077,success,,sarvam-105b,0.0,21,2048,2069
-43,translation,hi,Translate into English: हमें समय का सम्मान करना चाहिए।,We should respect time.,हमें समय का सम्मान करना चाहिए।,1.949,success,,sarvam-105b,0.0,21,285,306
-44,translation,en,Translate into Tamil: Clean water is important for health.,சுத்தமான நீர் ஆரோக்கியத்திற்கு முக்கியமானது.,"The most direct and common translation is:
+इसका मकसद ग्राहकों को कैशलेस शॉपिंग का एक आसान अनुभव देना है। इससे न सिर्फ पेमेंट तेज़ हो जाता है, बल्कि कैश कम रखने की ज़रूरत भी खत्म हो जाती है और बदलाव (चिल्लर) की झंझट भी नहीं होती। यह कदम छोटे बिज़नेस में आजकल बढ़ रही डिजिटल पेमेंट की सुविधा को दिखाता है।",24.8114,success,,sarvam-105b,0.0,31,1495,1526
+67,summarization,ta,சுருக்கமாக எழுதுக: ஒரு பள்ளி மாணவர்களுக்கு ஆரோக்கியமான உணவின் முக்கியத்துவத்தை விளக்கும் விழிப்புணர்வு நிகழ்ச்சியை நடத்தியது.,பள்ளி மாணவர்களுக்கு ஆரோக்கியமான உணவின் முக்கியத்துவம் குறித்து விழிப்புணர்வு நிகழ்ச்சி நடத்தியது.,"பள்ளியானது மாணவர்களுக்காக ஒரு சுகாதார விழிப்புணர்வு முகாம் நடத்தி, ஆரோக்கியமான உணவை தேர்ந்தெடுப்பதன் முக்கியத்துவத்தை வலியுறுத்தியது.",20.3359,success,,sarvam-105b,0.0,37,1245,1282
+68,summarization,ta,சுருக்கமாக எழுதுக: நகராட்சி பூங்காவில் புதிய நடைபாதை அமைத்து பொதுமக்கள் உடற்பயிற்சி செய்ய வசதி செய்தது.,நகராட்சி பூங்காவில் புதிய நடைபாதை அமைத்து உடற்பயிற்சிக்கான வசதியை மேம்படுத்தியது.,"ஒரு நகராட்சி பூங்காவில் (Municipal park), மக்கள் உடற்பயிற்சி செய்வதற்காகவே பிரத்யேகமாக ஒரு புதிய நடைபாதை (walking path) அமைக்கப்பட்டுள்ளது.
 
-**சுத்தமான தண்ணீர் ஆரோக்கியத்திற்கு முக்கியம்.**
+இந்தியாவில், இது ஒரு உள்ளூர் அரசு அமைப்பால், அதாவது நகராட்சி நிறுவனம் (Municipal Corporation) அல்லது நகராட்சி கவுன்சிலால் (Municipal Council) ஆதரிக்கப்படும் ஒரு முயற்சியாக இருக்கலாம். நகரங்களில் பொதுமக்களின் ஆரோக்கியத்தையும் பொழுதுபோக்கையும் மேம்படுத்தும் வகையில், நகர்ப்புறங்களில் பொது இடங்களை உருவாக்கும் ஒரு பொதுவான முயற்சியின் ஒரு பகுதியாக இதுவும் இருக்கும்.",23.5421,success,,sarvam-105b,0.0,38,1363,1401
+69,summarization,ta,சுருக்கமாக எழுதுக: விவசாயிகள் மழைநீரை சேமித்து வறண்ட காலத்தில் பயன்படுத்துவதற்காக சிறிய நீர்த்தேக்கங்களை அமைத்தனர்.,விவசாயிகள் மழைநீரை சேமிக்க சிறிய நீர்த்தேக்கங்களை அமைத்தனர்.,விவசாயிகள் வறண்ட காலங்களில் பயன்படுத்துவதற்காக மழைநீரை சேமித்து வைக்க சிறிய நீர்த்தேக்கங்களை உருவாக்கினார்கள்.,27.9962,success,,sarvam-105b,0.0,38,1751,1789
+70,summarization,ta,சுருக்கமாக எழுதுக: ஒரு மருத்துவமனை நோயாளிகளுக்கான காத்திருப்பு நேரத்தை குறைக்க புதிய ஆன்லைன் பதிவு முறையை அறிமுகப்படுத்தியது.,மருத்துவமனை காத்திருப்பு நேரத்தை குறைக்க ஆன்லைன் பதிவு முறையை அறிமுகப்படுத்தியது.,மருத்துவமனை நோயாளிகளுக்கான காத்திருப்பு நேரத்தைக் குறைப்பதற்காக ஒரு புதிய ஆன்லைன் பதிவு முறையை அறிமுகப்படுத்தியுள்ளது.,36.5713,success,,sarvam-105b,0.0,39,2037,2076
+71,summarization,ta,சுருக்கமாக எழுதுக: பள்ளி மாணவர்கள் உள்ளூர் ஏரியை சுத்தம் செய்ய ஆசிரியர்களுடன் இணைந்து ஒரு நாள் நிகழ்ச்சியை நடத்தினர்.,மாணவர்கள் ஆசிரியர்களுடன் இணைந்து உள்ளூர் ஏரியை சுத்தம் செய்யும் நிகழ்ச்சியை நடத்தினர்.,"பள்ளி மாணவர்களும் ஆசிரியர்களும் இணைந்து, ஒரு நாள் நிகழ்வாக உள்ளூர் ஏரியை தூய்மைப்படுத்தினர்.",28.8708,success,,sarvam-105b,0.0,36,1520,1556
+72,summarization,ta,சுருக்கமாக எழுதுக: ஒரு சமூக மையம் முதியவர்களுக்கு அடிப்படை ஸ்மார்ட்போன் பயன்பாட்டைக் கற்றுக்கொடுக்கும் வகுப்புகளை தொடங்கியது.,சமூக மையம் முதியவர்களுக்கு அடிப்படை ஸ்மார்ட்போன் பயன்பாட்டு வகுப்புகளை தொடங்கியது.,ஒரு சமூக மையம் முதியவர்களுக்கான அடிப்படை ஸ்மார்ட்போன் வகுப்புகளைத் தொடங்கியுள்ளது.,20.8282,success,,sarvam-105b,0.0,39,1269,1308
+73,summarization,ta,சுருக்கமாக எழுதுக: நகர நூலகம் மாணவர்களுக்காக இலவச இணைய வசதியுடன் புதிய படிப்பு அறையை திறந்தது.,நகர நூலகம் மாணவர்களுக்காக இலவச இணைய வசதியுள்ள புதிய படிப்பு அறையை திறந்தது.,"நகர நூலகம் இப்போது மாணவர்களுக்காக ஒரு புதிய படிப்பு அறையை, இலவச இன்டர்நெட்டுடன் திறந்து வைத்துள்ளது.",22.4169,success,,sarvam-105b,0.0,36,1355,1391
+74,summarization,ta,சுருக்கமாக எழுதுக: பேருந்து நிறுவனம் பயணிகள் பயண நேரத்தை முன்கூட்டியே அறிய புதிய மொபைல் செயலியை வெளியிட்டது.,பேருந்து நிறுவனம் பயண நேரத்தை அறிய புதிய மொபைல் செயலியை வெளியிட்டது.,ஒரு பஸ் கம்பெனி புதுசா ஒரு ஆப் கொண்டு வந்திருக்காங்க. இதுல பயணிகள் அவங்க போற நேரம் எப்போன்னு ஈஸியா தெரிஞ்சுக்கலாம்.,21.1759,success,,sarvam-105b,0.0,39,1381,1420
+75,summarization,ta,சுருக்கமாக எழுதுக: ஒரு உணவகம் மீதமான பாதுகாப்பான உணவை அருகிலுள்ள சமூக அமைப்புக்கு வழங்கி உணவு வீணாவதை குறைத்தது.,உணவகம் மீதமான பாதுகாப்பான உணவை சமூக அமைப்புக்கு வழங்கி உணவு வீணாவதை குறைத்தது.,"உணவு வீணாவதை குறைக்க, ஒரு உணவகத்திலிருந்து வரும் மீதமுள்ள, பாதுகாப்பான உணவை, அருகில் உள்ள ஒரு சமூக அமைப்பு தினமும் சேகரிக்கிறது. மதிய உணவு அல்லது இரவு உணவில் மீதமான உணவை போன்ற, விற்பனை செய்ய முடியாத, ஆனால் சாப்பிடக்கூடிய அனைத்து உணவுகளும் இதில் அடங்கும்.
 
----
-
-You can also say it in a few slightly different ways, which are also correct:
-
-*   **To emphasize ""very important"":**
-    **சுத்தமான தண்ணீர் ஆரோக்கியத்திற்கு மிகவும் முக்கியம்.**
-    (Suththamāna thannīr ārōkkkiyat-kku mikka m முக்கியம்.)
-
-*   **Using the verb ""to be"":**
-    **சுத்தமான தண்ணீர் ஆரோக்கியத்திற்கு முக்கியமாக இருக்கிறது.**
-    (Suththamāna thannīr ārōkkkiyat-kku mikkamāka irukkirathu.)
-
-Here's a simple breakdown:
-
-*   **சுத்தமான தண்ணீர்** (Suththamāna thannīr): Clean water
-*   **ஆரோக்கியத்திற்கு** (Ārōkkkiyat-kku): For health
-*   **முக்கியம்** (Mikka m): Important",18.603,success,,sarvam-105b,0.0,21,1860,1881
-45,translation,ta,Translate into English: சென்னை ஒரு பெரிய நகரம்.,Chennai is a large city.,சென்னையில ஒரு பெரிய நகரம்.,9.037,success,,sarvam-105b,0.0,19,916,935
-46,translation,en,Translate into Hindi: The children are playing in the park.,बच्चे पार्क में खेल रहे हैं।,बच्चे पार्क में खेल रहे हैं।,18.497,success,,sarvam-105b,0.0,22,1681,1703
-47,translation,hi,Translate into English: वह हर सुबह जल्दी उठता है।,He wakes up early every morning.,"Of course. Here are a few ways to translate that sentence into English, from the most direct to more natural variations.
-
-**1. Most Direct Translation:**
-> **He wakes up early every morning.**
-
-This is a literal and perfectly correct translation.
-
----
-
-**2. Common and Natural Alternatives:**
-
-*   **He gets up early every morning.**
-    *(This is very common in spoken English. ""Gets up"" is a frequent phrasal verb for waking up and leaving your bed.)*
-
-*   **Every morning, he wakes up early.**
-    *(This reorders the sentence for a slightly different emphasis, putting the time first.)*
-
-*   **He wakes up early in the morning.**
-    *(Note: ""in the morning"" is a common phrase, but ""every morning"" is more specific, just like ""हर सुबह"" in Hindi.)*
-
----
-
-### Quick Breakdown:
-
-*   **वह (vah):** He / She (The verb form `उठता है` is masculine, so ""He"" is the correct translation).
-*   **हर सुबह (har subah):** Every morning.
-*   **जल्दी (jaldi):** Early / Quickly. In this context, ""Early"" is the correct meaning.
-*   **उठता है (uthata hai):** He wakes up / He gets up.
-
-For most situations, **""He wakes up early every morning""** or **""He gets up early every morning""** would be the best choices.",20.578,success,,sarvam-105b,0.0,21,1512,1533
-48,translation,en,Translate into Tamil: Reading improves knowledge.,வாசிப்பு அறிவை மேம்படுத்துகிறது.,"இதோ சில நல்ல மொழிபெயர்ப்பு வழிகள், ஒவ்வொன்றின் நுணுக்கங்களையும் விளக்குகின்றன.
-
-### மிகவும் நேரடியான மற்றும் பொதுவான மொழிபெயர்ப்பு:
-**வாசிப்பு அறிவை மேம்படுத்துகிறது.**
-
-இது வாக்கிய அமைப்பிற்கு மிகவும் சரியான மற்றும் நேரடியான மொழிபெயர்ப்பாகும்.
-*   **வாசிப்பு (Vasippu):** படிக்கும் செயல்.
-*   **அறிவை (Arivai):** அறிவை (பொருள்).
-*   **மேம்படுத்துகிறது (Seimaypaduthugirathu):** மேம்படுத்துகிறது, சிறந்ததாக்குகிறது.
-
----
-
-### மாற்று மற்றும் மிகவும் இயல்பான சொற்றொடர்கள்:
-
-தாய்மொழி பேசுபவர்கள் சில நேரங்களில் ஒரு வாதத்தில் மிகவும் இயல்பான அல்லது பெயரடை/வினைச்சொல் வேறுபாட்டை வலுவாக வலியுறுத்த வேறு சொற்றொடர்களைப் பயன்படுத்தலாம்.
-
-**1. ""படித்தால், புதிய விஷயங்களையும் நன்றாகப் புரிந்துகொள்ள முடியும்.""**
-*   **சொற்றொடர்:** **படித்தால் அறிவு வளரும்.**
-*   **அர்த்தம்:** ""படித்துப் புரிந்துகொண்டால், அறிவு வளரும்.""
-*   **இது ஏன் பொதுவானது:** இது அன்றாடப் பேச்சில் மிகவும் இயல்பாக இருக்கும். இது ஒரு பழமொழியைக் கூறுவது போல, தர்க்கரீதியான முடிவைக் கூற latency, ""if"" அமைப்பைப் பயன்படுத்துகிறது.
-
-**2. ""அறிவை வளர்க்க வாசிப்பது ஒரு சிறந்த வழி.""**
-*   **சொற்றொடர்:** **வாசிப்பு அறிவை விரிவுபடுத்துகிறது.**
-*   **அர்த்தம்:** ""படிக்கும் செயல் அறிவை விரிவுபடுத்துகிறது.""
-*   **இது ஏன் பயனுள்ளது:** இது அறிவை ""விரிவுபடுத்துதல்"" (விரிவுபடுத்துகிறது) என்ற நுணுக்கத்தைக் கொடுக்கிறது, அதாவது தகவல்களை விரிவுபடுத்துவதையும் திறந்த மனதையும் வலியுறுத்துகிறது.
-
-**3. ""புதிய விஷயங்களை வாங்க படிப்பு ஒரு நல்ல முறை.""**
-*   **சொற்றொடர்:** **வாசிப்பு அறிவை அதிகரிக்கிறது.**
-*   **அர்த்தம்:** ""படிப்பு என்பது அறிவை அதிகரிக்கும் வழி.""
-*   **இது ஏன் பயனுள்ளது:** அறிவைப் பெறுவதை வலியுறுத்த, ""அறிவை விரிவுபடுத்துகிறது"" என்பதற்குப் பதிலாக ""அறிவை அதிகரிக்கிறது"" (அதிகரிக்கிறது) என்பதைப் பயன்படுத்துகிறது.
-
-### சுருக்கம்
-
-| ஆங்கிலம் | தமிழ் | இயல்பான தன்மை",27.768,success,,sarvam-105b,0.0,18,2048,2066
-49,translation,ta,Translate into English: இந்த உணவு மிகவும் சுவையாக உள்ளது.,This food is very tasty.,"The most direct and common way to translate this is:
-
-**""This food is delicious.""**
-
-Here are a few other excellent and natural-sounding options, depending on the context:
-
-### More Common & Natural Variations
-
-*   **""This is delicious.""** (This is the most common and natural way to say it while eating or referring to the food in front of you).
-*   **""This is really good.""**
-*   **""This food is very tasty.""**
-
-### More Enthusiastic Variations
-
-*   **""This food is so delicious!""**
-*   **""Wow, this is amazing!""**
-*   **""Mmm, this is so good!""**
-
-### Breakdown of the Tamil Sentence
-
-To understand why these translations work, let's break down the original Tamil:
-*   **இந்த (Iṉḏa)** = ""This""
-*   **உணவு (uṇavu)** = ""Food"" or ""meal""
-*   **மிகவும் (mikavum)** = ""Very"" or ""extremely""
-*   **சுவையாக (cūvaiyāka)** = ""Deliciously"" or ""tasty"" (describes *how* it is)
-*   **உள்ளது (uḷḷ",23.692,success,,sarvam-105b,0.0,21,2048,2069
-50,translation,en,Translate into Hindi: Hard work and patience are important.,मेहनत और धैर्य महत्वपूर्ण हैं।,"Here are a few excellent ways to say ""Hard work and patience are",25.598,success,,sarvam-105b,0.0,21,2048,2069
-51,summarization,en,"Summarize in 1-2 sentences: Heavy rain flooded several roads in Mumbai, while local authorities advised commuters to avoid low-lying areas.",Heavy rain flooded roads in Mumbai and authorities advised commuters to avoid low-lying areas.,"Heavy rain in Mumbai flooded several roads, and local authorities advised commuters to avoid low-lying areas.",13.001,success,,sarvam-105b,0.0,39,1094,1133
-52,summarization,en,Summarize in 1-2 sentences: A city library opened a new digital section with thousands of e-books and free computer access for students.,The city library opened a digital section with e-books and free computer access for students.,"A city library has opened a new digital section, offering thousands of e-books and free computer access for students. The new resources are designed to support the educational and technological needs of the community.",15.973,success,,sarvam-105b,0.0,40,1447,1487
-53,summarization,en,Summarize in 1-2 sentences: Farmers in a district adopted drip irrigation to reduce water use while maintaining crop yields during a dry season.,Farmers adopted drip irrigation to save water while maintaining crop yields during a dry season.,Farmers in the district adopted drip irrigation to conserve water during a dry season while successfully maintaining their crop yields.,18.278,success,,sarvam-105b,0.0,39,1475,1514
-54,summarization,en,Summarize in 1-2 sentences: A school introduced a recycling program that collects paper and plastic every Friday and uses the proceeds for classroom materials.,A school started weekly recycling of paper and plastic and uses the proceeds for classroom materials.,"A school introduced a weekly recycling program that collects paper and plastic, using the proceeds to fund classroom materials.",22.961,success,,sarvam-105b,0.0,40,1823,1863
-55,summarization,en,Summarize in 1-2 sentences: A local hospital added a telemedicine service so patients in nearby villages can consult doctors without long-distance travel.,A hospital added telemedicine so nearby villagers can consult doctors without traveling long distances.,"To improve healthcare access, a local hospital has launched a telemedicine service, allowing patients in nearby villages to consult with doctors remotely and avoid long-distance travel.",18.234,success,,sarvam-105b,0.0,40,1424,1464
-56,summarization,hi,संक्षेप में लिखें: शहर में भारी बारिश के बाद कई सड़कें जलमग्न हो गईं और प्रशासन ने लोगों से सावधानी बरतने की अपील की।,भारी बारिश से शहर की कई सड़कें जलमग्न हुईं और प्रशासन ने सावधानी बरतने को कहा।,"भारी बारिश के बाद शहर में जगह-जगह जलभराव हो गया है, जिसकी वजह से प्रशासन ने जनता को सावधानी बरतने की सलाह दी है।
-
-यहाँ कुछ दूसरे तरीके दिए गए हैं:
-
-* **संक्षिप्त:** शहर भर में जलभराव हो गया है, जिसके बाद प्रशासन ने लोगों को सावधान रहने को कहा है।
-* **हेडलाइन:** शहर में जलभराव; भारी बारिश के कारण प्रशासन की चेतावनी।",19.152,success,,sarvam-105b,0.0,40,1597,1637
-57,summarization,hi,संक्षेप में लिखें: एक पुस्तकालय ने विद्यार्थियों के लिए नई डिजिटल किताबें और कंप्यूटर सुविधा शुरू की।,पुस्तकालय ने विद्यार्थियों के लिए डिजिटल किताबें और कंप्यूटर सुविधा शुरू की।,"***
-
-यहाँ कुछ समरी (summary) ऑप्शन दिए गए हैं, सबसे छोटे से लेकर थोड़े ज़्यादा डिटेल के साथ:
-
-**बहुत छोटी समरी:**
-इस लाइब्रेरी ने स्टूडेंट्स के लिए डिजिटल बुक्स और कंप्यूटर फैसिलिटीज़ शुरू कर दी हैं।
-
-**स्टैंडर्ड समरी:**
-पढ़ाई के लिए बेहतर रिसोर्स देने के लिए, लाइब्रेरी ने स्टूडेंट्स के इस्तेमाल के लिए डिजिटल बुक्स और नई कंप्यूटर फैसिलिटीज़ की शुरुआत की है।
-
-**बुलेट-पॉइंट समरी:**
-*   **कौन:** लाइब्रेरी
-*   **क्या एक्शन:** नई डिजिटल सर्विसेज़ की शुरुआत
-*   **किसके लिए:** स्टूडेंट्स
-*   **नए रिसोर्स:**
-    *   डिजिटल (ई-) बुक्स का एक बड़ा कलेक्शन
-    *   कंप्यूटर वर्कस्टेशन और फैसिलिटीज़",22.049,success,,sarvam-105b,0.0,31,1901,1932
-58,summarization,hi,संक्षेप में लिखें: किसानों ने सूखे के दौरान पानी बचाने के लिए ड्रिप सिंचाई अपनाई।,किसानों ने सूखे में पानी बचाने के लिए ड्रिप सिंचाई अपनाई।,"सूखे के दौरान, किसानों ने ड्रिप इरिगेशन (drip irrigation) का इस्तेमाल करके पानी बचाने का एक असरदार तरीका निकाल लिया।",17.914,success,,sarvam-105b,0.0,30,1572,1602
-59,summarization,hi,संक्षेप में लिखें: एक स्कूल ने हर सप्ताह कागज और प्लास्टिक एकत्र करने की पुनर्चक्रण योजना शुरू की।,स्कूल ने कागज और प्लास्टिक के साप्ताहिक पुनर्चक्रण की योजना शुरू की।,"स्कूल ने हर हफ्ते कागज़ और प्लास्टिक को रीसायकल करने का एक प्रोग्राम शुरू किया है।
-
-इसके कुछ और छोटे विकल्प:
-* स्कूल ने हर हफ्ते कागज़ और प्लास्टिक इकट्ठा करने का काम शुरू किया है।
-* छात्रों के लिए कम से कम कचरा फैलाने की पहल शुरू हुई है।",21.811,success,,sarvam-105b,0.0,34,1892,1926
-60,summarization,hi,संक्षेप में लिखें: अस्पताल ने दूर के गांवों के मरीजों के लिए टेलीमेडिसिन सेवा शुरू की।,अस्पताल ने गांवों के मरीजों के लिए टेलीमेडिसिन सेवा शुरू की।,एक अस्पताल ने दूर-दराज के गांवों के मरीजों की देखभाल तक पहुंच बेहतर बनाने के लिए एक टेलीमेडिसिन सर्विस शुरू की है।,16.426,success,,sarvam-105b,0.0,32,1487,1519
-61,summarization,ta,சுருக்கமாக எழுதுக: நகரில் பெய்த கனமழையால் பல சாலைகள் நீரில் மூழ்கின; அதிகாரிகள் மக்கள் கவனமாக இருக்குமாறு கேட்டுக்கொண்டனர்.,கனமழையால் பல சாலைகள் நீரில் மூழ்கியதால் அதிகாரிகள் எச்சரிக்கையுடன் இருக்குமாறு கேட்டுக்கொண்டனர்.,"நகரத்தில் பலமான மழை பெய்ததால், பல சாலைகளில் தண்ணீர் தேங்கியுள்ளது, இதனால் போக்குவரத்து பாதிக்கப்பட்டுள்ளது. மக்கள் கவனமாக இருக்குமாறும், தண்ணீர் தேங்கியுள்ள பகுதிகளைத் தவிர்க்குமாறும் அதிகாரிகள் அறிவுறுத்தியுள்ளனர்.",14.69,success,,sarvam-105b,0.0,42,1372,1414
-62,summarization,ta,சுருக்கமாக எழுதுக: ஒரு நூலகம் மாணவர்களுக்காக புதிய மின்னூல்கள் மற்றும் கணினி வசதியைத் தொடங்கியது.,நூலகம் மாணவர்களுக்காக மின்னூல்கள் மற்றும் கணினி வசதியைத் தொடங்கியது.,நூலகம் மாணவர்களுக்காக மின் புத்தகங்கள் (e-book) மற்றும் கணினி வசதிகளை அறிமுகப்படுத்தியது.,19.047,success,,sarvam-105b,0.0,35,1666,1701
-63,summarization,ta,சுருக்கமாக எழுதுக: வறண்ட காலத்தில் நீரைச் சேமிக்க விவசாயிகள் சொட்டு நீர்ப்பாசனத்தைப் பயன்படுத்தினர்.,விவசாயிகள் வறட்சியில் நீரைச் சேமிக்க சொட்டு நீர்ப்பாசனத்தைப் பயன்படுத்தினர்.,,20.582,success,,sarvam-105b,0.0,37,2048,2085
-64,summarization,ta,சுருக்கமாக எழுதுக: ஒரு பள்ளி ஒவ்வொரு வெள்ளிக்கிழமையும் காகிதம் மற்றும் பிளாஸ்டிக்கை சேகரிக்கும் மறுசுழற்சி திட்டத்தைத் தொடங்கியது.,பள்ளி வாரந்தோறும் காகிதம் மற்றும் பிளாஸ்டிக்கை மறுசுழற்சி செய்யும் திட்டத்தைத் தொடங்கியது.,"அரசு மேல்நிலைப் பள்ளி ஒரு கிரீன் ரீசைக்கிளிங் திட்டத்தை தொடங்கியுள்ளது. ஒவ்வொரு வெள்ளிக்கிழமையும், பிள்ளைகள் பள்ளியிலிருந்தோ அல்லது வீட்டிலிருந்தோ சேகரித்த காகித துண்டுகளையும், பிளாஸ்டிக் பாட்டில்களையும் கொண்டு வருவார்கள். ஆசிரியை திருமதி. கவிதா, அந்தப் பொருட்களைத் தனித்தனியாக வகைப்படுத்தி, உள்ளூர் ரீசைக்கிளிங் மையத்திற்கு அனுப்ப ஏற்பாடு செய்கிறார். இந்தத் திட்டம் மூலம், பிளாஸ்டிக் குப்பைகள் குறைவதுடன், பிளாஸ்டிக் மறுபயன்பாடு குறித்தும் பிள்ளைகளுக்கு விழிப்புணர்வு கிடைக்கிறது. இந்த வெள்ளிக்கிழமை, ஆசிரியர்களும் இதில் பங்கேற்று, பிள்ளைகளுக்கு சிறந்த மாதிரி ஆளாக விளங்குகிறார்கள்.",2.606,success,,sarvam-105b,0.0,45,262,307
-65,summarization,ta,சுருக்கமாக எழுதுக: அருகிலுள்ள கிராம மக்கள் நீண்ட பயணம் செய்யாமல் மருத்துவர்களை அணுக மருத்துவமனை தொலைமருத்துவ சேவையைத் தொடங்கியது.,மருத்துவமனை கிராம மக்களுக்கு தொலைமருத்துவ சேவையைத் தொடங்கியது.,"பொதுவழக்கப்படி சொல்லப்போனால், இதன் அர்த்தம் இதுதான்:
-
-கிராம மக்கள் வெகுதூரம் பயணம் செய்வதைத் தவிர்க்கும் வகையில், ஒரு மருத்துவமனை அருகில் உள்ள கிராம மக்களுக்கு தொலைதூர மருத்துவ சேவைகளை (telemedical services) வழங்கத் தொடங்கியது.",11.317,success,,sarvam-105b,0.0,37,1194,1231
-66,summarization,en,Summarize in 1-2 sentences: A public park added solar-powered lights to improve visibility after sunset while reducing reliance on grid electricity.,The park added solar-powered lights to improve evening visibility and reduce grid electricity use.,The public park installed solar-powered lights to increase nighttime visibility while reducing its reliance on grid electricity.,18.453,success,,sarvam-105b,0.0,39,1613,1652
-67,summarization,en,Summarize in 1-2 sentences: A university launched a scholarship program for students from low-income families to support tuition and books.,A university launched scholarships to help low-income students pay for tuition and books.,,23.837,success,,sarvam-105b,0.0,38,2048,2086
-68,summarization,hi,संक्षेप में लिखें: नगर निगम ने पुराने बसों को बदलकर नई बसें चलाने की योजना की घोषणा की।,नगर निगम ने पुरानी बसों की जगह नई बसें चलाने की योजना घोषित की।,नगर निगम ने अपने पुराने बसों को हटाकर नई बसें शुरू करके शहर के पब्लिक ट्रांसपोर्ट सिस्टम को बेहतर बनाने का ऐलान किया है।,23.138,success,,sarvam-105b,0.0,32,2000,2032
-69,summarization,hi,संक्षेप में लिखें: संग्रहालय ने स्थानीय इतिहास पर एक नई प्रदर्शनी खोली।,संग्रहालय ने स्थानीय इतिहास पर नई प्रदर्शनी खोली।,"यहाँ एक म्यूज़ियम की प्रदर्शनी (exhibition) के बारे में एक संक्षिप्त जानकारी दी गई है, जिसे अलग-अलग जगहों और इस्तेमाल के हिसाब से तीन अलग-अलग वर्ज़न में लिखा गया है।
-
-### वर्ज़न 1: स्टैंडर्ड (एक प्रेस रिलीज़ या वेबसाइट के लिए)
-
-**हेडलाइन:** लोकल म्यूज़ियम एक अभूतपूर्व प्रदर्शनी ""Our Town: 200 Years in 200 Objects"" के साथ अपनी विरासत का जश्न मना रहा है
-
-**[शहर/संग्रहालय का नाम], [दिनांक]** — [संग्रहालय का नाम] को अपनी बहुप्रतीक्षित नई प्रदर्शनी, ""Our Town: 200 Years in 200 Objects"" के सार्वजनिक उद्घाटन की घोषणा करते हुए बेहद खुशी हो रही है। यह पूरी तरह से स्थापित प्रदर्श",17.607,success,,sarvam-105b,0.0,26,2048,2074
-70,summarization,ta,சுருக்கமாக எழுதுக: பலத்த காற்றுக்குப் பிறகு மின்சார ஊழியர்கள் சேதமடைந்த கம்பிகளை சரிசெய்தனர்.,பலத்த காற்றுக்குப் பிறகு மின்சார ஊழியர்கள் சேதமடைந்த கம்பிகளை சரிசெய்தனர்.,கனமான காற்றின் காரணமாக சேதமடைந்த வயர்களை பவர் கார் (Powercorp) சரிசெய்தது.,15.764,success,,sarvam-105b,0.0,36,1800,1836
-71,summarization,en,Summarize in 1-2 sentences: A community center started weekend classes in basic computer skills for older adults.,A community center started weekend computer classes for older adults.,A community center has started offering weekend classes to teach older adults basic computer skills. These courses aim to help seniors become more comfortable with technology.,17.608,success,,sarvam-105b,0.0,33,1938,1971
-72,summarization,hi,संक्षेप में लिखें: रेलवे ने यात्रियों के लिए एक नया ऑनलाइन टिकट सहायता पोर्टल शुरू किया।,रेलवे ने यात्रियों के लिए नया ऑनलाइन टिकट सहायता पोर्टल शुरू किया।,"रेलवे ने यात्रियों की मदद और उनकी शिकायतें दूर करने के लिए एक खास ऑनलाइन पोर्टल **RailMadad (mera Rail Madad)** शुरू किया है।
-
-**इस पहल के मुख्य फीचर्स और उद्देश्य यहाँ दिए गए हैं:**
-
-*   **इंटीग्रेटेड शिकायत निवारण:** यात्री एक सिंगल-विंडो सिस्टम के जरिए अपनी शिकायतें दर्ज कर सकते हैं। ट्रेन और स्टेशनों पर सफाई, खाने-पीने, सुरक्षा और पानी जैसी सुविधाओं से जुड़ी समस्याओं के लिए यह सुविधा है।
-*   **प्रोएक्टिव सेवाएं:** यह प्लेटफॉर्म यात्रियों को व्हीलचेयर, एक्स्ट्रा बेड और बुजुर्गों, बच्चों और दिव्यांगों के लिए मदद जैसी खास सेवाओं को पहले से बुक करने की सुविधा देता है।
-*   **मल्टी-चैनल एक्सेस:** ये सेवाएं **RailMadad वेबसाइट** और एक मोबाइल ऐप के जरिए चलती हैं। इसके अलावा, एक खास **139** हेल्पलाइन और सोशल मीडिया (Twitter, X, Facebook) के जरिए भी मदद मिलती है।
-*   **पारदर्शिता और ट्रैकिंग:** यात्रियों को शिकायत नंबर दिए जाते हैं, जिससे वे अपना केस ट्रैक कर सकते हैं और यह पक्का कर सकते हैं कि समस्या का समाधान हो गया है।
-
-यह पहल का मकसद यात्रियों का सफर आसान बनाना, जवाबदेही बढ़ाना और एक ज्यादा पैसेंजर-फ्रेंडली सिस्टम की तरफ बढ़ना है।",17.73,success,,sarvam-105b,0.0,29,1865,1894
-73,summarization,ta,சுருக்கமாக எழுதுக: பள்ளி மாணவர்களுக்கு மரங்களை நட்டுப் பராமரிக்கும் சுற்றுச்சூழல் நிகழ்ச்சியை நடத்தியது.,பள்ளி மாணவர்களுடன் மரம் நடும் சுற்றுச்சூழல் நிகழ்ச்சியை நடத்தியது.,"**சுருக்கம்:**
-
-பள்ளிக் குழந்தைகளுக்காக நடத்தப்பட்ட இந்த சுற்றுச்சூழல் திட்டத்தில், மரக்கன்றுகளை நடுவதும் வளர்ப்பதும் முக்கியமாக இருந்தது. இதன் மூலம், மாணவர்கள் சுற்றுச்சூழல் பாதுகாப்பு பற்றி நேரில் தெரிந்துகொண்டு, இயற்கையை பாதுகாக்கும் பொறுப்பை உணரும் வகையில் ஒரு நடைமுறை கல்வியை அவர்களுக்கு வழங்கப்பட்டது.",16.065,success,,sarvam-105b,0.0,33,1376,1409
-74,summarization,en,Summarize in 1-2 sentences: A restaurant reduced food waste by donating safe surplus meals to a local community organization.,A restaurant reduced food waste by donating safe surplus meals to a community organization.,,23.752,success,,sarvam-105b,0.0,35,2048,2083
-75,summarization,hi,संक्षेप में लिखें: नगर के एक पार्क में बच्चों के लिए नया खेल क्षेत्र बनाया गया और सुरक्षा के लिए नई रोशनी लगाई गई。,नगर के पार्क में बच्चों के लिए नया खेल क्षेत्र और नई सुरक्षा रोशनी लगाई गई।,,24.928,success,,sarvam-105b,0.0,37,2048,2085
-76,reasoning_math,en,"If a book costs $12 and you buy 3 books, how much do you pay?",36,You would pay $12 × 3 = **$36**.,3.225,success,,sarvam-105b,0.0,30,252,282
-77,reasoning_math,en,A train travels 60 km in 1 hour. How far will it travel in 4 hours at the same speed?,240,"The train’s speed is  
+அந்த சமூக அமைப்பு இந்த உணவை பொறுமையாக பேக் செய்து, தங்குமிடம் இல்லாதவர்களுக்கும் அல்லது சமுதாயத்தில் பின்தங்கியவர்களுக்கும் விநியோகிக்கிறது. இந்த எளிய, நேரடி partnership உணவு கழிவுகளை குறைப்பதோடு, உள்ளூர் பசியை நிவர்த்தி செய்யவும் நேரடியாக உதவுகிறது. உணவு தானம் செய்வது சமுதாயத்திற்கு எளிதாக செய்யக்கூடிய ஒரு நல்ல விஷயமாக இருக்கும், இது இந்தியாவில் ஒரு வளர்ந்து வரும் நடைமுறை.",26.9523,success,,sarvam-105b,0.0,41,1713,1754
+76,reasoning_math,en,"A shop sells notebooks for $4 each. If Maya buys 7 notebooks, how much does she pay?",28,"Maya would pay  
 
 \[
-\text{speed} = \frac{60\text{ km}}{1\text{ h}} = 60\text{ km/h}.
+7 \text{ notebooks} \times \$4 \text{ per notebook} = \$28.
 \]
 
-In 4 hours at the same speed the distance covered is  
+So she pays **\$28**.",3.4777,success,,sarvam-105b,0.0,32,187,219
+77,reasoning_math,en,"A bus has 48 seats. If 35 seats are occupied, how many seats are empty?",13,"The bus has 48 seats in total.  
+  Occupied seats = 35  
+  Empty seats = 48 − 35 = **13**.  
+
+So, there are 13 empty seats.",4.379,success,,sarvam-105b,0.0,32,242,274
+78,reasoning_math,en,A farmer has 6 rows of plants with 12 plants in each row. How many plants are there altogether?,72,"Each row has 12 plants, and there are 6 rows.  
+So the total number of plants is  
 
 \[
-\text{distance} = \text{speed} \times \text{time} = 60\text{ km/h} \times 4\text{ h} = 240\text{ km}.
+6 \times 12 = 72.
+\]
+
+**There are 72 plants altogether.**",4.9557,success,,sarvam-105b,0.0,34,274,308
+79,reasoning_math,en,Ravi has $100 and spends $37 on books. How much money does he have left?,63,Ravi has $100 – $37 = **$63** left.,5.4482,success,,sarvam-105b,0.0,33,314,347
+80,reasoning_math,en,"A train travels 60 km in 1 hour. At the same speed, how far will it travel in 4 hours?",240 km,"The train’s speed is  
+
+\[
+\text{speed}= \frac{60\text{ km}}{1\text{ h}} = 60\ \text{km/h}.
+\]
+
+At that constant speed, the distance covered in 4 h is  
+
+\[
+\text{distance}= \text{speed} \times \text{time}= 60\ \frac{\text{km}}{\text{h}} \times 4\ \text{h}=240\ \text{km}.
 \]
 
 \[
 \boxed{240\text{ km}}
-\]",5.017,success,,sarvam-105b,0.0,36,346,382
-78,reasoning_math,en,Ravi has 15 apples and gives 6 away. How many apples remain?,9,"Ravi starts with 15 apples and gives away 6.  
-Remaining apples = 15 − 6 = **9 apples**.",2.653,success,,sarvam-105b,0.0,28,208,236
-79,reasoning_math,en,A box has 8 rows with 5 items in each row. How many items are there?,40,"Each row contains 5 items and there are 8 rows, so the total number of items is  
+\]",6.6136,success,,sarvam-105b,0.0,37,381,418
+81,reasoning_math,en,A class has 30 students. Two-thirds of them submitted their assignments. How many students submitted them?,20,"Two‑thirds of the 30 students is  
 
 \[
-8 \times 5 = 40.
+\frac{2}{3}\times 30 = \frac{60}{3}=20.
 \]
 
-**There are 40 items in the box.**",3.883,success,,sarvam-105b,0.0,30,296,326
-80,reasoning_math,en,"If 20% of 50 students are absent, how many students are absent?",10,"\(20\%\) of 50 students is  
+So **20 students** turned in their assignments.",3.7331,success,,sarvam-105b,0.0,33,210,243
+82,reasoning_math,en,"A bottle contains 2.5 liters of water. If 0.75 liters are used, how much water remains?",1.75 liters,"The remaining amount is found by subtracting the used volume from the original volume:
 
 \[
-\frac{20}{100}\times 50 = 0.20 \times 50 = 10.
+2.5\text{ L} - 0.75\text{ L} = 1.75\text{ L}
 \]
 
-**So, 10 students are absent.**",2.56,success,,sarvam-105b,0.0,29,207,236
-81,reasoning_math,en,A shop gives a $10 discount on a $75 item. What is the final price?,65,"The final price is  
+So, **1.75 liters of water remain** in the bottle.",4.872,success,,sarvam-105b,0.0,36,269,305
+83,reasoning_math,en,A store gives a 20% discount on a $50 jacket. What is the discounted price?,40,"The discount is \(20\% \times \$50 = \$10\).
 
+Subtracting the discount from the original price:
 \[
-\$75 - \$10 = \$65.
-\]  
-
-So after the \(10\)‑dollar discount, the item costs **\$65**.",4.297,success,,sarvam-105b,0.0,31,363,394
-82,reasoning_math,en,A farmer has 48 eggs and packs them equally into 6 boxes. How many eggs per box?,8,"The farmer divides the 48 eggs by the 6 boxes:
-
-\[
-48 \div 6 = 8
+\$50 - \$10 = \$40.
 \]
 
-So each box contains **8 eggs**.",2.758,success,,sarvam-105b,0.0,32,235,267
-83,reasoning_math,en,A rectangle has length 10 and width 4. What is its area?,40,"The area of a rectangle is found by multiplying its length by its width:
+So the jacket costs **\$40** after the discount.",4.0785,success,,sarvam-105b,0.0,32,224,256
+84,reasoning_math,en,A rectangle is 8 cm long and 5 cm wide. What is its area?,40 cm²,"The area \(A\) of a rectangle is found by multiplying its length by its width:
 
 \[
-\text{Area} = \text{length} \times \text{width} = 10 \times 4 = 40.
+A = \text{length} \times \text{width} = 8\ \text{cm} \times 5\ \text{cm} = 40\ \text{cm}^2.
 \]
 
-So the rectangle’s area is **\(40\) square units**.",2.669,success,,sarvam-105b,0.0,27,223,250
-84,reasoning_math,en,"If a car uses 5 liters of fuel for 100 km, how much fuel is needed for 300 km?",15,"The car’s fuel usage is linear, so we can just scale it:
-
-- Consumption: \(5\text{ L per }100\text{ km}\)  
-- 300 km is three times 100 km → fuel needed \(= 3 \times 5\text{ L} = 15\text{ L}\).
-
-**Answer: 15 liters of fuel.**",6.548,success,,sarvam-105b,0.0,38,534,572
-85,reasoning_math,en,A worker earns $20 per hour and works 7 hours. What is the pay?,140,"The worker’s total pay is  
+\[
+\boxed{40\ \text{cm}^2}
+\]",3.43,success,,sarvam-105b,0.0,28,188,216
+85,reasoning_math,hi,एक दुकान में 6 पेन हैं और प्रत्येक पेन की कीमत ₹15 है। सभी पेन की कुल कीमत कितनी होगी?,₹90,"कुल लागत निकालने के लिए, पेन की संख्या को प्रति पेन कीमत से गुणा करें:
 
 \[
-\$20\text{ per hour} \times 7\text{ hours} = \boxed{\$140}.
-\]",2.565,success,,sarvam-105b,0.0,29,199,228
-86,reasoning_math,hi,"यदि एक पेन की कीमत 15 रुपये है और आप 4 पेन खरीदते हैं, तो कुल कीमत कितनी होगी?",60,"कुल कीमत = 1 पेन की कीमत × पेनों की संख्या  
-= 15 रु. × 4  
-= **60 रु.**",1.832,success,,sarvam-105b,0.0,34,145,179
-87,reasoning_math,hi,एक बस 50 किलोमीटर प्रति घंटे की गति से 3 घंटे चलती है। वह कितनी दूरी तय करेगी?,150,"बस की दूरी निकालने के लिए, स्पीड को यात्रा में लगे समय से गुणा कर दें:
-
-\[
-\text{Distance} = \text{speed} \times \text{time}
-               = 50\ \text{km/h} \times 3\ \text{h}
-               = 150\ \text{km}.
+6 \text{ पेन} \times ₹15 \text{ प्रति पेन} = ₹90
 \]
 
-**बस 150 किलोमीटर की दूरी तय करेगी।**",3.768,success,,sarvam-105b,0.0,33,306,339
-88,reasoning_math,hi,रीना के पास 20 आम हैं और वह 7 आम दे देती है। कितने आम बचेंगे?,13,"रीना के पास **13 आम** बचेंगे।
-
-यह एक आसान घटाने वाला सवाल है। हम शुरुआती संख्या में से दी गई संख्या को घटाते हैं:
-
-20 (शुरुआती आम)
-- 7 (दिए गए आम)
----
-13 (बाकी आम)",13.638,success,,sarvam-105b,0.0,33,1125,1158
-89,reasoning_math,hi,एक डिब्बे में 6 पंक्तियाँ हैं और हर पंक्ति में 4 वस्तुएँ हैं। कुल कितनी वस्तुएँ हैं?,24,"आइटम्स की कुल संख्या निकालने के लिए, आप रोज़ की संख्या को हर रोज़ में मौजूद आइटम्स की संख्या से गुणा कर सकते हैं:
+तो सभी छः पेन की कुल कीमत **₹90** है।",6.0477,success,,sarvam-105b,0.0,35,326,361
+86,reasoning_math,hi,एक बस में 52 यात्री थे। अगले स्टॉप पर 17 यात्री उतर गए। बस में कितने यात्री बचे?,35,"बस में बचे हैं:
 
 \[
-6 \text{ रोज़} \times 4 \text{ आइटम्स हर रोज़} = 24 \text{ आइटम्स}
+52 - 17 = \boxed{35}
 \]
 
-तो पूरे डिब्बे में **24 आइटम्स** हैं।",3.172,success,,sarvam-105b,0.0,36,225,261
-90,reasoning_math,hi,50 छात्रों में से 10% अनुपस्थित हैं। कितने छात्र अनुपस्थित हैं?,5,"50 का 10 % निकालने के लिए, 50 को 0.10 से गुणा करें (या इसका दसवां हिस्सा निकालें):
+ passengers.",3.0504,success,,sarvam-105b,0.0,36,148,184
+87,reasoning_math,hi,एक किसान ने 8 टोकरियों में प्रत्येक में 9 आम रखे। कुल कितने आम हैं?,72,"प्रत्येक टोकरी में आमों की संख्या को टोकरियों की संख्या से गुणा करें:
 
 \[
-0.10 \times 50 = 5
+9 \text{ आम/टोकरी} \times 8 \text{ टोकरियाँ}=72 \text{ आम}.
 \]
 
-**इसलिए, 5 छात्र अनुपस्थित हैं।**",4.709,success,,sarvam-105b,0.0,29,310,339
-91,reasoning_math,hi,एक वस्तु की कीमत 100 रुपये है और उस पर 20 रुपये की छूट है। अंतिम कीमत क्या है?,80,"100 रुपये की लिस्ट प्राइस में से 20 रुपये की छूट घटाने के बाद फाइनल प्राइस है  
+तो किसान ने **72 आम** स्टोर किए।",5.2706,success,,sarvam-105b,0.0,31,269,300
+88,reasoning_math,hi,एक छात्र के पास ₹500 हैं और वह ₹185 की किताब खरीदता है। उसके पास कितने रुपये बचेंगे?,₹315,"छात्र के पास शुरुआत में ₹500 हैं।  
+किताब की कीमत ₹185 है।
 
 \[
-100 - 20 = \mathbf{ \text{Rs. } 80 }
-\]",3.174,success,,sarvam-105b,0.0,36,257,293
-92,reasoning_math,hi,48 अंडों को 8 डिब्बों में बराबर बाँटा जाए तो प्रत्येक डिब्बे में कितने अंडे होंगे?,6,"48 अंडों को 8 कंटेनरों में बराबर-बराबर बाँटने के लिए, कुल अंडों की संख्या को कंटेनरों की संख्या से भाग दे दें:
-
-\[
-\frac{48}{8} = 6
+\begin{aligned}
+500 - 185 &= 500 - (100 + 80 + 5) \\
+        &= (500 - 100) - 80 - 5 \\
+        &= 400 - 80 - 5 \\
+        &= 320 - 5 \\
+        &= 315.
+\end{aligned}
 \]
 
-तो हर कंटेनर में **6 अंडे** होंगे। (जाँचें: \(6 \times 8 = 48\) अंडे, जो कुल संख्या से मेल खाता है।)",3.481,success,,sarvam-105b,0.0,34,253,287
-93,reasoning_math,hi,एक आयत की लंबाई 9 और चौड़ाई 5 है। उसका क्षेत्रफल कितना है?,45,"एक आयत का क्षेत्रफल निकालने के लिए, आप उसकी लंबाई को उसकी चौड़ाई से गुणा करते हैं।
+**उत्तर:** किताब खरीदने के बाद छात्र के पास **₹315** बचेंगे।",7.8034,success,,sarvam-105b,0.0,38,431,469
+89,reasoning_math,hi,एक ट्रेन 3 घंटे में 180 किलोमीटर चलती है। उसकी औसत गति कितनी है?,60 किमी/घंटा,"एवरेज स्पीड = टोटल डिस्टेंस ÷ टोटल टाइम  
 
-Area = length × width
-Area = 9 × 5
-Area = 45
-
-आयत का क्षेत्रफल **45 square units** है।",9.625,success,,sarvam-105b,0.0,29,760,789
-94,reasoning_math,hi,एक कार 100 किमी में 6 लीटर ईंधन उपयोग करती है। 200 किमी के लिए कितना ईंधन चाहिए?,12,"कार को **12 लीटर** ईंधन की ज़रूरत होगी।
-
-इसे सॉल्व करने के कुछ तरीके यहाँ दिए गए हैं:
-
-### तरीका 1: आसान तरीका
-
-1.  इंजन 100 किमी के लिए 6 लीटर ईंधन इस्तेमाल करता है।
-2.  200 किमी का सफर 100 किमी के दो सफर के बराबर है।
-3.  चूँकि कार को 100 किमी के सफर के लिए 6 लीटर की ज़रूरत होती है, इसलिए इसे अपने से दोगुने ईंधन की ज़रूरत होगी।
-4.  6 लीटर x 2 = **12 लीटर**।
-
----
-
-### तरीका 2: अनुपात (Ratio) का इस्तेमाल
-
-आप इसे एक साधारण अनुपात (proportion) के रूप में सेट कर सकते हैं।
-
-*   **दिया गया:** 6 लीटर / 100 किमी = x लीटर / 200 किमी
-*   **x निकालने के लिए (200 किमी के लिए ईंधन):**
-    *   x = (6 लीटर * 200) / 100
-    *   x = 1200 / 100
-    *   x = **12 लीटर**
-
----
-
-### तरीका 3: प्रति किलोमीटर ईंधन की गणना करना
-
-1.  सबसे पहले, पता लगाएँ कि कार प्रति किलोमीटर कितना ईंधन इस्तेमाल करती है।
-    *   6 लीटर / 100 किमी = 0.06 लीटर प्रति किलोमीटर
-2.  अब, उस मात्रा को कुल दूरी से गुणा करें।
-    *   0.06 लीटर/किमी * 200 किमी = **12 लीटर**।",16.078,success,,sarvam-105b,0.0,37,1323,1360
-95,reasoning_math,hi,एक कर्मचारी प्रति घंटे 25 रुपये कमाता है और 4 घंटे काम करता है। उसकी कमाई कितनी है?,100,"मज़दूर की कुल कमाई है 
+= 180 km ÷ 3 h = **60 km/h**।",5.2567,success,,sarvam-105b,0.0,30,253,283
+90,reasoning_math,hi,एक कक्षा में 40 विद्यार्थी हैं। उनमें से 25% विद्यार्थी अनुपस्थित हैं। कितने विद्यार्थी अनुपस्थित हैं?,10,"अनुपस्थित छात्रों की संख्या निकालने के लिए 40 का 25% निकालें:
 
 \[
-25 \text{ रुपये/घंटा} \times 4 \text{ घंटे} = 100 \text{ रुपये}.
+25\% \times 40 = \frac{25}{100} \times 40 = \frac{1}{4} \times 40 = 10.
 \]
 
-तो, वह **₹100** कमाता है।",2.862,success,,sarvam-105b,0.0,34,215,249
-96,reasoning_math,ta,ஒரு புத்தகத்தின் விலை 20 ரூபாய். 3 புத்தகங்களின் விலை எவ்வளவு?,60,"3 புத்தகங்களுக்கு, ஒவ்வொன்றுக்கும் ₹20 வீதம்:
+**तो, 10 छात्र अनुपस्थित हैं।**",6.0558,success,,sarvam-105b,0.0,36,321,357
+91,reasoning_math,hi,एक आयत की लंबाई 12 सेमी और चौड़ाई 4 सेमी है। उसका क्षेत्रफल कितना होगा?,48 सेमी²,"आयताकार का क्षेत्रफल उसकी लंबाई और चौड़ाई को गुणा करके निकाला जाता है:
 
 \[
-20 \times 3 = 60
+\text{Area}= \text{length} \times \text{width}=12\ \text{cm}\times 4\ \text{cm}=48\ \text{cm}^2.
 \]
 
-அதனால், மொத்த விலை **₹60**.",3.89,success,,sarvam-105b,0.0,26,267,293
-97,reasoning_math,ta,ஒரு பேருந்து மணிக்கு 40 கிமீ வேகத்தில் 5 மணி நேரம் செல்கிறது. அது எவ்வளவு தூரம் செல்லும்?,200,"பயணம் செய்திருக்கும் தூரம் வேகத்தையும் நேரத்தையும் பெருக்கிக் கிடைக்கும் அளவுக்குச் சமம்:
+**उत्तर:** क्षेत्रफल **48 वर्ग सेंटीमीटर** है।",7.5741,success,,sarvam-105b,0.0,32,368,400
+92,reasoning_math,hi,एक वस्तु की कीमत ₹800 है और उस पर 10% छूट मिलती है। छूट के बाद कीमत कितनी होगी?,₹720,"10 % की छूट से कीमत कम हो जाती है:
 
 \[
-\text{தூரம்} = \text{வேகம்} \times \text{நேரம்} = 40\ \text{km/h} \times 5\ \text{h} = 200\ \text{km}.
+\text{Discount} = 10\% \times ₹800 = 0.10 \times 800 = ₹80
 \]
 
-எனவே, அந்த பஸ் **200 கிலோமீட்டர்** தூரம் பயணிக்கிறது.",3.685,success,,sarvam-105b,0.0,34,250,284
-98,reasoning_math,ta,அனிதாவிடம் 18 பேனாக்கள் உள்ளன; அவள் 5 பேனாக்களை கொடுத்தாள். எத்தனை பேனாக்கள் மீதம்?,13,அனிதாbalance-ல் \(18 - 5 = 13\) பேனாக்கள் மீதமுள்ளது.,3.074,success,,sarvam-105b,0.0,39,212,251
-99,reasoning_math,ta,ஒரு பெட்டியில் 7 வரிசைகள் உள்ளன; ஒவ்வொரு வரிசையிலும் 3 பொருட்கள் உள்ளன. மொத்தம் எத்தனை?,21,"**7 வரிசைகளில்** ஒவ்வொன்றிலும் **3 பொருட்கள்** உள்ளன, அதனால் மொத்த பொருட்களின் எண்ணிக்கை  
+तो, फाइनल कीमत होगी:
 
 \[
-7 \times 3 = 21.
+₹800 - ₹80 = ₹720
 \]
 
-ஆக, அந்தப் பெட்டியில் **21 பொருட்கள்** உள்ளன.",5.935,success,,sarvam-105b,0.0,33,420,453
-100,reasoning_math,ta,50 இன் 30 சதவீதம் எவ்வளவு?,15,"50-இன் 30 %-ஐக் கண்டுபிடிக்க:
-
-1. சதவீதத்தை தசம எண்ணாக மாற்றுங்கள்: \(30\% = \frac{30}{100} = 0.30\).
-2. அந்த தசம எண்ணை 50-ஆல் பெருக்குங்கள்:
+**डिस्काउंट के बाद फाइनल कीमत: ₹720.**",8.4823,success,,sarvam-105b,0.0,37,411,448
+93,reasoning_math,ta,ஒரு பேனாவின் விலை ₹12. 9 பேனாக்களை வாங்கினால் மொத்தம் எவ்வளவு செலவாகும்?,₹108,"ஒரு பேனாவின் விலை ₹12.  
+9 பேனாக்களுக்கு:
 
 \[
-0.30 \times 50 = 15.
+9 \times ₹12 = ₹108
 \]
 
-**பதில்:** 50-இன் 30 % என்பது **15**.",3.992,success,,sarvam-105b,0.0,19,304,323
+**மொத்த செலவு = ₹108.**",4.6556,success,,sarvam-105b,0.0,31,215,246
+94,reasoning_math,ta,ஒரு பெட்டியில் 64 மாம்பழங்கள் உள்ளன. அவற்றில் 19 மாம்பழங்கள் விற்கப்பட்டன. எத்தனை மாம்பழங்கள் மீதமுள்ளன?,45,"\(\displaystyle 64 - 19 = 45\)
+
+அதனால, அந்தப் பெட்டியில **45 மாம்பழங்கள்** மீதம் இருக்கு.",4.6232,success,,sarvam-105b,0.0,45,232,277
+95,reasoning_math,ta,ஒரு வகுப்பில் 7 வரிசைகள் உள்ளன. ஒவ்வொரு வரிசையிலும் 6 மாணவர்கள் உள்ளனர். மொத்தம் எத்தனை மாணவர்கள்?,42,"மொத்த மாணவர்களின் எண்ணிக்கையைக் கண்டுபிடிக்க, வரிசைகளின் எண்ணிக்கையை ஒவ்வொரு வரிசையிலும் உள்ள மாணவர்களின் எண்ணிக்கையால் பெருக்க வேண்டும்:
+
+\[
+7 \text{ வரிசைகள்} \times 6 \text{ ஒரு வரிசைக்கு மாணவர்கள்} = 42 \text{ மாணவர்கள்}
+\]
+
+ஆக, வகுப்பில் **42 மாணவர்கள்** இருக்கிறார்கள்.",5.4565,success,,sarvam-105b,0.0,33,283,316
+96,reasoning_math,ta,ஒரு நபர் தினமும் 3 கிலோமீட்டர் நடக்கிறார். 8 நாட்களில் அவர் எத்தனை கிலோமீட்டர் நடப்பார்?,24 கிலோமீட்டர்,"அந்த நபர் 
+
+\[
+3\ \text{km/day} \times 8\ \text{days} = 24\ \text{km}.
+\]
+
+எனவே 8 நாட்களில் அவர்கள் **24 கிலோமீட்டர்** நடந்து செல்வார்கள்.",4.7341,success,,sarvam-105b,0.0,34,213,247
+97,reasoning_math,ta,"ஒரு கடையில் ₹1,000 மதிப்புள்ள பொருளுக்கு 15% தள்ளுபடி வழங்கப்படுகிறது. தள்ளுபடிக்குப் பிறகு விலை என்ன?",₹850,"டிஸ்கவுண்ட் தொகை  
+
+\[
+15\% \times ₹1{,}000 = 0.15 \times 1{,}000 = ₹150.
+\]
+
+இதை ஒரிஜினல் விலையில இருந்து கழிச்சுக்கோங்க:
+
+\[
+₹1{,}000 - ₹150 = ₹850.
+\]
+
+**டிஸ்கவுண்ட் போட்டதுக்கு அப்புறம் விலைகள் ₹850.**",5.8134,success,,sarvam-105b,0.0,43,294,337
+98,reasoning_math,ta,ஒரு செவ்வகத்தின் நீளம் 10 செ.மீ. மற்றும் அகலம் 6 செ.மீ. அதன் சுற்றளவு என்ன?,32 செ.மீ.,"ஒரு செவ்வகத்தின் சுற்றளவை \(P\) இந்த ஃபார்முலாவை வெச்சு கண்டுபிடிக்கலாம்  
+
+\[
+P = 2(\text{நீளம்} + \text{அகலம்}).
+\]
+
+கொடுக்கப்பட்ட அளவுகளை வெச்சு:
+
+\[
+P = 2(10\ \text{cm} + 6\ \text{cm}) = 2(16\ \text{cm}) = 32\ \text{cm}.
+\]
+
+\[
+\boxed{32\ \text{cm}}
+\]",8.4907,success,,sarvam-105b,0.0,39,458,497
+99,reasoning_math,ta,ஒரு பேருந்தில் 5 வரிசைகள் உள்ளன. ஒவ்வொரு வரிசையிலும் 8 இருக்கைகள் உள்ளன. 7 இருக்கைகள் காலியாக இருந்தால் எத்தனை இருக்கைகள் நிரம்பியுள்ளன?,33,"பேருந்தில் இருப்பது  
+
+\[
+5 \text{ வரிசைகள்} \times 8 \text{ ஒரு வரிசைக்கு இருக்கைகள்} = 40 \text{ இருக்கைகள் மொத்தம்}.
+\]
+
+7 இருக்கைகள் காலியாக இருந்தால், நிரம்பிய (நிரம்பிய) இருக்கைகளின் எண்ணிக்கை  
+
+\[
+40 - 7 = 33.
+\]
+
+\[
+\boxed{33}
+\]",4.4828,success,,sarvam-105b,0.0,45,255,300
+100,reasoning_math,ta,ஒரு கடிகாரம் ஒவ்வொரு மணி நேரத்திலும் 5 நிமிடங்கள் முன்னேறுகிறது. அது 4 மணி நேரத்தில் மொத்தம் எத்தனை நிமிடங்கள் முன்னேறும்?,20 நிமிடங்கள்,,35.7138,success,,sarvam-105b,0.0,36,2048,2084
